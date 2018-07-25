@@ -1,41 +1,62 @@
-from app import app, db, lm, oid
+from app import app, db, oid, lm
 from flask import render_template, flash, redirect, session, url_for, request, g
 from flask_login import login_user, logout_user, current_user, login_required
 from .forms import LoginForm
-from  .models import User
+from .models import User,Post
 
+@app.before_request
+def before_request():
+    g.user = current_user
+    print(current_user)
+
+@app.route('/add', methods=['GET', 'POST'])
+def add_entry():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        title = request.form['title']
+        content = request.form['text']
+        category = Post(title, content, 1001)
+        db.session.add(category)
+        db.session.commit()
+        flash('新文章保存成功')
+        return redirect(url_for('show'))
 @app.route('/')
-@app.route('/index')
-def index():
-    user = {'nickname': 'Miguel'}  # fake user
-    posts = [  # fake array of posts
-        {
-            'author': {'nickname': 'John'},
-            'body': 'Beautiful day in Portland!'
-        },
-        {
-            'author': {'nickname': 'Susan'},
-            'body': 'The Avengers movie was so cool!'
-        }
-    ]
-    return render_template("index.html",
-                           title='Home',
-                           user=user,
-                           posts=posts)
+def show():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        categorys = Post.query.all()
+        print('categorys:%s'%categorys)
+        return render_template("index.html",
+                               title='Home',
+                               entries=categorys)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if g.user is not None and g.user.is_authenticated():
-        return redirect(url_for('index'))
-    form = LoginForm()
-    if form.validate_on_submit():
-        session['remenber_me'] = form.remenber_me.data
-        return oid.try_login(form.openid.data, ask_for=['nickname', 'email'])
+    error = None
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        user = User.query.filter_by(username=username).first()
+        passwd = User.query.filter_by(password=password).first()
+
+        if user is None:
+            error = 'Invalid username'
+        elif passwd is None:
+            error = 'Invalid password'
+        else:
+            session['logged_in'] = True
+            flash('You were logged in')
+            print('开始重定向转到主页')
+            return redirect(url_for('show'))
     return render_template('login.html',
                            title='登录',
-                           form=form,
-                           providers=app.config['OPENID_PROVIDERS'])
+                           error=error,
+                           form=LoginForm)
 
-@lm.user_loder
-def load_user(id):
-    return User.query.get(int(id))
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('login'))

@@ -7,7 +7,13 @@
         {% endif %}
     </head>
     <body>
-        <div>Microblog: <a href="/index">Home</a> </div>
+        <div>Microblog:
+            {% if not session.logged_in %}
+            <a href="{{url_for('login')}}">login</a>
+            {% else %}
+            | <a href="{{url_for('logout')}}">Logout</a>
+            {% endif %}
+        </div>
         <hr>
         {% with messages = get_flashed_messages() %}
         {% if messages %}

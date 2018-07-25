@@ -1,7 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Hi,{{user.nickname}}!</h1>
-{% for post in posts %}
-<div><p>{{post.author.nickname}} says:<b>{{post.body}}</b></p></div>
-{% endfor %}
+
+<form action="{{ url_for('add_entry')}}" method="POST" class="add-entry">
+    <d1>
+        <dt>Title:</dt>
+        <dt><input type="text" size="50" name="title"></dt>
+        <dt>Text:</dt>
+        <dd><textarea name="text" rows="10" cols="50"></textarea> </dd>
+        <dd><input type="submit" value="Share"></dd>
+    </d1>
+</form>
+
+<ul class="entries">
+    {% for entry in entries %}
+    <li><h2>{{ entry.title}}</h2></li>{{entry.body|safe}}
+    {% endfor %}
+</ul>
 {% endblock %}

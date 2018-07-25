@@ -15,20 +15,16 @@
         form.elements['openid'].value = openid
     }
 </script>
-<h1>登录</h1>
-<form action="" method="post" name="login">
-    {{form.hidden_tag()}}
-    <p>
-        请输入你的账号ID:<br>
-        {{form.openid(size=80)}}<br>
-        {% for error in form.openid.errors %}
-            <span style="color: red;">[{{error}}]</span>
-        {% endfor %}<br>
-        {% for pr in providers %}
-            <a href="javascript:set_openid('{{pr.url}}','{{pr.name}}');">{{pr.name}}</a>
-        {% endfor %}
-    </p>
-    <p>{{form.remenber_me}} 记住密码</p>
-    <p><input type="submit" value="登录"></p>
+<h2>登录</h2>
+{% if error %}<p class="error"><strong>Error:</strong>{{ error }}</p>{% endif %}
+<form action="{{ url_for('login')}}" method="post" name="login">
+    <d1>
+        <dt>Username:</dt>
+        <dd><input type="text" name="username"></dd>
+        <dt>Password:</dt>
+        <dd><input type="text" name="password"></dd>
+        <p>{{form.remenber_me}} 记住密码</p>
+        <p><input type="submit" value="登录"></p>
+    </d1>
 </form>
 {% endblock %}
