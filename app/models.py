@@ -33,6 +33,32 @@ class Post(db.Model):
         self.title = title
         self.body = body
         self.user_id = user_id
-
     def __repr__(self):
         return '<Post %r>' % (self.title)
+
+class Case(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(32))
+    IP = db.Column(db.String(32))
+    ways = db.Column(db.String(100))
+    request_method = db.Column(db.String(32))
+    data_i = db.Column(db.String(32))
+    data = db.Column(db.String(250))
+    check = db.Column(db.String(100))
+    is_do = db.Column(db.String(32))
+    is_base = db.Column(db.String(32))
+    is_base_do = db.Column(db.String(32))
+    def __init__(self,name,IP,ways,request_method,data_i,data,check,is_do,is_base,is_base_do):
+        self.name = name
+        self.IP = IP
+        self.ways = ways
+        self.request_method = request_method
+        self.data_i = data_i
+        self.data = data
+        self.check = check
+        self.is_do = is_do
+        self.is_base = is_base
+        self.is_base_do = is_base_do
+
+    def __repr__(self):
+        return '<Case %r>' % (self.name)
