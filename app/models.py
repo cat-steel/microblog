@@ -48,7 +48,7 @@ class Case(db.Model):
     is_do = db.Column(db.String(32))
     is_base = db.Column(db.String(32))
     is_base_do = db.Column(db.String(32))
-    def __init__(self,name,IP,ways,request_method,data_i,data,check,is_do,is_base,is_base_do):
+    def __init__(self,name='1',IP='1',ways=1,request_method='1',data_i='1',data='1',check='1',is_do='1',is_base='1',is_base_do='1'):
         self.name = name
         self.IP = IP
         self.ways = ways
