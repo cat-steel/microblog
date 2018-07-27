@@ -31,26 +31,19 @@ def add_testcase():
             flash('用例保存成功')
             return redirect(url_for('show'))
 
-@app.route('del')
+@app.route('/delete', methods=['GET', 'POST'])
 def delete():
-    if not session.get('logged_in'):
-        return redirect('login')
-    else:
-        name = request.form['names']
-        server = request.form['server']
-        ways = request.form['way']
-        request_method = request.form['request_method']
-        data_i = request.form['data_i']
-        data = request.form['data']
-        check = request.form['check']
-        is_do = request.form['is_do']
-        is_base = request.form['is_base']
-        is_base_do = request.form['is_base_do']
-        category = Case(name, server, ways, request_method, data_i, data, check, is_do, is_base, is_base_do)
-        db.session.delete(category)
-        db.session.commit()
-        flash('用例删除成功')
-        return redirect(url_for('show'))
+    if request.method =='GET':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            ids = request.args.get('id')
+            Case.query.filter_by(id=ids).delete()
+            db.session.commit()
+            flash('删除完成')
+            print('重定向')
+            return redirect(url_for('show'))
+
 @app.route('/')
 def show():
     if not session.get('logged_in'):

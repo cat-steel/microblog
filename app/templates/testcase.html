@@ -2,16 +2,27 @@
 {% block content %}
 <html>
 <head>
-    <script type="text/javascript">
+    <script src="{{url_for('static',filename='jquery.js')}}"></script>
+    <script>
         function openwin() {
             document.getElementById('add_testcase').style.display='block';
         }
         function closewin() {
             document.getElementById('add_testcase').style.display='none';
         }
-        function delcase() {
+        function delcase(obj) {
+            var cell1 = obj.parentNode.parentNode.children[1];
+            var ids = cell1.innerText;
+            var data = {'id':ids};
+            $.ajax({
+                type:'GET',
+                url:'{{url_for("delete")}}',
+                data:data,
+                dataType:'json'
+            })
         }
     </script>
+
     <style type="text/css">
         #add_testcase{
             display: none;
@@ -92,7 +103,7 @@
             <td>{{case.is_do}}</td>
             <td>{{case.is_base}}</td>
             <td>{{case.is_base_do}}</td>
-            <td><input type="button" value="编辑"><a href="{{url_for('delete')}}">删除</td>
+            <td><input type="button" value="编辑"><input type="button" value="删除" onclick="delcase(this)"></td>
         </tr>
     {% endfor %}
     </table>
