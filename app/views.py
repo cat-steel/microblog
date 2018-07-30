@@ -7,7 +7,6 @@ from .models import User,Post,Case
 @app.before_request
 def before_request():
     g.user = current_user
-    print(current_user)
 
 @app.route('/add', methods=['GET', 'POST'])
 def add_testcase():
@@ -74,15 +73,23 @@ def editor():
             flash('用例更新成功')
             return redirect(url_for('show'))
 
-@app.route('/')
-def show():
+@app.route('/case')
+def case():
     if not session.get('logged_in'):
         return redirect('login')
     else:
         cases = Case.query.all()
         return render_template("testcase.html",
-                               title='Home',
                                cases=cases)
+
+@app.route('/')
+def index():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        cases = Case.query.all()
+        return render_template("index.html",
+                               title='Home')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
