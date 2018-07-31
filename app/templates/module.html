@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+<head>
+    <script src="{{url_for('static',filename='module/module.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='module/module.css')}}">
+    <script type="text/javascript">
+        function delmudole(obj) {
+            var cell1 = obj.parentNode.parentNode.children[0];
+            var ids = cell1.innerHTML;
+            var data = {'id':ids};
+            $.ajax({
+                type:'GET',
+                url:"{{url_for('delete_module')}}",
+                data:data,
+                dataType:'json'
+            })
+        }
+    </script>
+</head>
+<body>
+<div class="top_buttom">
+    <input id="add_module" type="button" value="添加模块" onclick="openwin_module()">
+</div>
+<form action="{{ url_for('add_module')}}" method="POST" id="new_module">
+    <div id="news_module">
+        <h2>添加模块</h2>
+        <p>项目名称
+            <select name="project_name">
+                <option value="POST">POST</option>
+                <option value="GET">GET</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </p>
+        <p>编号               <input type="text" size="50" name="num"></p>
+        <p>模块名称           <input type="text" size="50" name="module_name"></p>
+        <p>创建者              <input type="text" size="50" name="creator"></p>
+        <div class="di_buttom">
+            <input id="sub_module" type="submit" value="提交">
+            <input id="close_module" type="button" value="关闭" onclick="closewin_module()"></div>
+        </div>
+</form>
+<form action="{{ url_for('editor_module')}}" method="POST" id="editor_module">
+    <div id="editors_module">
+        <h2>编辑模块</h2>
+        <p>项目名称
+            <select name="project_name1">
+                <option value="POST">POST</option>
+                <option value="GET">GET</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </p>
+        <p>编号               <input type="text" size="50" name="num1"></p>
+        <p>模块名称           <input type="text" size="50" name="module_name1"></p>
+        <p>创建者              <input type="text" size="50" name="creator1"></p>
+
+        <div class="di_buttom">
+            <input id="sub_module1" type="submit" value="提交">
+            <input id="close_module1" type="button" value="关闭" onclick="closewin_modul_editor()">
+        </div>
+    </div>
+</form>
+<table border="2" cellpadding="8" style="border-collapse: collapse">
+        <tr>
+            <th>编号</th>
+            <th>模块名称</th>
+            <th>创建者</th>
+            <th>操作</th>
+        </tr>
+        {% for module in modules %}
+        <tr>
+            <td>{{module.id}}</td>
+            <td>{{module.module_name}}</td>
+            <td>{{module.creator}}</td>
+            <td><input type="button" value="编辑" onclick="editor_module(this)"><input type="button" value="删除" onclick="delmudole(this)"></td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

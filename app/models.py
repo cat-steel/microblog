@@ -6,7 +6,6 @@ class User(db.Model):
     email = db.Column(db.String(120), index=True, unique=True)
     username = db.Column(db.String(64), index=True, unique=True)
     password = db.Column(db.String(128))
-    posts = db.relationship('Post', backref='author', lazy='dynamic')
 
     is_authenticated = True  # 判断用户是否登陆
 
@@ -24,17 +23,6 @@ class User(db.Model):
     def __repr__(self):
         return '<User %r>' % (self.nickname)
 
-class Post(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    body = db.Column(db.String(140))
-    title = db.Column(db.String(250))
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    def __init__(self,title,body,user_id):
-        self.title = title
-        self.body = body
-        self.user_id = user_id
-    def __repr__(self):
-        return '<Post %r>' % (self.title)
 
 class Case(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -45,10 +33,11 @@ class Case(db.Model):
     data_i = db.Column(db.String(32))
     data = db.Column(db.String(250))
     check = db.Column(db.String(100))
-    is_do = db.Column(db.String(32))
     is_base = db.Column(db.String(32))
-    is_base_do = db.Column(db.String(32))
-    def __init__(self,name='1',IP='1',ways=1,request_method='1',data_i='1',data='1',check='1',is_do='1',is_base='1',is_base_do='1'):
+    org_id = db.Column(db.Integer)
+    module_id = db.Column(db.Integer)
+
+    def __init__(self,name,IP,ways,request_method,data_i,data,check,is_base,org_id,module_id):
         self.name = name
         self.IP = IP
         self.ways = ways
@@ -56,9 +45,35 @@ class Case(db.Model):
         self.data_i = data_i
         self.data = data
         self.check = check
-        self.is_do = is_do
         self.is_base = is_base
-        self.is_base_do = is_base_do
+        self.org_id = org_id
+        self.module_id = module_id
 
     def __repr__(self):
         return '<Case %r>' % (self.name)
+
+class Module(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    module_name = db.Column(db.String(32))
+    creator = db.Column(db.String(32))
+    org_id = db.Column(db.Integer)
+
+    def __init__(self,module_name,creator,org_id):
+        self.module_name = module_name
+        self.creator = creator
+        self.org_id = org_id
+
+    def __repr__(self):
+        return '<Module %r>' % (self.module_name)
+
+class Project(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    project_name = db.Column(db.String(32))
+    creator = db.Column(db.String(32))
+
+    def __init__(self,project_name,creator):
+        self.project_name = project_name
+        self.creator = creator
+
+    def __repr__(self):
+        return '<Project %r>' % (self.project_name)
