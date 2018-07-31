@@ -7,9 +7,8 @@ from .models import User,Post,Case
 @app.before_request
 def before_request():
     g.user = current_user
-    print(current_user)
 
-@app.route('/add', methods=['GET', 'POST'])
+@app.route('/add_testcase', methods=['GET', 'POST'])
 def add_testcase():
     if request.method =='POST':
         if not session.get('logged_in'):
@@ -22,38 +21,74 @@ def add_testcase():
             data_i = request.form['data_i']
             data = request.form['data']
             check = request.form['check']
-            is_do = request.form['is_do']
             is_base = request.form['is_base']
             is_base_do = request.form['is_base_do']
-            category = Case(name,server,ways,request_method,data_i,data,check,is_do,is_base,is_base_do)
+            category = Case(name,server,ways,request_method,data_i,data,check,'',is_base,is_base_do)
             db.session.add(category)
             db.session.commit()
             flash('用例保存成功')
-            return redirect(url_for('show'))
+            return redirect(url_for('case'))
 
-@app.route('/delete', methods=['GET', 'POST'])
+@app.route('/delete/', methods=['GET', 'POST'])
 def delete():
     if request.method =='GET':
         if not session.get('logged_in'):
             return redirect('login')
         else:
             ids = request.args.get('id')
-            Case.query.filter_by(id=ids).delete()
+            id = int(ids)
+            Case.query.filter_by(id=id).delete()
             db.session.commit()
             flash('删除完成')
-            print('重定向')
-            return redirect(url_for('show'))
+            return redirect(url_for('case'))
 
-@app.route('/')
-def show():
+@app.route('/editor/', methods=['GET', 'POST'])
+def editor():
+    if request.method == 'POST':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            id_num = request.form['num1']
+            name = request.form['names1']
+            server = request.form['server1']
+            ways = request.form['way1']
+            request_method = request.form['request_method1']
+            data_i = request.form['data_i1']
+            data = request.form['data1']
+            check = request.form['check1']
+            is_base = request.form['is_base1']
+            is_base_do = request.form['is_base_do1']
+            Case.query.filter_by(id=id_num).update({Case.name:name,
+                                              Case.IP:server,
+                                              Case.ways:ways,
+                                              Case.request_method:request_method,
+                                              Case.data_i:data_i,
+                                              Case.data:data,
+                                              Case.check:check,
+                                              Case.is_do:'',
+                                              Case.is_base:is_base,
+                                              Case.is_base_do:is_base_do})
+            db.session.commit()
+            flash('用例更新成功')
+            return redirect(url_for('case'))
+
+@app.route('/case')
+def case():
     if not session.get('logged_in'):
         return redirect('login')
     else:
         cases = Case.query.all()
-        print('categorys:%s'%cases)
         return render_template("testcase.html",
-                               title='Home',
-                               cases=cases)
+                               cases=cases,
+                               title='用例')
+
+@app.route('/')
+def index():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        return render_template("index.html",
+                               title='Home')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -71,8 +106,7 @@ def login():
         else:
             session['logged_in'] = True
             flash('You were logged in')
-            print('开始重定向转到主页')
-            return redirect(url_for('show'))
+            return redirect(url_for('index'))
     return render_template('login.html',
                            title='登录',
                            error=error,
@@ -82,5 +116,3 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('login'))
-
-

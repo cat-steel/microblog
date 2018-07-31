@@ -1,19 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<form action="{{ url_for('add_entry')}}" method="POST" class="add-entry">
-    <d1>
-        <dt>Title:</dt>
-        <dt><input type="text" size="50" name="title"></dt>
-        <dt>Text:</dt>
-        <dd><textarea name="text" rows="10" cols="50"></textarea> </dd>
-        <dd><input type="submit" value="Share"></dd>
-    </d1>
-</form>
-
-<ul class="entries">
-    {% for entry in entries %}
-    <li><h2>{{ entry.name}}</h2></li>{{entry.name}}
-    {% endfor %}
-</ul>
+<div>
+    <a href="{{url_for('case')}}">模块</a><br>
+    <a href="{{url_for('case')}}">用例</a>
+</div>
 {% endblock %}

@@ -1,20 +1,29 @@
 <html>
     <head>
         {% if title %}
-        <title>{{title}} - microblog</title>
+        <title>{{title}} - API测试</title>
         {% else %}
-        <title>microblog</title>
+        <title>API测试</title>
         {% endif %}
+        <style type="text/css">
+            .link{
+                margin-right: 100px;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <div>Microblog:
-            {% if not session.logged_in %}
-            <a href="{{url_for('login')}}">login</a>
-            {% else %}
-            | <a href="{{url_for('logout')}}">Logout</a>
-            {% endif %}
-        </div>
-        <hr>
+    <div>
+        <a class="home" href="{{url_for('index')}}">主页</a>
+        {% if not session.logged_in %}
+        <a class="link" href="{{url_for('login')}}">登陆</a>
+        {% else %}
+        <a class="link" href="{{url_for('logout')}}">退出</a>
+        {% endif %}
+    </div>
+    <hr>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         <ul>

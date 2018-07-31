@@ -2,77 +2,110 @@
 {% block content %}
 <html>
 <head>
-    <script src="{{url_for('static',filename='jquery.js')}}"></script>
-    <script>
-        function openwin() {
-            document.getElementById('add_testcase').style.display='block';
-        }
-        function closewin() {
-            document.getElementById('add_testcase').style.display='none';
-        }
-        function delcase(obj) {
-            var cell1 = obj.parentNode.parentNode.children[1];
-            var ids = cell1.innerText;
-            var data = {'id':ids};
-            $.ajax({
-                type:'GET',
-                url:'{{url_for("delete")}}',
-                data:data,
-                dataType:'json'
-            })
-        }
-    </script>
-
-    <style type="text/css">
-        #add_testcase{
-            display: none;
-            position: absolute;
-            top: 25%;
-            left: 25%;
-            width: 55%;
-            height: 55%;
-            border: 2px solid orange;
-            background: #BFDDE0;
-            overflow: auto;
-        }
-        #new_window{
-            font-size: 18px;
-            font-weight: bold;
-        }
-        #sub{
-            font-size: 18px;
-            font-weight: bold;
-        }
-        #close{
-            font-size: 18px;
-            font-weight: bold;
-        }
-        input[type="text"]{
-            margin-left: 100px;
-        }
-        form{width: 100%}
-    </style>
+    <title>测试用例</title>
+    <script src="{{url_for('static',filename='case/jquery.js')}}"></script>
+    <script src="{{url_for('static',filename='case/testcase.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='case/testcase.css')}}">
 </head>
 <form action="{{ url_for('add_testcase')}}" method="POST" id="add_testcase">
     <div id="new_window">
+        <h2>新增用例</h2>
         <p>用例编号           <input type="text" size="50" name="num"></p>
         <p>用例名称           <input type="text" size="50" name="names"></p>
         <p>服务器名称或IP     <input type="text" size="50" name="server"></p>
         <p>路径               <input type="text" size="50" name="way"></p>
-        <p>请求方式           <input type="text" size="50" name="request_method"></p>
-        <p>数据类型           <input type="text" size="50" name="data_i"></p>
         <p>接口参数           <input type="text" size="50" name="data"></p>
         <p>检查点             <input type="text" size="50" name="check"></p>
-        <p>是否执行           <input type="text" size="50" name="is_do"></p>
-        <p>是否作为基础数据   <input type="text" size="50" name="is_base"></p>
-        <p>是否在基础数据上操作<input type="text" size="50" name="is_base_do"></p>
-        <input id="sub" type="submit" value="提交">
-        <input id="close" type="button" value="关闭" onclick="closewin()">
-
+        <p>请求方式
+            <select name="request_method">
+                <option value="POST">POST</option>
+                <option value="GET">GET</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </p>
+        <p>数据类型
+            <select name="data_i">
+                <option value="DATA">DATA</option>
+                <option value="FILE">FILE</option>
+                <option value="FORM">FORM</option>
+            </select>
+        </p>
+        <p>是否作为基础数据
+            <select name="is_base">
+                <option value="YES">YES</option>
+                <option value="NO" selected="selected">NO</option>
+            </select>
+        </p>
+        <p>是否在基础数据上操作
+            <select name="is_base_do">
+                <option value="YES">YES</option>
+                <option value="NO" selected="selected">NO</option>
+            </select>
+        </p>
+        <div class="di_buttom">
+            <input id="sub" type="submit" value="提交">
+            <input id="close" type="button" value="关闭" onclick="closewin()"></div>
+        </div>
+</form>
+<form action="{{ url_for('editor')}}" method="POST" id="editor_testcase">
+    <div id="editor_window">
+        <h2>编辑用例</h2>
+        <p>用例编号           <input type="text" size="50" name="num1"></p>
+        <p>用例名称           <input type="text" size="50" name="names1"></p>
+        <p>服务器名称或IP     <input type="text" size="50" name="server1"></p>
+        <p>路径               <input type="text" size="50" name="way1"></p>
+        <p>接口参数           <input type="text" size="50" name="data1"></p>
+        <p>检查点             <input type="text" size="50" name="check1"></p>
+        <p>请求方式
+            <select name="request_method1">
+                <option value="POST">POST</option>
+                <option value="GET">GET</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </p>
+        <p>数据类型
+            <select name="data_i1">
+                <option value="DATA">DATA</option>
+                <option value="FILE">FILE</option>
+                <option value="FORM">FORM</option>
+            </select>
+        </p>
+        <p>是否作为基础数据
+            <select name="is_base1">
+                <option value="YES">YES</option>
+                <option value="NO" selected="selected">NO</option>
+            </select>
+        </p>
+        <p>是否在基础数据上操作
+            <select name="is_base_do1">
+                <option YES="yes">YES</option>
+                <option value="NO" selected="selected">NO</option>
+            </select>
+        </p>
+        <div class="di_buttom">
+            <input id="sub1" type="submit" value="提交">
+            <input id="close1" type="button" value="关闭" onclick="closewin_editor()">
+        </div>
     </div>
 </form>
 <div class="test_case">
-    <input id="add_case" type="button" value="新增用例" onclick="openwin()">
+    <div class="model">项目
+        <select name="project">
+            <option value="人员系统">人员系统</option>
+            <option value="交易系统">交易系统</option>
+        </select>
+        模块
+        <select name="models">
+            <option value="从业人员管理">从业人员管理</option>
+            <option value="离职管理">离职管理</option>
+        </select>
+    </div>
+    <div class="top_buttom">
+        <input id="add_case" type="button" value="新增用例" onclick="openwin()">
+        <input id="do" type="button" value="执行">
+    </div>
     <table border="2" cellpadding="8" style="border-collapse: collapse">
         <tr>
             <th style="width: 2%"><input type="checkbox"></th>
@@ -84,7 +117,6 @@
             <th style="width: 3%">数据类型</th>
             <th style="width: 10%">接口参数</th>
             <th style="width: 3%">检查点</th>
-            <th style="width: 3%">是否执行</th>
             <th style="width: 5%">是否作为基础数据</th>
             <th style="width: 5%">是否在基础数据上操作</th>
             <th style="width: 4%"></th>
@@ -100,13 +132,12 @@
             <td>{{case.data_i}}</td>
             <td>{{case.data}}</td>
             <td>{{case.check}}</td>
-            <td>{{case.is_do}}</td>
             <td>{{case.is_base}}</td>
             <td>{{case.is_base_do}}</td>
-            <td><input type="button" value="编辑"><input type="button" value="删除" onclick="delcase(this)"></td>
+            <td><input type="button" value="编辑" onclick="editor(this)"><input type="button" value="删除" onclick="delcase(this)"></td>
         </tr>
     {% endfor %}
     </table>
 </div>
-{% endblock %}
 </html>
+{% endblock %}
