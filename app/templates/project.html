@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+<head>
+    <script src="{{url_for('static',filename='project/project.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='project/project.css')}}">
+    <script type="text/javascript">
+        function delproject(obj) {
+            var cell1 = obj.parentNode.parentNode.children[0];
+            var ids = cell1.innerHTML;
+            var data = {'id':ids};
+            $.ajax({
+                type:'GET',
+                url:"{{url_for('delete_project')}}",
+                data:data,
+                dataType:'json'
+            })
+        }
+    </script>
+</head>
+<body>
+<div class="top_buttom">
+    <input id="add_project" type="button" value="添加项目" onclick="openwin_project()">
+</div>
+<form action="{{ url_for('add_project')}}" method="POST" id="new_project">
+    <div id="news_project">
+        <h2>添加项目</h2>
+        <p>编号               <input type="text" size="50" name="num"></p>
+        <p>项目名称           <input type="text" size="50" name="project_name"></p>
+        <p>创建者              <input type="text" size="50" name="creator"></p>
+        <div class="di_buttom">
+            <input id="sub_project" type="submit" value="提交">
+            <input id="close_project" type="button" value="关闭" onclick="closewin_project()"></div>
+        </div>
+</form>
+<form action="{{ url_for('editor_project')}}" method="POST" id="editor_project">
+    <div id="editors_project">
+        <h2>编辑项目</h2>
+        <p>编号               <input type="text" size="50" name="num1"></p>
+        <p>项目名称           <input type="text" size="50" name="project_name1"></p>
+        <p>创建者              <input type="text" size="50" name="creator1"></p>
+
+        <div class="di_buttom">
+            <input id="sub_project1" type="submit" value="提交">
+            <input id="close_project1" type="button" value="关闭" onclick="closewin_project_editor()">
+        </div>
+    </div>
+</form>
+<table border="2" cellpadding="8" style="border-collapse: collapse">
+        <tr>
+            <th>编号</th>
+            <th>项目名称</th>
+            <th>创建者</th>
+            <th>操作</th>
+        </tr>
+        {% for project in projects %}
+        <tr>
+            <td>{{project.id}}</td>
+            <td>{{project.project_name}}</td>
+            <td>{{project.creator}}</td>
+            <td><input type="button" value="编辑" onclick="editor_project(this)"><input type="button" value="删除" onclick="delproject(this)"></td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}

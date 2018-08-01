@@ -24,14 +24,8 @@ def add_testcase():
             is_base = request.form['is_base']
             org_name = request.form['project_name']
             module_name = request.form['model_name']
-            if org_name == '人员系统':
-                org_id = 1
-            else:
-                org_id = 2
-            if module_name == '从业人员管理':
-                module_id = 1
-            else:
-                module_id = 2
+            org_id = db.session.query(Project.id).filter_by(project_name=org_name).first()[0]
+            module_id = db.session.query(Module.id).filter_by(module_name=module_name).first()[0]
             category = Case(name,server,ways,request_method,data_i,data,check,is_base,org_id,module_id)
             db.session.add(category)
             db.session.commit()
@@ -68,17 +62,46 @@ def editor():
             data = request.form['data1']
             check = request.form['check1']
             is_base = request.form['is_base1']
+            org_name = request.form['project_name1']
+            module_name = request.form['module_name1']
+            org_id = db.session.query(Project.id).filter_by(project_name=org_name).first()[0]
+            module_id = db.session.query(Module.id).filter_by(module_name=module_name).first()[0]
             Case.query.filter_by(id=id_num).update({Case.name:name,
-                                              Case.IP:server,
-                                              Case.ways:ways,
-                                              Case.request_method:request_method,
-                                              Case.data_i:data_i,
-                                              Case.data:data,
-                                              Case.check:check,
-                                              Case.is_base:is_base})
+                                                    Case.IP:server,
+                                                    Case.ways:ways,
+                                                    Case.request_method:request_method,
+                                                    Case.data_i:data_i,
+                                                    Case.data:data,
+                                                    Case.check:check,
+                                                    Case.is_base:is_base,
+                                                    Case.org_id:org_id,
+                                                    Case.module_id:module_id})
             db.session.commit()
             flash('用例更新成功')
             return redirect(url_for('case'))
+
+@app.route('/selected_top_case', methods=['GET','POST'])
+def selected_top_case():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        p_name = db.session.query(Project.project_name)
+        m_name = db.session.query(Module.module_name)
+        projects = Project.query.all()
+        modules = Module.query.all()
+        module_name_case = request.form['module_name_case']
+        if module_name_case == '全部':
+            cases = Case.query.all()
+        else:
+            case_id = db.session.query(Module.id).filter_by(module_name=module_name_case).first()[0]
+            cases = Case.query.filter_by(module_id=case_id).all()
+        return render_template("testcase.html",
+                               cases=cases,
+                               modules=modules,
+                               projects=projects,
+                               p_name=p_name,
+                               m_name=m_name,
+                               title='用例-' + module_name_case)
 
 @app.route('/case')
 def case():
@@ -86,17 +109,45 @@ def case():
         return redirect('login')
     else:
         cases = Case.query.all()
+        modules = Module.query.all()
+        projects = Project.query.all()
+        p_name = db.session.query(Project.project_name)
+        m_name = db.session.query(Module.module_name)
         return render_template("testcase.html",
                                cases=cases,
+                               modules=modules,
+                               projects=projects,
+                               p_name=p_name,
+                               m_name=m_name,
                                title='用例')
+
+@app.route('/project_module', methods=['GET', 'POST'])
+def project_module():
+    if request.method =='POST':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            projects = Project.query.all()
+            project_name = request.form['project']
+            if project_name == '全部':
+                modules = Module.query.all()
+            else:
+                project_id = db.session.query(Project.id).filter_by(project_name=project_name).first()[0]
+                modules = Module.query.filter_by(org_id=project_id).all()
+            return render_template('module.html',
+                                   projects=projects,
+                                   modules=modules,
+                                   title='模块-' + project_name)
 
 @app.route('/module')
 def module():
     if not session.get('logged_in'):
         return redirect('login')
     else:
+        projects = Project.query.all()
         modules = Module.query.all()
         return render_template("module.html",
+                               projects=projects,
                                modules=modules,
                                title='模块')
 
@@ -153,6 +204,58 @@ def delete_module():
             flash('删除完成')
             return redirect(url_for('module'))
 
+@app.route('/project')
+def project():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        projects = Project.query.all()
+        return render_template("project.html",
+                               projects=projects,
+                               title='项目')
+
+@app.route('/add_project', methods=['GET', 'POST'])
+def add_project():
+    if request.method =='POST':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            project_name = request.form['project_name']
+            creator = request.form['creator']
+            category = Project(project_name,creator)
+            db.session.add(category)
+            db.session.commit()
+            flash('项目保存成功')
+            return redirect(url_for('project'))
+
+@app.route('/editor_project', methods=['GET', 'POST'])
+def editor_project():
+    if request.method =='POST':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            id_num = request.form['num1']
+            project_name = request.form['project_name1']
+            creator = request.form['creator1']
+            Project.query.filter_by(id=id_num).update({Project.project_name: project_name,
+                                                           Project.creator: creator})
+            db.session.commit()
+            flash('项目更新成功')
+            return redirect(url_for('project'))
+
+@app.route('/delete_project', methods=['GET', 'POST'])
+def delete_project():
+    if request.method =='GET':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            ids = request.args.get('id')
+            id = int(ids)
+            Project.query.filter_by(id=id).delete()
+            db.session.commit()
+            flash('删除完成')
+            return redirect(url_for('project'))
+
 @app.route('/')
 def index():
     if not session.get('logged_in'):
@@ -166,10 +269,8 @@ def login():
     error = None
     if request.method == 'POST':
         username = request.form['username']
-        print(username)
         password = request.form['password']
         user = User.query.filter_by(username=username).first()
-        print('user:%s'%user)
         passwd = User.query.filter_by(password=password).first()
 
         if user is None:

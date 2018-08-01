@@ -30,6 +30,8 @@
             var data = obj.parentNode.parentNode.children[7].innerHTML;
             var check = obj.parentNode.parentNode.children[8].innerHTML;
             var is_base = obj.parentNode.parentNode.children[9].innerHTML;
+            var project_name1 = obj.parentNode.parentNode.children[11].innerHTML;
+            var module_name1 = obj.parentNode.parentNode.children[12].innerHTML;
             document.getElementsByName('num1')[0].value = id_num;
             document.getElementsByName('names1')[0].value = case_name;
             document.getElementsByName('server1')[0].value = IP;
@@ -39,4 +41,6 @@
             document.getElementsByName('data1')[0].value = data;
             document.getElementsByName('check1')[0].value = check;
             document.getElementsByName('is_base1')[0].value = is_base;
+            document.getElementsByName('project_name1')[0].value = project_name1;
+            document.getElementsByName('module_name1')[0].value = module_name1;
         }

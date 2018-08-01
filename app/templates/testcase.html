@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>测试用例</title>
-    <script type="text/javascript" src="{{url_for('static',filename='case/testcase.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='case/testcase2.js')}}"></script>
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='case/testcase1.css')}}">
     <script type="text/javascript">
         function delcase(obj) {
@@ -25,18 +25,16 @@
         <h2>新增用例</h2>
         <p>项目名称
             <select name="project_name">
-                <option value="POST">POST</option>
-                <option value="GET">GET</option>
-                <option value="PUT">PUT</option>
-                <option value="DELETE">DELETE</option>
+                {% for project in projects %}
+                <option value="{{project.project_name}}">{{project.project_name}}</option>
+                {% endfor %}
             </select>
         </p>
         <p>模块名称
             <select name="model_name">
-                <option value="POST">POST</option>
-                <option value="GET">GET</option>
-                <option value="PUT">PUT</option>
-                <option value="DELETE">DELETE</option>
+                {% for module in modules %}
+                <option value="{{module.module_name}}">{{module.module_name}}</option>
+                {% endfor %}
             </select>
         </p>
         <p>用例编号           <input type="text" size="50" name="num"></p>
@@ -74,6 +72,20 @@
 <form action="{{ url_for('editor')}}" method="POST" id="editor_testcase">
     <div id="editor_window">
         <h2>编辑用例</h2>
+        <p>项目名称
+            <select name="project_name1">
+                {% for project in projects %}
+                <option value="{{project.project_name}}">{{project.project_name}}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>模块名称
+            <select name="module_name1">
+                {% for module in modules %}
+                <option value="{{module.module_name}}">{{module.module_name}}</option>
+                {% endfor %}
+            </select>
+        </p>
         <p>用例编号           <input type="text" size="50" name="num1"></p>
         <p>用例名称           <input type="text" size="50" name="names1"></p>
         <p>服务器名称或IP     <input type="text" size="50" name="server1"></p>
@@ -108,17 +120,23 @@
     </div>
 </form>
 <div class="test_case">
-    <div class="model">项目
-        <select name="project">
-            <option value="人员系统">人员系统</option>
-            <option value="交易系统">交易系统</option>
+    <form id="top_select" action="{{ url_for('selected_top_case')}}"  method="POST">
+        项目
+        <select name="project_name_case">
+            <option value="全部">全部</option>
+            {% for project in projects %}
+            <option value="{{project.project_name}}">{{project.project_name}}</option>
+            {% endfor %}
         </select>
         模块
-        <select name="models">
-            <option value="从业人员管理">从业人员管理</option>
-            <option value="离职管理">离职管理</option>
+        <select name="module_name_case">
+            <option value="全部">全部</option>
+            {% for module in modules %}
+            <option value="{{module.module_name}}">{{module.module_name}}</option>
+            {% endfor %}
         </select>
-    </div>
+        <input type="submit" id="select_top_case" value="查询">
+    </form>
     <div class="top_buttom">
         <input id="add_case" type="button" value="新增用例" onclick="openwin()">
         <input id="do" type="button" value="执行">
@@ -136,6 +154,8 @@
             <th style="width: 3%">检查点</th>
             <th style="width: 5%">是否作为基础数据</th>
             <th style="width: 4%"></th>
+            <th style="width: 0">项目</th>
+            <th style="width: 0">模块</th>
         </tr>
         {% for case in cases %}
         <tr>
@@ -150,6 +170,8 @@
             <td>{{case.check}}</td>
             <td>{{case.is_base}}</td>
             <td><input type="button" value="编辑" onclick="editor(this)"><input type="button" value="删除" onclick="delcase(this)"></td>
+            <td>{{p_name.filter_by(id=case.org_id).first()[0]}}</td>
+            <td>{{m_name.filter_by(id=case.module_id).first()[0]}}</td>
         </tr>
     {% endfor %}
     </table>

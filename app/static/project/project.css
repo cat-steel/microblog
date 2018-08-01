@@ -1,0 +1,64 @@
+
+        #add_project{
+            font-size: 18px;
+            font-weight: bold;
+            background: red;
+        }
+        #new_project{
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            width: 55%;
+            height: 55%;
+            border: 2px solid orange;
+            background: #BFDDE0;
+            overflow: auto;
+        }
+        #editor_project{
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            width: 55%;
+            height: 55%;
+            border: 2px solid orange;
+            background: #BFDDE0;
+            overflow: auto;
+        }
+        #news_project{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #editors_project{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #sub_project{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #close_project{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #sub_project1{
+            font-size: 18px;
+            font-weight: bold;
+        }#close_project1{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        input[type="text"]{
+            margin-left: 30px;
+        }
+        form{width: 100%}
+        p{
+            margin: 10px
+        }
+        h2{
+            text-align: center;
+        }
+        .di_buttom{
+            text-align: center;
+        }

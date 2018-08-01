@@ -19,18 +19,15 @@
     </script>
 </head>
 <body>
-<div class="top_buttom">
-    <input id="add_module" type="button" value="添加模块" onclick="openwin_module()">
-</div>
+
 <form action="{{ url_for('add_module')}}" method="POST" id="new_module">
     <div id="news_module">
         <h2>添加模块</h2>
         <p>项目名称
             <select name="project_name">
-                <option value="POST">POST</option>
-                <option value="GET">GET</option>
-                <option value="PUT">PUT</option>
-                <option value="DELETE">DELETE</option>
+                {% for project in projects%}
+                <option value="{{project.project_name}}">{{project.project_name}}</option>
+                {% endfor %}
             </select>
         </p>
         <p>编号               <input type="text" size="50" name="num"></p>
@@ -46,10 +43,9 @@
         <h2>编辑模块</h2>
         <p>项目名称
             <select name="project_name1">
-                <option value="POST">POST</option>
-                <option value="GET">GET</option>
-                <option value="PUT">PUT</option>
-                <option value="DELETE">DELETE</option>
+                {% for project in projects%}
+                <option value="{{project.project_name}}">{{project.project_name}}</option>
+                {% endfor %}
             </select>
         </p>
         <p>编号               <input type="text" size="50" name="num1"></p>
@@ -62,6 +58,18 @@
         </div>
     </div>
 </form>
+<form id="project_module" action="{{ url_for('project_module')}}"  method="POST">项目
+    <select name="project">
+        <option value="全部">全部</option>
+        {% for project in projects%}
+        <option value="{{project.project_name}}">{{project.project_name}}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" id="select_project" value="查询">
+</form>
+<div class="top_buttom">
+    <input id="add_module" type="button" value="添加模块" onclick="openwin_module()">
+</div>
 <table border="2" cellpadding="8" style="border-collapse: collapse">
         <tr>
             <th>编号</th>
