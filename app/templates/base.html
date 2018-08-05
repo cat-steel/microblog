@@ -20,16 +20,33 @@
                 height: 50px;
             }
             #mess{color: red}
+            .right{
+                text-align: right;
+                width: 50%;
+                float: right;
+            }
+            .left{
+                text-align: left;
+                width: 50%;
+                float: left;
+            }
         </style>
     </head>
     <body>
     <div>
-        <a class="home" href="{{url_for('index')}}">主页</a>
-        {% if not session.logged_in %}
-        <a class="link" href="{{url_for('login')}}">登陆</a>
-        {% else %}
-        <a class="link" href="{{url_for('logout')}}">退出</a>
-        {% endif %}
+        <div class="left">
+            <a class="home" href="{{url_for('index')}}">主页</a>
+            {% if not session.logged_in %}
+            <a class="link" href="{{url_for('login')}}">登陆</a>
+            {% else %}
+            <a class="link" href="{{url_for('logout')}}">退出</a>
+            {% endif %}
+        </div>
+        <div class="right">
+            <a href="{{url_for('project')}}">项目</a>
+            <a href="{{url_for('module')}}">模块</a>
+            <a href="{{url_for('case')}}">用例</a>
+        </div>
     </div>
     <hr>
         {% with messages = get_flashed_messages() %}

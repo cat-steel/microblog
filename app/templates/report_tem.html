@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+<head>
+</head>
+<body>
+<div class="head">
+    <h2>测试报告</h2>
+    <p>开始时间：<nobr></nobr></p>
+    <p>结束时间：<nobr></nobr></p>
+    <p>测试结果：<nobr></nobr></p>
+</div>
+<div class="detail">
+    <p>测试详情</p>
+    <table id="case_detail" border="2" cellpadding="8" style="border-collapse: collapse">
+        <tr>
+            <td>用例组</td>
+            <td>总用例数</td>
+            <td>通过数量</td>
+            <td>失败数量</td>
+            <td>错误数量</td>
+            <td>查看 收起</td>
+        </tr>
+        <tr>
+            <td>total</td>
+            <td>10</td>
+            <td>8</td>
+            <td>2</td>
+            <td>0</td>
+            <td>全部 通过 失败 错误</td>
+        </tr>
+        <tr>
+            <td colspan="2">用例ID</td>
+            <td colspan="2">用例名称</td>
+            <td colspan="2">测试结果</td>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td colspan="2">{{ result[0] }}</td>
+            <td colspan="2">{{ result[1] }}</td>
+            <td colspan="2">通过</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
+{% endblock %}

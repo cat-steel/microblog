@@ -128,6 +128,7 @@ def do_case():
 
 @app.route('/do_many_case', methods=['GET', 'POST'])
 def do_many_case():
+    results = []
     if request.method =='GET':
         if not session.get('logged_in'):
             return redirect('login')
@@ -148,9 +149,11 @@ def do_many_case():
                     data_i = case_data.get('data_i')
                     check = case_data.get('check')
                     is_base = case_data.get('is_base')
+                    result = [id_num,case_name]
+                    results.append(result)
                     code = request_cases.get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
                     print('用例:%s  响应结果：%d'%(case_name,code))
-            return redirect(url_for('case'))
+                return redirect(url_for('index'))
 
 @app.route('/selected_top_case', methods=['GET','POST'])
 def selected_top_case():
