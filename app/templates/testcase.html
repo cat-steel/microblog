@@ -3,8 +3,8 @@
 <html>
 <head>
     <title>测试用例</title>
-    <script type="text/javascript" src="{{url_for('static',filename='case/testcase2.js')}}"></script>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='case/testcase1.css')}}">
+    <script type="text/javascript" src="{{url_for('static',filename='case/testcase.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='case/testcase.css')}}">
     <script type="text/javascript">
         function delcase(obj) {
             var cell1 = obj.parentNode.parentNode.children[1];
@@ -18,9 +18,48 @@
                 async:true
             })
         }
+        function do_many_case() {
+            var data = [];
+            $(function () {
+                $('#cases').find(':checkbox:checked').each(function () {
+                    var id_num = $(this).parent().next().text();
+                    var case_name = $(this).parent().next().next().text();
+                    var server = $(this).parent().next().next().next().text();
+                    var way = $(this).parent().next().next().next().next().text();
+                    var request_method = $(this).parent().next().next().next().next().next().text();
+                    var data_type = $(this).parent().next().next().next().next().next().next().text();
+                    var data_i = $(this).parent().next().next().next().next().next().next().next().text();
+                    var check = $(this).parent().next().next().next().next().next().next().next().next().text();
+                    var is_base = $(this).parent().next().next().next().next().next().next().next().next().next().text();
+                    data.push({'id_num':id_num,
+                    'case_name':case_name,
+                    'server':server,
+                    'way':way,
+                    'request_method':request_method,
+                    'data_type':data_type,
+                    'data_i':data_i,
+                    'check':check,
+                    'is_base':is_base});
+                });
+                var data_i = {};
+                var num = data.length;
+                for(var i=0;i<data.length;i++){
+                    var ki = i.toString();
+                    data_i[ki]=data[i];
+                }
+                data_i['len']=num;
+                $.ajax({
+                        type:'GET',
+                        url:"{{url_for('do_many_case')}}",
+                        data:JSON.stringify(data_i),
+                        dataType:'json',
+                        async:true
+                    })
+            });
+        }
     </script>
 </head>
-<form action="{{ url_for('add_testcase')}}" method="POST" id="add_testcase">
+<form class="form_case" action="{{ url_for('add_testcase')}}" method="POST" id="add_testcase">
     <div id="new_window">
         <h2>新增用例</h2>
         <p>项目名称
@@ -41,7 +80,7 @@
         <p>用例名称           <input type="text" size="50" name="names"></p>
         <p>服务器名称或IP     <input type="text" size="50" name="server"></p>
         <p>路径               <input type="text" size="50" name="way"></p>
-        <p>接口参数           <input type="text" size="50" name="data"></p>
+        <p>接口参数           <textarea  cols="50" name="data" class="datas"></textarea></p>
         <p>检查点             <input type="text" size="50" name="check"></p>
         <p>请求方式
             <select name="request_method">
@@ -69,7 +108,7 @@
             <input id="close" type="button" value="关闭" onclick="closewin()"></div>
         </div>
 </form>
-<form action="{{ url_for('editor')}}" method="POST" id="editor_testcase">
+<form class="form_case" action="{{ url_for('editor')}}" method="POST" id="editor_testcase">
     <div id="editor_window">
         <h2>编辑用例</h2>
         <p>项目名称
@@ -90,7 +129,7 @@
         <p>用例名称           <input type="text" size="50" name="names1"></p>
         <p>服务器名称或IP     <input type="text" size="50" name="server1"></p>
         <p>路径               <input type="text" size="50" name="way1"></p>
-        <p>接口参数           <input type="text" size="50" name="data1"></p>
+        <p>接口参数           <textarea  cols="50" name="data1" class="datas"></textarea></p>
         <p>检查点             <input type="text" size="50" name="check1"></p>
         <p>请求方式
             <select name="request_method1">
@@ -119,6 +158,68 @@
         </div>
     </div>
 </form>
+<form class="form_case" action="{{ url_for('do_case')}}" method="POST" id="do_case">
+    <div id="do_window">
+        <h2>调试</h2>
+        <p>项目名称
+            <select name="project_name2">
+                {% for project in projects %}
+                <option value="{{project.project_name}}">{{project.project_name}}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>模块名称
+            <select name="module_name2">
+                {% for module in modules %}
+                <option value="{{module.module_name}}">{{module.module_name}}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>用例编号           <input type="text" size="50" name="num2"></p>
+        <p>用例名称           <input type="text" size="50" name="names2"></p>
+        <p>服务器名称或IP     <input type="text" size="50" name="server2"></p>
+        <p>路径               <input type="text" size="50" name="way2"></p>
+        <p>接口参数           <textarea  cols="50" name="data2" class="datas"></textarea></p>
+        <p>检查点             <input type="text" size="50" name="check2"></p>
+        <p>请求方式
+            <select name="request_method2">
+                <option value="POST">POST</option>
+                <option value="GET">GET</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </p>
+        <p>数据类型
+            <select name="data_i2">
+                <option value="DATA">DATA</option>
+                <option value="FILE">FILE</option>
+                <option value="FORM">FORM</option>
+            </select>
+        </p>
+        <p>是否作为基础数据
+            <select name="is_base2">
+                <option value="YES">YES</option>
+                <option value="NO" selected="selected">NO</option>
+            </select>
+        </p>
+        <div class="di_buttom">
+            <input id="sub2" type="submit" onclick="open_result()" value="执行">
+            <input id="close2" type="button" value="关闭" onclick="closewin_do()">
+        </div>
+    </div>
+</form>
+<div class="form_case" id="result">
+    <h2>调试结果</h2>
+    <p>项目名称：</p>
+    <p>模块名称：</p>
+    <p>用例名称：</p>
+    <p>开始时间：</p>
+    <p>结束时间：</p>
+    <p>状态码：</p>
+    <p>调试结果：</p>
+    <p>接口返回：</p><br>
+    <p>请等待响应结果......</p>
+</div>
 <div class="test_case">
     <form id="top_select" action="{{ url_for('selected_top_case')}}"  method="POST">
         项目
@@ -139,9 +240,9 @@
     </form>
     <div class="top_buttom">
         <input id="add_case" type="button" value="新增用例" onclick="openwin()">
-        <input id="do" type="button" value="执行">
+        <input id="do" type="button" value="执行" onclick="do_many_case()">
     </div>
-    <table border="2" cellpadding="8" style="border-collapse: collapse">
+    <table id="cases" border="2" cellpadding="8" style="border-collapse: collapse">
         <tr>
             <th style="width: 2%"><input type="checkbox"></th>
             <th style="width: 3%">用例编号</th>
@@ -153,15 +254,15 @@
             <th style="width: 10%">接口参数</th>
             <th style="width: 3%">检查点</th>
             <th style="width: 5%">是否作为基础数据</th>
-            <th style="width: 4%"></th>
-            <th style="width: 0">项目</th>
-            <th style="width: 0">模块</th>
+            <th style="width: 2%">操作</th>
+            <th style="width: 2%">项目</th>
+            <th style="width: 2%">模块</th>
         </tr>
         {% for case in cases %}
         <tr>
-            <td><input type="checkbox"></td>
-            <td>{{case.id}}</td>
-            <td>{{case.name}}</td>
+            <td><input name="check" type="checkbox"></td>
+            <td id="id_num">{{case.id}}</td>
+            <td id="case_name">{{case.name}}</td>
             <td>{{case.IP}}</td>
             <td>{{case.ways}}</td>
             <td>{{case.request_method}}</td>
@@ -169,9 +270,13 @@
             <td>{{case.data}}</td>
             <td>{{case.check}}</td>
             <td>{{case.is_base}}</td>
-            <td><input type="button" value="编辑" onclick="editor(this)"><input type="button" value="删除" onclick="delcase(this)"></td>
-            <td>{{p_name.filter_by(id=case.org_id).first()[0]}}</td>
-            <td>{{m_name.filter_by(id=case.module_id).first()[0]}}</td>
+            <td style="width: 2%">
+                <input type="button" value="编辑" onclick="editor(this)">
+                <input type="button" value="删除" onclick="delcase(this)">
+                <input type="button" value="调试" onclick="do_case(this)">
+            </td>
+            <td style="width: 2%">{{p_name.filter_by(id=case.org_id).first()[0]}}</td>
+            <td style="width: 2%">{{m_name.filter_by(id=case.module_id).first()[0]}}</td>
         </tr>
     {% endfor %}
     </table>

@@ -14,8 +14,6 @@
             position: absolute;
             top: 20%;
             left: 25%;
-            width: 55%;
-            height: 55%;
             border: 2px solid orange;
             background: #BFDDE0;
             overflow: auto;
@@ -25,17 +23,38 @@
             position: absolute;
             top: 20%;
             left: 25%;
-            width: 55%;
-            height: 55%;
             border: 2px solid orange;
             background: #BFDDE0;
             overflow: auto;
         }
+        #do_case{
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            border: 2px solid orange;
+            background: #BFDDE0;
+            overflow: auto;
+        }
+        #result{
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            border: 2px solid orange;
+            background: #BFDDE0;
+            overflow: auto;
+        }
+        #result[p]{font-weight: bold}
         #new_window{
             font-size: 16px;
             font-weight: bold;
         }
         #editor_window{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #do_window{
             font-size: 16px;
             font-weight: bold;
         }
@@ -47,10 +66,19 @@
             font-size: 18px;
             font-weight: bold;
         }
+        #sub2{
+            font-size: 18px;
+            font-weight: bold;
+        }
         #close1{
             font-size: 18px;
             font-weight: bold;
-        }#close{
+        }
+        #close{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #close2{
             font-size: 18px;
             font-weight: bold;
         }

@@ -12,6 +12,14 @@
             h2{
                 text-align: center;
             }
+            .form_case{
+                width: 800px;
+                height: 500px;
+            }
+            .datas{
+                height: 50px;
+            }
+            #mess{color: red}
         </style>
     </head>
     <body>
@@ -28,7 +36,7 @@
         {% if messages %}
         <ul>
          {% for message in messages %}
-            <li>{{message}}</li>
+            <li id="mess">{{message}}</li>
          {% endfor %}
         </ul>
         {% endif %}

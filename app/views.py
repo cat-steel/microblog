@@ -3,6 +3,8 @@ from flask import render_template, flash, redirect, session, url_for, request, g
 from flask_login import login_user, logout_user, current_user, login_required
 from .forms import LoginForm
 from .models import User,Module,Case,Project
+from .test import request_tiaoshi,request_cases
+import json, time
 
 @app.before_request
 def before_request():
@@ -47,7 +49,7 @@ def delete_case():
             flash('删除完成')
             return redirect(url_for('case'))
 
-@app.route('/editor/', methods=['GET', 'POST'])
+@app.route('/editor', methods=['GET', 'POST'])
 def editor():
     if request.method == 'POST':
         if not session.get('logged_in'):
@@ -78,6 +80,76 @@ def editor():
                                                     Case.module_id:module_id})
             db.session.commit()
             flash('用例更新成功')
+            return redirect(url_for('case'))
+
+@app.route('/do_case', methods=['GET', 'POST'])
+def do_case():
+    if request.method == 'POST':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            cases = Case.query.all()
+            modules = Module.query.all()
+            projects = Project.query.all()
+            p_name = db.session.query(Project.project_name)
+            m_name = db.session.query(Module.module_name)
+            id_num = request.form['num2']
+            case_name = request.form['names2']
+            server = request.form['server2']
+            way = request.form['way2']
+            request_method = request.form['request_method2']
+            data_type = request.form['data_i2']
+            data_i = request.form['data2']
+            check = request.form['check2']
+            is_base = request.form['is_base2']
+            org_name = request.form['project_name2']
+            module_name = request.form['module_name2']
+            start_time = time.strftime('%H:%M:%S')
+            code = request_cases.get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
+            end_time = time.strftime('%H:%M:%S')
+            print('调试---用例:%s  响应结果：%d' % (case_name, code))
+            result = {
+                'org_name':org_name,
+                'module_name':module_name,
+                'code':code,
+                'case_name':case_name,
+                'start_time':start_time,
+                'end_time':end_time,
+            }
+            return render_template('tiaoshi_result.html',
+                                   cases=cases,
+                                   modules=modules,
+                                   projects=projects,
+                                   p_name=p_name,
+                                   m_name=m_name,
+                                   title='用例',
+                                   result=result
+                                   )
+
+@app.route('/do_many_case', methods=['GET', 'POST'])
+def do_many_case():
+    if request.method =='GET':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            dics = request.args.to_dict()
+            for dic in dics:
+                json_d = json.loads(dic)
+                num = json_d.get('len')
+                for i in range(num):
+                    k = str(i)
+                    case_data = json_d.get(k)
+                    id_num = case_data.get('id_num')
+                    case_name = case_data.get('case_name')
+                    server = case_data.get('server')
+                    way = case_data.get('way')
+                    request_method = case_data.get('request_method')
+                    data_type = case_data.get('data_type')
+                    data_i = case_data.get('data_i')
+                    check = case_data.get('check')
+                    is_base = case_data.get('is_base')
+                    code = request_cases.get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
+                    print('用例:%s  响应结果：%d'%(case_name,code))
             return redirect(url_for('case'))
 
 @app.route('/selected_top_case', methods=['GET','POST'])
@@ -274,17 +346,17 @@ def login():
         passwd = User.query.filter_by(password=password).first()
 
         if user is None:
-            error = 'Invalid username'
+            error = '无效账号'
         elif passwd is None:
-            error = 'Invalid password'
+            error = '无效密码'
         else:
             session['logged_in'] = True
-            flash('You were logged in')
+            flash('登录成功')
             return redirect(url_for('index'))
     return render_template('login.html',
                            title='登录',
                            error=error,
-                           form=LoginForm)
+                           form=LoginForm())
 
 @app.route('/logout')
 def logout():
