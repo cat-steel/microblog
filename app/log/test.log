@@ -1,0 +1,338 @@
+2018-08-06 16:00:08,460---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\request_cases.py', reloading
+2018-08-06 16:00:08,538---INFO--- * Restarting with stat
+2018-08-06 16:00:14,832---WARNING--- * Debugger is active!
+2018-08-06 16:00:14,849---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:00:14,861---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:03:52,992---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 16:03:53,070---INFO--- * Restarting with stat
+2018-08-06 16:03:58,159---WARNING--- * Debugger is active!
+2018-08-06 16:03:58,159---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:03:58,174---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:31:52,242---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 16:31:52,435---INFO--- * Restarting with stat
+2018-08-06 16:31:58,462---WARNING--- * Debugger is active!
+2018-08-06 16:31:58,471---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:31:58,484---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:31:58,795---INFO---127.0.0.1 - - [06/Aug/2018 16:31:58] "GET /case HTTP/1.1" 200 -
+2018-08-06 16:32:28,409---INFO---  ---预期结果ok
+2018-08-06 16:32:49,432---INFO---  ---预期结果ok
+2018-08-06 16:33:10,451---INFO---  ---预期结果ok
+2018-08-06 16:33:10,471---INFO---  ---预期结果
+2018-08-06 16:33:10,471---INFO---  --QQ邮箱--正确
+2018-08-06 16:33:10,508---INFO---127.0.0.1 - - [06/Aug/2018 16:33:10] "GET /do_many_case?{%220%22:{%22id_num%22:%225%22,%22case_name%22:%22%E8%82%A1%E7%A5%A8%E8%A1%8C%E6%83%85%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-hangqing/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{2,3,4,5,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%222%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%223%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:4} HTTP/1.1" 200 -
+2018-08-06 16:34:41,281---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\request_cases.py', reloading
+2018-08-06 16:34:41,388---INFO--- * Restarting with stat
+2018-08-06 16:34:47,756---WARNING--- * Debugger is active!
+2018-08-06 16:34:47,756---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:34:47,772---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:36:24,126---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-06 16:36:24,284---INFO--- * Restarting with stat
+2018-08-06 16:36:31,801---WARNING--- * Debugger is active!
+2018-08-06 16:36:31,816---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:36:31,832---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:38:22,516---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-06 16:38:22,641---INFO--- * Restarting with stat
+2018-08-06 16:38:29,236---WARNING--- * Debugger is active!
+2018-08-06 16:38:29,252---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:38:29,267---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:38:47,481---INFO---  ---预期结果
+2018-08-06 16:38:47,482---INFO---  --QQ邮箱--正确
+2018-08-06 16:38:47,538---INFO---127.0.0.1 - - [06/Aug/2018 16:38:47] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:1} HTTP/1.1" 500 -
+2018-08-06 16:41:54,854---INFO---  ---预期结果
+2018-08-06 16:41:54,854---INFO---  --QQ邮箱--正确
+2018-08-06 16:41:54,934---INFO---127.0.0.1 - - [06/Aug/2018 16:41:54] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:1} HTTP/1.1" 500 -
+2018-08-06 16:42:36,640---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-06 16:42:36,734---INFO--- * Restarting with stat
+2018-08-06 16:42:42,369---WARNING--- * Debugger is active!
+2018-08-06 16:42:42,384---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:42:42,384---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:43:13,635---INFO---  ---预期结果
+2018-08-06 16:43:13,635---INFO---  --QQ邮箱--正确
+2018-08-06 16:43:13,712---INFO---127.0.0.1 - - [06/Aug/2018 16:43:13] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:1} HTTP/1.1" 200 -
+2018-08-06 16:45:48,326---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 16:45:48,453---INFO--- * Restarting with stat
+2018-08-06 16:45:55,141---WARNING--- * Debugger is active!
+2018-08-06 16:45:55,157---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:45:55,172---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:47:34,707---INFO---  ---预期结果
+2018-08-06 16:47:34,707---INFO---  --QQ邮箱--正确
+2018-08-06 16:47:34,738---INFO---127.0.0.1 - - [06/Aug/2018 16:47:34] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:1} HTTP/1.1" 200 -
+2018-08-06 16:47:35,560---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 16:47:35,638---INFO--- * Restarting with stat
+2018-08-06 16:47:43,512---WARNING--- * Debugger is active!
+2018-08-06 16:47:43,525---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 16:47:43,543---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 16:48:25,518---INFO---  ---预期结果
+2018-08-06 16:48:25,518---INFO---  --QQ邮箱--正确
+2018-08-06 16:48:25,549---INFO---127.0.0.1 - - [06/Aug/2018 16:48:25] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:1} HTTP/1.1" 200 -
+2018-08-06 17:00:55,170---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 17:00:55,257---INFO--- * Restarting with stat
+2018-08-06 17:01:01,010---WARNING--- * Debugger is active!
+2018-08-06 17:01:01,025---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 17:01:01,041---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 17:01:33,684---INFO---  ---预期结果ok
+2018-08-06 17:01:33,720---INFO---  ---预期结果
+2018-08-06 17:01:33,720---INFO---  --QQ邮箱--正确
+2018-08-06 17:01:33,786---INFO---127.0.0.1 - - [06/Aug/2018 17:01:33] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 17:02:51,575---INFO---  ---预期结果ok
+2018-08-06 17:02:52,685---INFO---  ---预期结果
+2018-08-06 17:02:52,685---INFO---  --QQ邮箱--正确
+2018-08-06 17:02:52,700---INFO---127.0.0.1 - - [06/Aug/2018 17:02:52] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 17:09:23,794---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 17:09:23,884---INFO--- * Restarting with stat
+2018-08-06 17:09:30,158---WARNING--- * Debugger is active!
+2018-08-06 17:09:30,186---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 17:09:30,201---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 17:10:09,644---INFO---  ---预期结果ok
+2018-08-06 17:10:09,659---INFO---  ---预期结果
+2018-08-06 17:10:09,659---INFO---  --QQ邮箱--正确
+2018-08-06 17:10:09,706---INFO---127.0.0.1 - - [06/Aug/2018 17:10:09] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 17:13:13,083---INFO---  ---预期结果ok
+2018-08-06 17:13:13,104---INFO---127.0.0.1 - - [06/Aug/2018 17:13:13] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%22len%22:1} HTTP/1.1" 200 -
+2018-08-06 17:13:33,366---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 17:13:33,451---INFO--- * Restarting with stat
+2018-08-06 17:13:39,824---WARNING--- * Debugger is active!
+2018-08-06 17:13:39,849---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 17:13:39,860---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 17:23:43,849---INFO---  ---预期结果ok
+2018-08-06 17:24:04,865---INFO---  ---预期结果ok
+2018-08-06 17:24:04,885---INFO---  ---预期结果
+2018-08-06 17:24:04,885---INFO---  --QQ邮箱--正确
+2018-08-06 17:24:04,979---INFO---127.0.0.1 - - [06/Aug/2018 17:24:04] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%222%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:3} HTTP/1.1" 200 -
+2018-08-06 17:28:53,750---INFO---  ---预期结果ok
+2018-08-06 17:29:14,786---INFO---  ---预期结果ok
+2018-08-06 17:29:14,805---INFO---  ---预期结果
+2018-08-06 17:29:14,806---INFO---  --QQ邮箱--正确
+2018-08-06 17:29:14,827---INFO---127.0.0.1 - - [06/Aug/2018 17:29:14] "GET /do_many_case?{%220%22:{%22id_num%22:%225%22,%22case_name%22:%22%E8%82%A1%E7%A5%A8%E8%A1%8C%E6%83%85%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-hangqing/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{2,3,4,5,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%222%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:3} HTTP/1.1" 200 -
+2018-08-06 17:38:10,293---INFO---  ---预期结果ok
+2018-08-06 17:38:10,309---INFO---  ---预期结果
+2018-08-06 17:38:10,309---INFO---  --QQ邮箱--正确
+2018-08-06 17:38:10,324---INFO---127.0.0.1 - - [06/Aug/2018 17:38:10] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 17:38:48,690---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-06 17:38:48,837---INFO--- * Restarting with stat
+2018-08-06 17:38:54,885---WARNING--- * Debugger is active!
+2018-08-06 17:38:54,900---INFO--- * Debugger PIN: 105-426-550
+2018-08-06 17:38:54,916---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 17:49:37,699---INFO---  ---预期结果ok
+2018-08-06 17:49:37,715---INFO---  ---预期结果
+2018-08-06 17:49:37,715---INFO---  --QQ邮箱--正确
+2018-08-06 17:49:37,746---INFO---127.0.0.1 - - [06/Aug/2018 17:49:37] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 17:50:57,184---INFO---  ---预期结果ok
+2018-08-06 17:50:58,287---INFO---  ---预期结果
+2018-08-06 17:50:58,287---INFO---  --QQ邮箱--正确
+2018-08-06 17:50:58,302---INFO---127.0.0.1 - - [06/Aug/2018 17:50:58] "GET /do_many_case?{%220%22:{%22id_num%22:%224%22,%22case_name%22:%22%E8%B4%AD%E4%B9%B0%E8%82%A1%E7%A5%A8%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/buy-stock/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{4,5,6,7,21,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 22:42:39,554---INFO--- * Restarting with stat
+2018-08-06 22:42:41,085---WARNING--- * Debugger is active!
+2018-08-06 22:42:41,094---INFO--- * Debugger PIN: 843-323-975
+2018-08-06 22:42:41,103---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-06 22:42:56,285---INFO---127.0.0.1 - - [06/Aug/2018 22:42:56] "GET /case HTTP/1.1" 302 -
+2018-08-06 22:42:56,336---INFO---127.0.0.1 - - [06/Aug/2018 22:42:56] "GET /login HTTP/1.1" 200 -
+2018-08-06 22:42:56,485---INFO---127.0.0.1 - - [06/Aug/2018 22:42:56] "GET /static/jquery.js HTTP/1.1" 304 -
+2018-08-06 22:42:56,540---INFO---127.0.0.1 - - [06/Aug/2018 22:42:56] "GET /favicon.ico HTTP/1.1" 404 -
+2018-08-06 22:43:04,659---INFO---127.0.0.1 - - [06/Aug/2018 22:43:04] "POST /login HTTP/1.1" 302 -
+2018-08-06 22:43:04,672---INFO---127.0.0.1 - - [06/Aug/2018 22:43:04] "GET / HTTP/1.1" 200 -
+2018-08-06 22:43:05,975---INFO---127.0.0.1 - - [06/Aug/2018 22:43:05] "GET /case HTTP/1.1" 200 -
+2018-08-06 22:43:06,001---INFO---127.0.0.1 - - [06/Aug/2018 22:43:06] "GET /static/case/testcase.css HTTP/1.1" 304 -
+2018-08-06 22:43:06,011---INFO---127.0.0.1 - - [06/Aug/2018 22:43:06] "GET /static/case/testcase.js HTTP/1.1" 304 -
+2018-08-06 22:43:41,704---INFO---  ---预期结果ok
+2018-08-06 22:44:02,714---INFO---  ---预期结果ok
+2018-08-06 22:44:03,800---INFO---  ---预期结果ok
+2018-08-06 22:44:03,800---INFO---  --QQ邮箱--正确
+2018-08-06 22:44:03,822---INFO---127.0.0.1 - - [06/Aug/2018 22:44:03] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%222%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:3} HTTP/1.1" 200 -
+2018-08-06 22:47:01,361---INFO---  ---预期结果ok
+2018-08-06 22:47:01,591---INFO---  ---预期结果ok
+2018-08-06 22:47:01,591---INFO---  --QQ邮箱--正确
+2018-08-06 22:47:01,657---INFO---127.0.0.1 - - [06/Aug/2018 22:47:01] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 22:47:58,693---INFO---127.0.0.1 - - [06/Aug/2018 22:47:58] "GET /case HTTP/1.1" 200 -
+2018-08-06 22:48:26,654---INFO---  ---预期结果ok
+2018-08-06 22:48:26,871---INFO---  ---预期结果ok
+2018-08-06 22:48:26,871---INFO---  --QQ邮箱--正确
+2018-08-06 22:48:26,899---INFO---127.0.0.1 - - [06/Aug/2018 22:48:26] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 22:52:20,383---INFO---127.0.0.1 - - [06/Aug/2018 22:52:20] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-06 22:52:45,118---INFO---  ---预期结果ok
+2018-08-06 22:52:45,298---INFO---  ---预期结果ok
+2018-08-06 22:52:45,298---INFO---  --QQ邮箱--正确
+2018-08-06 22:52:45,321---INFO---127.0.0.1 - - [06/Aug/2018 22:52:45] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 22:54:19,313---INFO---  ---预期结果ok
+2018-08-06 22:54:19,538---INFO---  ---预期结果ok
+2018-08-06 22:54:19,538---INFO---  --QQ邮箱--正确
+2018-08-06 22:54:19,570---INFO---127.0.0.1 - - [06/Aug/2018 22:54:19] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 22:55:49,053---INFO---  ---预期结果ok
+2018-08-06 22:55:49,263---INFO---  ---预期结果ok
+2018-08-06 22:55:49,263---INFO---  --QQ邮箱--正确
+2018-08-06 22:55:49,302---INFO---127.0.0.1 - - [06/Aug/2018 22:55:49] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:05:40,206---INFO---  ---预期结果ok
+2018-08-06 23:05:40,436---INFO---  ---预期结果ok
+2018-08-06 23:05:40,437---INFO---  --QQ邮箱--正确
+2018-08-06 23:05:40,478---INFO---127.0.0.1 - - [06/Aug/2018 23:05:40] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:08:45,381---INFO---  ---预期结果ok
+2018-08-06 23:08:45,563---INFO---  ---预期结果ok
+2018-08-06 23:08:45,563---INFO---  --QQ邮箱--正确
+2018-08-06 23:08:45,606---INFO---127.0.0.1 - - [06/Aug/2018 23:08:45] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:10:42,732---INFO---  ---预期结果ok
+2018-08-06 23:10:42,927---INFO---  ---预期结果ok
+2018-08-06 23:10:42,927---INFO---  --QQ邮箱--正确
+2018-08-06 23:10:42,972---INFO---127.0.0.1 - - [06/Aug/2018 23:10:42] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:11:51,132---INFO---  ---预期结果ok
+2018-08-06 23:11:51,397---INFO---  ---预期结果ok
+2018-08-06 23:11:51,397---INFO---  --QQ邮箱--正确
+2018-08-06 23:11:51,419---INFO---127.0.0.1 - - [06/Aug/2018 23:11:51] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:17:09,833---INFO---  ---预期结果ok
+2018-08-06 23:17:10,049---INFO---  ---预期结果ok
+2018-08-06 23:17:10,050---INFO---  --QQ邮箱--正确
+2018-08-06 23:17:10,082---INFO---127.0.0.1 - - [06/Aug/2018 23:17:10] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:22:17,065---INFO---  ---预期结果ok
+2018-08-06 23:22:17,237---INFO---  ---预期结果ok
+2018-08-06 23:22:17,237---INFO---  --QQ邮箱--正确
+2018-08-06 23:22:17,270---INFO---127.0.0.1 - - [06/Aug/2018 23:22:17] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:26:50,650---INFO---  ---预期结果ok
+2018-08-06 23:26:50,835---INFO---  ---预期结果ok
+2018-08-06 23:26:50,835---INFO---  --QQ邮箱--正确
+2018-08-06 23:26:50,861---INFO---127.0.0.1 - - [06/Aug/2018 23:26:50] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:30:31,981---INFO---  ---预期结果ok
+2018-08-06 23:30:32,249---INFO---  ---预期结果ok
+2018-08-06 23:30:32,249---INFO---  --QQ邮箱--正确
+2018-08-06 23:30:32,276---INFO---127.0.0.1 - - [06/Aug/2018 23:30:32] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:34:12,285---INFO---  ---预期结果ok
+2018-08-06 23:34:12,494---INFO---  ---预期结果ok
+2018-08-06 23:34:12,494---INFO---  --QQ邮箱--正确
+2018-08-06 23:34:12,534---INFO---127.0.0.1 - - [06/Aug/2018 23:34:12] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E5%88%A0%E9%99%A4%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22DELETE%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,3,4,5,6}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:37:55,123---INFO---  ---预期结果ok
+2018-08-06 23:37:55,320---INFO---  ---预期结果ok
+2018-08-06 23:37:55,320---INFO---  --QQ邮箱--正确
+2018-08-06 23:37:55,352---INFO---127.0.0.1 - - [06/Aug/2018 23:37:55] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:38:43,769---INFO---  ---预期结果ok
+2018-08-06 23:38:43,975---INFO---  ---预期结果ok
+2018-08-06 23:38:43,976---INFO---  --QQ邮箱--正确
+2018-08-06 23:38:44,001---INFO---127.0.0.1 - - [06/Aug/2018 23:38:44] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:42:26,616---INFO---  ---预期结果ok
+2018-08-06 23:42:26,841---INFO---  ---预期结果ok
+2018-08-06 23:42:26,841---INFO---  --QQ邮箱--正确
+2018-08-06 23:42:26,865---INFO---127.0.0.1 - - [06/Aug/2018 23:42:26] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:58:42,789---INFO---  ---预期结果ok
+2018-08-06 23:58:43,033---INFO---  ---预期结果ok
+2018-08-06 23:58:43,033---INFO---  --QQ邮箱--正确
+2018-08-06 23:58:43,061---INFO---127.0.0.1 - - [06/Aug/2018 23:58:43] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-06 23:59:58,487---INFO---127.0.0.1 - - [06/Aug/2018 23:59:58] "GET / HTTP/1.1" 200 -
+2018-08-07 00:00:58,847---INFO---127.0.0.1 - - [07/Aug/2018 00:00:58] "GET / HTTP/1.1" 200 -
+2018-08-07 00:01:36,565---INFO---127.0.0.1 - - [07/Aug/2018 00:01:36] "GET / HTTP/1.1" 200 -
+2018-08-07 00:03:52,902---INFO---127.0.0.1 - - [07/Aug/2018 00:03:52] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:14,503---INFO---127.0.0.1 - - [07/Aug/2018 00:04:14] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:15,837---INFO---127.0.0.1 - - [07/Aug/2018 00:04:15] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:16,335---INFO---127.0.0.1 - - [07/Aug/2018 00:04:16] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:16,685---INFO---127.0.0.1 - - [07/Aug/2018 00:04:16] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:17,004---INFO---127.0.0.1 - - [07/Aug/2018 00:04:17] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:33,616---INFO---127.0.0.1 - - [07/Aug/2018 00:04:33] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:36,433---INFO---127.0.0.1 - - [07/Aug/2018 00:04:36] "GET /module HTTP/1.1" 200 -
+2018-08-07 00:04:36,461---INFO---127.0.0.1 - - [07/Aug/2018 00:04:36] "GET /static/module/module.css HTTP/1.1" 200 -
+2018-08-07 00:04:36,477---INFO---127.0.0.1 - - [07/Aug/2018 00:04:36] "GET /static/module/module.js HTTP/1.1" 200 -
+2018-08-07 00:04:38,465---INFO---127.0.0.1 - - [07/Aug/2018 00:04:38] "GET / HTTP/1.1" 200 -
+2018-08-07 00:04:39,167---INFO---127.0.0.1 - - [07/Aug/2018 00:04:39] "GET /case HTTP/1.1" 200 -
+2018-08-07 00:04:42,304---INFO---127.0.0.1 - - [07/Aug/2018 00:04:42] "GET / HTTP/1.1" 200 -
+2018-08-07 00:34:39,431---INFO--- * Restarting with stat
+2018-08-07 00:34:40,556---WARNING--- * Debugger is active!
+2018-08-07 00:34:40,565---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:34:40,573---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:34:53,166---INFO---127.0.0.1 - - [07/Aug/2018 00:34:53] "GET /project HTTP/1.1" 200 -
+2018-08-07 00:34:53,195---INFO---127.0.0.1 - - [07/Aug/2018 00:34:53] "GET /static/project/project.css HTTP/1.1" 200 -
+2018-08-07 00:34:53,211---INFO---127.0.0.1 - - [07/Aug/2018 00:34:53] "GET /static/project/project.js HTTP/1.1" 200 -
+2018-08-07 00:34:55,039---INFO---127.0.0.1 - - [07/Aug/2018 00:34:55] "GET /project HTTP/1.1" 200 -
+2018-08-07 00:34:56,465---INFO---127.0.0.1 - - [07/Aug/2018 00:34:56] "GET / HTTP/1.1" 200 -
+2018-08-07 00:35:29,862---INFO---127.0.0.1 - - [07/Aug/2018 00:35:29] "GET / HTTP/1.1" 200 -
+2018-08-07 00:35:47,358---INFO---127.0.0.1 - - [07/Aug/2018 00:35:47] "GET / HTTP/1.1" 200 -
+2018-08-07 00:35:48,789---INFO---127.0.0.1 - - [07/Aug/2018 00:35:48] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:37:51,795---INFO---127.0.0.1 - - [07/Aug/2018 00:37:51] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:37:53,311---INFO---127.0.0.1 - - [07/Aug/2018 00:37:53] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:38:04,202---INFO---127.0.0.1 - - [07/Aug/2018 00:38:04] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:38:18,619---INFO---127.0.0.1 - - [07/Aug/2018 00:38:18] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:38:31,546---INFO---127.0.0.1 - - [07/Aug/2018 00:38:31] "GET /report HTTP/1.1" 500 -
+2018-08-07 00:38:31,585---INFO---127.0.0.1 - - [07/Aug/2018 00:38:31] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 00:38:31,605---INFO---127.0.0.1 - - [07/Aug/2018 00:38:31] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 00:38:31,634---INFO---127.0.0.1 - - [07/Aug/2018 00:38:31] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 00:38:31,683---INFO---127.0.0.1 - - [07/Aug/2018 00:38:31] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 00:38:31,868---INFO---127.0.0.1 - - [07/Aug/2018 00:38:31] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 00:38:31,939---INFO---127.0.0.1 - - [07/Aug/2018 00:38:31] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 00:40:30,714---INFO---127.0.0.1 - - [07/Aug/2018 00:40:30] "GET / HTTP/1.1" 200 -
+2018-08-07 00:40:32,121---INFO---127.0.0.1 - - [07/Aug/2018 00:40:32] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:40:33,264---INFO---127.0.0.1 - - [07/Aug/2018 00:40:33] "GET /static/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 00:40:49,364---INFO---127.0.0.1 - - [07/Aug/2018 00:40:49] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:41:34,266---INFO---127.0.0.1 - - [07/Aug/2018 00:41:34] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:41:35,599---INFO---127.0.0.1 - - [07/Aug/2018 00:41:35] "GET / HTTP/1.1" 200 -
+2018-08-07 00:43:15,617---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 00:43:15,762---INFO--- * Restarting with stat
+2018-08-07 00:43:17,381---WARNING--- * Debugger is active!
+2018-08-07 00:43:17,387---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:43:17,395---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:44:13,711---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 00:44:13,774---INFO--- * Restarting with stat
+2018-08-07 00:44:14,991---WARNING--- * Debugger is active!
+2018-08-07 00:44:14,998---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:44:15,005---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:44:15,194---INFO---127.0.0.1 - - [07/Aug/2018 00:44:15] "GET / HTTP/1.1" 200 -
+2018-08-07 00:44:16,700---INFO---127.0.0.1 - - [07/Aug/2018 00:44:16] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:44:17,707---INFO---127.0.0.1 - - [07/Aug/2018 00:44:17] "GET /report_result HTTP/1.1" 500 -
+2018-08-07 00:44:17,737---INFO---127.0.0.1 - - [07/Aug/2018 00:44:17] "GET /report_result?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 00:44:17,738---INFO---127.0.0.1 - - [07/Aug/2018 00:44:17] "GET /report_result?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 00:44:17,738---INFO---127.0.0.1 - - [07/Aug/2018 00:44:17] "GET /report_result?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 00:44:17,775---INFO---127.0.0.1 - - [07/Aug/2018 00:44:17] "GET /report_result?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 00:44:17,839---INFO---127.0.0.1 - - [07/Aug/2018 00:44:17] "GET /report_result?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 00:44:17,872---INFO---127.0.0.1 - - [07/Aug/2018 00:44:17] "GET /report_result?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 00:44:31,397---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 00:44:31,501---INFO--- * Restarting with stat
+2018-08-07 00:44:33,045---WARNING--- * Debugger is active!
+2018-08-07 00:44:33,052---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:44:33,060---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:44:33,213---INFO---127.0.0.1 - - [07/Aug/2018 00:44:33] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:44:35,046---INFO---127.0.0.1 - - [07/Aug/2018 00:44:35] "GET /report_result HTTP/1.1" 500 -
+2018-08-07 00:44:35,079---INFO---127.0.0.1 - - [07/Aug/2018 00:44:35] "GET /report_result?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 00:44:35,081---INFO---127.0.0.1 - - [07/Aug/2018 00:44:35] "GET /report_result?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 00:44:35,081---INFO---127.0.0.1 - - [07/Aug/2018 00:44:35] "GET /report_result?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 00:44:35,136---INFO---127.0.0.1 - - [07/Aug/2018 00:44:35] "GET /report_result?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 00:44:35,195---INFO---127.0.0.1 - - [07/Aug/2018 00:44:35] "GET /report_result?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 00:45:50,421---INFO---127.0.0.1 - - [07/Aug/2018 00:45:50] "GET /report HTTP/1.1" 500 -
+2018-08-07 00:45:50,564---INFO---127.0.0.1 - - [07/Aug/2018 00:45:50] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 00:46:41,412---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\test\\get_report.py', reloading
+2018-08-07 00:46:41,503---INFO--- * Restarting with stat
+2018-08-07 00:46:42,781---INFO--- * Restarting with stat
+2018-08-07 00:46:42,897---WARNING--- * Debugger is active!
+2018-08-07 00:46:42,903---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:46:42,912---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:46:43,873---WARNING--- * Debugger is active!
+2018-08-07 00:46:43,879---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:46:43,887---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:46:48,273---INFO---127.0.0.1 - - [07/Aug/2018 00:46:48] "GET / HTTP/1.1" 200 -
+2018-08-07 00:46:49,443---INFO---127.0.0.1 - - [07/Aug/2018 00:46:49] "GET / HTTP/1.1" 200 -
+2018-08-07 00:46:50,240---INFO---127.0.0.1 - - [07/Aug/2018 00:46:50] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:46:51,213---INFO---127.0.0.1 - - [07/Aug/2018 00:46:51] "GET /report_result HTTP/1.1" 500 -
+2018-08-07 00:46:51,239---INFO---127.0.0.1 - - [07/Aug/2018 00:46:51] "GET /report_result?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 00:46:51,240---INFO---127.0.0.1 - - [07/Aug/2018 00:46:51] "GET /report_result?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 00:46:51,259---INFO---127.0.0.1 - - [07/Aug/2018 00:46:51] "GET /report_result?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 00:46:51,324---INFO---127.0.0.1 - - [07/Aug/2018 00:46:51] "GET /report_result?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 00:46:51,399---INFO---127.0.0.1 - - [07/Aug/2018 00:46:51] "GET /report_result?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 00:47:04,884---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 00:47:04,988---INFO--- * Restarting with stat
+2018-08-07 00:47:05,135---INFO---127.0.0.1 - - [07/Aug/2018 00:47:05] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:47:05,280---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 00:47:05,380---INFO--- * Restarting with stat
+2018-08-07 00:47:06,443---WARNING--- * Debugger is active!
+2018-08-07 00:47:06,450---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:47:06,459---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:47:06,691---WARNING--- * Debugger is active!
+2018-08-07 00:47:06,696---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:47:06,704---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:47:06,734---INFO---127.0.0.1 - - [07/Aug/2018 00:47:06] "GET /report_result HTTP/1.1" 200 -
+2018-08-07 00:49:40,836---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 00:49:40,928---INFO--- * Restarting with stat
+2018-08-07 00:49:40,929---INFO--- * Restarting with stat
+2018-08-07 00:49:42,586---WARNING--- * Debugger is active!
+2018-08-07 00:49:42,595---WARNING--- * Debugger is active!
+2018-08-07 00:49:42,598---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:49:42,608---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 00:49:42,608---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:49:42,621---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 00:49:44,489---INFO---127.0.0.1 - - [07/Aug/2018 00:49:44] "GET / HTTP/1.1" 200 -
+2018-08-07 00:49:45,760---INFO---127.0.0.1 - - [07/Aug/2018 00:49:45] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:49:47,423---INFO---127.0.0.1 - - [07/Aug/2018 00:49:47] "GET /report_result HTTP/1.1" 200 -
+2018-08-07 00:49:49,550---INFO---127.0.0.1 - - [07/Aug/2018 00:49:49] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:49:50,370---INFO---127.0.0.1 - - [07/Aug/2018 00:49:50] "GET /report_result HTTP/1.1" 200 -
+2018-08-07 00:49:51,427---INFO---127.0.0.1 - - [07/Aug/2018 00:49:51] "GET /report HTTP/1.1" 200 -

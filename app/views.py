@@ -3,7 +3,8 @@ from flask import render_template, flash, redirect, session, url_for, request, g
 from flask_login import login_user, logout_user, current_user, login_required
 from .forms import LoginForm
 from .models import User,Module,Case,Project
-from .test import request_tiaoshi,request_cases
+from .test import request_cases,write_report
+from .test import get_report
 import json, time
 
 @app.before_request
@@ -129,6 +130,9 @@ def do_case():
 @app.route('/do_many_case', methods=['GET', 'POST'])
 def do_many_case():
     results = []
+    succ_num = 0
+    fail_num = 0
+    start_time = time.strftime('%Y-%m-%d %H:%M:%S')
     if request.method =='GET':
         if not session.get('logged_in'):
             return redirect('login')
@@ -149,11 +153,20 @@ def do_many_case():
                     data_i = case_data.get('data_i')
                     check = case_data.get('check')
                     is_base = case_data.get('is_base')
-                    result = [id_num,case_name]
+                    result_case, text, code = request_cases.get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
+                    result = [id_num, case_name, result_case, text, code]
                     results.append(result)
-                    code = request_cases.get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
-                    print('用例:%s  响应结果：%d'%(case_name,code))
-                return redirect(url_for('index'))
+                    if result_case == 'success':
+                        succ_num += 1
+                    else:
+                        fail_num += 1
+    print('开始时间%s'%start_time)
+    num = succ_num + fail_num
+    end_time = time.strftime('%Y-%m-%d %H:%M:%S')
+    write = write_report.Write_report(results,start_time,end_time,num,succ_num,fail_num)
+    write.run_tem()
+    print('测试报告写入完成')
+    return 'ok'
 
 @app.route('/selected_top_case', methods=['GET','POST'])
 def selected_top_case():
@@ -365,3 +378,23 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
+@app.route('/report')
+def report():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        reports = get_report.get_report()
+        return render_template("report.html",
+                               reports=reports,
+                               title='测试报告')
+
+@app.route('/report_result')
+def report_result():
+    if not session.get('logged_in'):
+        return redirect('login')
+    else:
+        reports = get_report.get_report()
+        for report in reports:
+            return render_template("report/"+report,
+                               title='测试报告')
