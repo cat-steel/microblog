@@ -3,20 +3,26 @@ from .common import log
 
 cookies = 'session=eyJfZnJlc2giOmZhbHNlLCJsb2dnZWRfaW4iOnRydWV9.DklzlQ.7szQbkhxbnYwcC6Clv3aDq3HHDY'
 logger = log.log()
-def get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base):
-    url = 'http://' + server + way
+def get_cases(id_num, sql_case):
+    case_name = sql_case.get('case_name')
+    request_method = sql_case.get('request_method')
+    url = 'http://' + sql_case.get('server') + sql_case.get('way')
     print('用例:%s开始执行  url=%s  请求方式%s'%(case_name,url,request_method))
-    result, text, code = assert_result(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
+    result, text, code = assert_result(id_num, sql_case)
     return result, text, code
 
-def case_request(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base):
+def case_request(id_num, sql_case):
     headers = {
         'Accept': 'application/json,text/plain,*/*',
         'Content-Type': 'application/json;charset=utf-8',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
         'Cookie': cookies,
     }
-    url = 'http://' + server + way
+    url = 'http://' + sql_case.get('server') + sql_case.get('way')
+    request_method = sql_case.get('request_method')
+    data_type = sql_case.get('data_type')
+    data_i = sql_case.get('data_i')
+    case_name = sql_case.get('case_name')
     if request_method == 'GET':
         try:
             response = requests.get(url,headers=headers)
@@ -51,11 +57,15 @@ def case_request(id_num, case_name, server, way, request_method, data_type, data
         except:
             response = ''
             logger.info('%d--%s参数错误，请检查url,data,header是否正确' % (id_num, case_name))
+    else:
+        response = ''
     return response
 
-def assert_result(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base):
+def assert_result(id_num, sql_case):
+    case_name = sql_case.get('case_name')
+    check = sql_case.get('check')
     try:
-        response = case_request(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
+        response = case_request(id_num, sql_case)
         code = response.status_code
         text = response.text
     except:

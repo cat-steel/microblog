@@ -5,7 +5,8 @@ from .forms import LoginForm
 from .models import User,Module,Case,Project
 from .test import request_cases,write_report
 from .test import get_report
-import json, time
+from .test.common import do_sql
+import json, time, os
 
 @app.before_request
 def before_request():
@@ -29,7 +30,7 @@ def add_testcase():
             module_name = request.form['model_name']
             org_id = db.session.query(Project.id).filter_by(project_name=org_name).first()[0]
             module_id = db.session.query(Module.id).filter_by(module_name=module_name).first()[0]
-            category = Case(name,server,ways,request_method,data_i,data,check,is_base,org_id,module_id)
+            category = Case(name,server,ways,request_method,data_i,data,check,is_base,org_id,module_id,is_succ=0)
             db.session.add(category)
             db.session.commit()
             flash('用例保存成功')
@@ -67,19 +68,8 @@ def editor():
             is_base = request.form['is_base1']
             org_name = request.form['project_name1']
             module_name = request.form['module_name1']
-            org_id = db.session.query(Project.id).filter_by(project_name=org_name).first()[0]
-            module_id = db.session.query(Module.id).filter_by(module_name=module_name).first()[0]
-            Case.query.filter_by(id=id_num).update({Case.name:name,
-                                                    Case.IP:server,
-                                                    Case.ways:ways,
-                                                    Case.request_method:request_method,
-                                                    Case.data_i:data_i,
-                                                    Case.data:data,
-                                                    Case.check:check,
-                                                    Case.is_base:is_base,
-                                                    Case.org_id:org_id,
-                                                    Case.module_id:module_id})
-            db.session.commit()
+            editor_sql = do_sql.Do_sql()
+            editor_sql.editor_case(id_num,org_name,module_name,name,server,ways,request_method,data_i,data,check,is_base)
             flash('用例更新成功')
             return redirect(url_for('case'))
 
@@ -95,20 +85,22 @@ def do_case():
             p_name = db.session.query(Project.project_name)
             m_name = db.session.query(Module.module_name)
             id_num = request.form['num2']
-            case_name = request.form['names2']
-            server = request.form['server2']
-            way = request.form['way2']
-            request_method = request.form['request_method2']
-            data_type = request.form['data_i2']
-            data_i = request.form['data2']
-            check = request.form['check2']
-            is_base = request.form['is_base2']
-            org_name = request.form['project_name2']
-            module_name = request.form['module_name2']
+            sql_case = do_sql.Do_sql().get_case(id_num)
+            case_name = sql_case.get('case_name')
+            org_name = sql_case.get('org_name')
+            module_name = sql_case.get('module_name')
             start_time = time.strftime('%H:%M:%S')
-            code = request_cases.get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
+            result_case, text, code = request_cases.get_cases(id_num, sql_case)
             end_time = time.strftime('%H:%M:%S')
-            print('调试---用例:%s  响应结果：%d' % (case_name, code))
+            ids = int(id_num)
+            print('%d  调试---用例:%s  响应结果：%d' % (ids,case_name, code))
+            if result_case == 'success':
+                print('成功')
+                Case.query.filter_by(id=id_num).update({Case.is_succ:1})
+                db.session.commit()
+                print('修改成功')
+            else:
+                pass
             result = {
                 'org_name':org_name,
                 'module_name':module_name,
@@ -116,6 +108,8 @@ def do_case():
                 'case_name':case_name,
                 'start_time':start_time,
                 'end_time':end_time,
+                'result_case':result_case,
+                'text':text
             }
             return render_template('tiaoshi_result.html',
                                    cases=cases,
@@ -133,6 +127,7 @@ def do_many_case():
     succ_num = 0
     fail_num = 0
     start_time = time.strftime('%Y-%m-%d %H:%M:%S')
+    file_time = time.strftime('%Y-%m-%d %H_%M_%S')
     if request.method =='GET':
         if not session.get('logged_in'):
             return redirect('login')
@@ -146,27 +141,22 @@ def do_many_case():
                     case_data = json_d.get(k)
                     id_num = case_data.get('id_num')
                     case_name = case_data.get('case_name')
-                    server = case_data.get('server')
-                    way = case_data.get('way')
-                    request_method = case_data.get('request_method')
-                    data_type = case_data.get('data_type')
-                    data_i = case_data.get('data_i')
-                    check = case_data.get('check')
-                    is_base = case_data.get('is_base')
-                    result_case, text, code = request_cases.get_cases(id_num, case_name, server, way, request_method, data_type, data_i, check, is_base)
+                    result_case, text, code = request_cases.get_cases(id_num, case_data)
                     result = [id_num, case_name, result_case, text, code]
                     results.append(result)
                     if result_case == 'success':
                         succ_num += 1
+                        Case.query.filter_by(id=id_num).update({Case.is_succ: 1})
+                        db.session.commit()
                     else:
                         fail_num += 1
     print('开始时间%s'%start_time)
     num = succ_num + fail_num
     end_time = time.strftime('%Y-%m-%d %H:%M:%S')
-    write = write_report.Write_report(results,start_time,end_time,num,succ_num,fail_num)
+    write = write_report.Write_report(results,start_time,file_time,end_time,num,succ_num,fail_num)
     write.run_tem()
     print('测试报告写入完成')
-    return 'ok'
+    return '测试报告写入完成'
 
 @app.route('/selected_top_case', methods=['GET','POST'])
 def selected_top_case():
@@ -178,11 +168,23 @@ def selected_top_case():
         projects = Project.query.all()
         modules = Module.query.all()
         module_name_case = request.form['module_name_case']
+        succ = request.form['is_succ']
         if module_name_case == '全部':
-            cases = Case.query.all()
+            if succ =='全部':
+                cases = Case.query.all()
+            elif succ == '成功':
+                cases = Case.query.filter_by(is_succ=1).all()
+            else:
+                cases = Case.query.filter_by(is_succ=0).all()
         else:
             case_id = db.session.query(Module.id).filter_by(module_name=module_name_case).first()[0]
-            cases = Case.query.filter_by(module_id=case_id).all()
+            if succ == '全部':
+                cases = Case.query.filter_by(module_id=case_id).all()
+            elif succ == '成功':
+                cases = Case.query.filter_by(is_succ=1,module_id=case_id).all()
+                print(cases)
+            else:
+                cases = Case.query.filter_by(is_succ=0,module_id=case_id).all()
         return render_template("testcase.html",
                                cases=cases,
                                modules=modules,
@@ -385,16 +387,19 @@ def report():
         return redirect('login')
     else:
         reports = get_report.get_report()
+        lenth = len(reports)
         return render_template("report.html",
                                reports=reports,
+                               lenth=lenth,
                                title='测试报告')
 
-@app.route('/report_result')
-def report_result():
-    if not session.get('logged_in'):
-        return redirect('login')
-    else:
-        reports = get_report.get_report()
-        for report in reports:
-            return render_template("report/"+report,
-                               title='测试报告')
+@app.route('/del_report')
+def del_report():
+    if request.method =='GET':
+        if not session.get('logged_in'):
+            return redirect('login')
+        else:
+            file_name = request.args.get('file_name')
+            os.remove('app\\static\\report\\'+file_name)
+            flash('删除完成')
+            return '删除完成'

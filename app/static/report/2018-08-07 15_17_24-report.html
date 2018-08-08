@@ -1,0 +1,186 @@
+<html>
+    <head>
+        
+        <title>API测试</title>
+        
+        <style type="text/css">
+            h2{
+                text-align: center;
+            }
+            .form_case{
+                width: 800px;
+                height: 500px;
+            }
+            .datas{
+                height: 50px;
+            }
+            #mess{color: red}
+            .right{
+                text-align: right;
+                width: 50%;
+                float: right;
+            }
+            .left{
+                text-align: left;
+                width: 50%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+        <div class="left">
+            <a class="home" href="/">主页</a>
+            <a href="/project">项目</a>
+            <a href="/module">模块</a>
+            <a href="/case">用例</a>
+        </div>
+        <div class="right">
+            
+            <a class="link" href="/logout">退出</a>
+            
+        </div>
+    </div>
+    <hr>
+        
+        
+        
+        
+<html>
+<head>
+    <script type="text/javascript">
+        function fail_text() {
+            var ds = document.getElementById('fail_text');
+            if(ds.style.display=='block')
+                ds.style.display='none';
+           else
+                ds.style.display='block';
+        }
+        function show_detail() {
+           document.getElementById('detail').style.display='block';
+        }
+        function hide_detail() {
+           document.getElementById('detail').style.display='none';
+        }
+    </script>
+    <style type="text/css">
+        #fail_text{display: none}
+        #detail{width: 900px}
+        .all{
+            width: 130px;
+        }
+        .case{
+            width: 300px;
+        }
+        #case_detail{
+            width: 900px;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <h2>测试报告</h2>
+    <p>开始时间：<nobr>2018-08-07 15_17_24</nobr></p>
+    <p>结束时间：<nobr></nobr>2018-08-07 15:19:10</p><br>
+</div>
+<div class="detail">
+    <p>测试详情</p>
+    <table id="case_detail" border="2" cellpadding="8" style="border-collapse: collapse">
+        <tr>
+            <td class="all">用例组</td>
+            <td class="all">总用例数</td>
+            <td class="all">通过数量</td>
+            <td class="all">失败数量</td>
+            <td class="all">错误数量</td>
+            <td class="show">
+                <a href="javascript:" onclick="show_detail()">查看</a>
+                <a href="javascript:" onclick="hide_detail()">收起</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="all">total</td>
+            <td class="all">6</td>
+            <td class="all">1</td>
+            <td class="all">5</td>
+            <td class="all">0</td>
+            <td class="show">全部 通过 失败 错误</td>
+        </tr>
+    </table>
+    <table id="detail" border="2" cellpadding="8" style="border-collapse: collapse">
+        <tr>
+            <td class="case">用例ID</td>
+            <td class="case">用例名称</td>
+            <td class="case_result">测试结果</td>
+        </tr>
+        
+        <tr id="case_result">
+            <td class="case">4</td>
+            <td class="case">购买股票</td>
+            
+            <td id="fail" class="case_result">
+                <a href="javascript:" onclick="fail_text()">fail</a>
+                <div id="fail_text">参数错误，请检查url,data,header是否正确</div>
+            </td>
+            
+        </tr>
+        
+        <tr id="case_result">
+            <td class="case">5</td>
+            <td class="case">股票行情</td>
+            
+            <td id="fail" class="case_result">
+                <a href="javascript:" onclick="fail_text()">fail</a>
+                <div id="fail_text">参数错误，请检查url,data,header是否正确</div>
+            </td>
+            
+        </tr>
+        
+        <tr id="case_result">
+            <td class="case">6</td>
+            <td class="case">新增人员</td>
+            
+            <td id="fail" class="case_result">
+                <a href="javascript:" onclick="fail_text()">fail</a>
+                <div id="fail_text">参数错误，请检查url,data,header是否正确</div>
+            </td>
+            
+        </tr>
+        
+        <tr id="case_result">
+            <td class="case">7</td>
+            <td class="case">人员离职</td>
+            
+            <td id="fail" class="case_result">
+                <a href="javascript:" onclick="fail_text()">fail</a>
+                <div id="fail_text">参数错误，请检查url,data,header是否正确</div>
+            </td>
+            
+        </tr>
+        
+        <tr id="case_result">
+            <td class="case">8</td>
+            <td class="case">QQ邮箱</td>
+            
+            <td id="succ"  colspan="2">success</td>
+            
+        </tr>
+        
+        <tr id="case_result">
+            <td class="case">9</td>
+            <td class="case">个地方法规的</td>
+            
+            <td id="fail" class="case_result">
+                <a href="javascript:" onclick="fail_text()">fail</a>
+                <div id="fail_text">参数错误，请检查url,data,header是否正确</div>
+            </td>
+            
+        </tr>
+        
+    </table>
+</div>
+</body>
+</html>
+
+    <script type=text/javascript src="/static/jquery.js"></script>
+    </body>
+</html>

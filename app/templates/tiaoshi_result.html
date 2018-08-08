@@ -15,7 +15,7 @@
                 url:"{{url_for('delete_case')}}",
                 data:data,
                 dataType:'json',
-                async:true
+                success: window.location.reload()
             })
         }
         function do_many_case() {
@@ -230,8 +230,8 @@
     <p class="do_result">开始时间：<nobr style="font-weight: normal">     {{ result.start_time }}</nobr></p>
     <p class="do_result">结束时间：<nobr style="font-weight: normal">     {{ result.end_time }}</nobr></p>
     <p class="do_result">状态码：<nobr style="font-weight: normal">     {{ result.code }}</nobr></p>
-    <p class="do_result">调试结果：<nobr style="font-weight: normal"></nobr></p>
-    <p class="do_result">接口返回：<nobr style="font-weight: normal"></nobr></p><br><br>
+    <p class="do_result">调试结果：<nobr style="font-weight: normal">     {{ result.result_case }}</nobr></p>
+    <p class="do_result">接口返回：<nobr style="font-weight: normal">     {{ result.text }}</nobr></p><br><br>
     <div class="di_buttom"><input type="button" value="关闭" onclick="close_result()" class="di_buttom"></div>
 </div>
 <div class="test_case">

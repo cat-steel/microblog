@@ -15,10 +15,11 @@
                 url:"{{url_for('delete_case')}}",
                 data:data,
                 dataType:'json',
-                async:true
+                success: window.location.reload()
             })
         }
         function do_many_case() {
+            document.getElementById('show_result').innerText='用例正在执行。。。执行完毕请查看测试报告页查看';
             var data = [];
             $(function () {
                 $('#cases').find(':checkbox:checked').each(function () {
@@ -53,7 +54,10 @@
                         url:"{{url_for('do_many_case')}}",
                         data:JSON.stringify(data_i),
                         dataType:'json',
-                        async:true
+                        async:false,
+                        success:function (msg) {
+                            alert(msg)
+                        }
                     })
             });
         }
@@ -76,7 +80,6 @@
                 {% endfor %}
             </select>
         </p>
-        <p>用例编号           <input type="text" size="50" name="num"></p>
         <p>用例名称           <input type="text" size="50" name="names"></p>
         <p>服务器名称或IP     <input type="text" size="50" name="server"></p>
         <p>路径               <input type="text" size="50" name="way"></p>
@@ -125,7 +128,7 @@
                 {% endfor %}
             </select>
         </p>
-        <p>用例编号           <input type="text" size="50" name="num1"></p>
+        <p>用例编号           <input type="text" size="50" name="num1" readonly="readonly"></p>
         <p>用例名称           <input type="text" size="50" name="names1"></p>
         <p>服务器名称或IP     <input type="text" size="50" name="server1"></p>
         <p>路径               <input type="text" size="50" name="way1"></p>
@@ -175,12 +178,12 @@
                 {% endfor %}
             </select>
         </p>
-        <p>用例编号           <input type="text" size="50" name="num2"></p>
-        <p>用例名称           <input type="text" size="50" name="names2"></p>
-        <p>服务器名称或IP     <input type="text" size="50" name="server2"></p>
-        <p>路径               <input type="text" size="50" name="way2"></p>
-        <p>接口参数           <textarea  cols="50" name="data2" class="datas"></textarea></p>
-        <p>检查点             <input type="text" size="50" name="check2"></p>
+        <p>用例编号           <input type="text" size="50" name="num2" readonly="readonly"></p>
+        <p>用例名称           <input type="text" size="50" name="names2" readonly="readonly"></p>
+        <p>服务器名称或IP     <input type="text" size="50" name="server2" readonly="readonly"></p>
+        <p>路径               <input type="text" size="50" name="way2" readonly="readonly"></p>
+        <p>接口参数           <textarea  cols="50" name="data2" class="datas" readonly="readonly"></textarea></p>
+        <p>检查点             <input type="text" size="50" name="check2" readonly="readonly"></p>
         <p>请求方式
             <select name="request_method2">
                 <option value="POST">POST</option>
@@ -236,11 +239,19 @@
             <option value="{{module.module_name}}">{{module.module_name}}</option>
             {% endfor %}
         </select>
+        成功与失败用例
+        <select name="is_succ">
+            <option value="全部">全部</option>
+            <option value="成功">成功</option>
+            <option value="失败">失败</option>
+        </select>
         <input type="submit" id="select_top_case" value="查询">
     </form>
     <div class="top_buttom">
         <input id="add_case" type="button" value="新增用例" onclick="openwin()">
         <input id="do" type="button" value="执行" onclick="do_many_case()">
+        <div style="display: inline;color:mediumvioletred;font-weight: bold" id="show_result">
+        </div>
     </div>
     <table id="cases" border="2" cellpadding="8" style="border-collapse: collapse">
         <tr>

@@ -13,7 +13,9 @@
                 type:'GET',
                 url:"{{url_for('delete_project')}}",
                 data:data,
-                dataType:'json'
+                dataType:'json',
+                success: window.location.reload()
+
             })
         }
     </script>

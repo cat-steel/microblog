@@ -1,5 +1,52 @@
-{% extends 'base.html' %}
-{% block content %}
+<html>
+    <head>
+        
+        <title>API测试</title>
+        
+        <style type="text/css">
+            h2{
+                text-align: center;
+            }
+            .form_case{
+                width: 800px;
+                height: 500px;
+            }
+            .datas{
+                height: 50px;
+            }
+            #mess{color: red}
+            .right{
+                text-align: right;
+                width: 50%;
+                float: right;
+            }
+            .left{
+                text-align: left;
+                width: 50%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+        <div class="left">
+            <a class="home" href="/">主页</a>
+            <a href="/project">项目</a>
+            <a href="/module">模块</a>
+            <a href="/case">用例</a>
+            <a href="/report">测试报告</a>
+        </div>
+        <div class="right">
+            
+            <a class="link" href="/logout">退出</a>
+            
+        </div>
+    </div>
+    <hr>
+        
+        
+        
+        
 <html>
 <head>
     <script type="text/javascript">
@@ -38,8 +85,8 @@
 <body>
 <div class="head">
     <h2>测试报告</h2>
-    <p>开始时间：<nobr>{{ start_time }}</nobr></p>
-    <p>结束时间：<nobr></nobr>{{ end_time }}</p><br>
+    <p>开始时间：<nobr>2018-08-07 20:28:32</nobr></p>
+    <p>结束时间：<nobr></nobr>2018-08-07 20:28:43</p><br>
 </div>
 <div class="detail">
     <p>测试详情</p>
@@ -57,9 +104,9 @@
         </tr>
         <tr>
             <td class="all">total</td>
-            <td class="all">{{ num }}</td>
-            <td class="all">{{ succ_num }}</td>
-            <td class="all">{{ fail_num }}</td>
+            <td class="all">2</td>
+            <td class="all">1</td>
+            <td class="all">1</td>
             <td class="all">0</td>
             <td class="show">全部 通过 失败 错误</td>
         </tr>
@@ -70,22 +117,31 @@
             <td class="case">用例名称</td>
             <td class="case_result">测试结果</td>
         </tr>
-        {% for i in range(lenth) %}
+        
         <tr class="case_result" id="case_result">
-            <td class="case">{{ results[i][0]}}</td>
-            <td class="case">{{ results[i][1] }}</td>
-            {% if results[i][2] == 'fail' %}
-            <td class="case_result">
-                <a href="javascript:" onclick="fail_text(this)">{{ results[i][2] }}</a>
-                <div class="fail_text" id="fail_{{ i }}">{{ results[i][3] }}</div>
-            </td>
-            {% else %}
-            <td class="case_result" id="succ"  colspan="2">{{ results[i][2] }}</td>
-            {% endif %}
+            <td class="case">4</td>
+            <td class="case">sdf</td>
+            
+            <td class="case_result" id="succ"  colspan="2">success</td>
+            
         </tr>
-        {% endfor %}
+        
+        <tr class="case_result" id="case_result">
+            <td class="case">6</td>
+            <td class="case">dsf</td>
+            
+            <td class="case_result">
+                <a href="javascript:" onclick="fail_text(this)">fail</a>
+                <div class="fail_text" id="fail_1">参数错误，请检查url,data,header是否正确</div>
+            </td>
+            
+        </tr>
+        
     </table>
 </div>
 </body>
 </html>
-{% endblock %}
+
+    <script type=text/javascript src="/static/jquery.js"></script>
+    </body>
+</html>

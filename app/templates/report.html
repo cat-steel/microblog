@@ -1,9 +1,40 @@
 {% extends 'base.html' %}
 {% block content %}
+<head>
+    <script type="text/javascript">
+        function on_file(obj) {
+            var id_f = obj.id;
+            var file_name = document.getElementById(id_f).innerText;
+            window.open("http://127.0.0.1:5000/static/report/"+file_name)
+        }
+        function del_file(obj) {
+            var file_name = obj.parentNode.children[0].innerHTML;
+            var data = {'file_name':file_name}
+            $.ajax({
+                type:'GET',
+                url:"{{url_for('del_report')}}",
+                data:data,
+                dataType:'json',
+                success: window.location.reload()
+            })
+        }
+    </script>
+    <style type="text/css">
+        .delete{
+            left: 220px;
+        }
+        .link{
+            width: 200px;
+        }
+    </style>
+</head>
 <body>
 <div>
-    {% for report in reports %}
-    <div><a href="{{url_for('report_result')}}">{{ report }}</a> </div>
+    {% for i in range(lenth) %}
+    <div>
+        <a class="link" id="{{ i }}" href="javascript:" onclick="on_file(this)">{{ reports[i] }}</a>
+        <input class="delete" type="button" value="删除" onclick="del_file(this)">
+    </div>
     {% endfor %}
 </div>
 </body>

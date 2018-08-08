@@ -336,3 +336,1104 @@
 2018-08-07 00:49:49,550---INFO---127.0.0.1 - - [07/Aug/2018 00:49:49] "GET /report HTTP/1.1" 200 -
 2018-08-07 00:49:50,370---INFO---127.0.0.1 - - [07/Aug/2018 00:49:50] "GET /report_result HTTP/1.1" 200 -
 2018-08-07 00:49:51,427---INFO---127.0.0.1 - - [07/Aug/2018 00:49:51] "GET /report HTTP/1.1" 200 -
+2018-08-07 00:53:33,333---INFO---127.0.0.1 - - [07/Aug/2018 00:53:33] "GET / HTTP/1.1" 200 -
+2018-08-07 09:22:55,179---INFO--- * Restarting with stat
+2018-08-07 09:23:01,428---WARNING--- * Debugger is active!
+2018-08-07 09:23:01,428---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 09:23:01,455---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 09:23:24,716---INFO---127.0.0.1 - - [07/Aug/2018 09:23:24] "GET /case HTTP/1.1" 200 -
+2018-08-07 09:23:25,420---INFO---127.0.0.1 - - [07/Aug/2018 09:23:25] "GET /static/case/testcase.css HTTP/1.1" 304 -
+2018-08-07 09:23:25,604---INFO---127.0.0.1 - - [07/Aug/2018 09:23:25] "GET /static/case/testcase.js HTTP/1.1" 304 -
+2018-08-07 09:23:25,995---INFO---127.0.0.1 - - [07/Aug/2018 09:23:25] "GET /static/jquery.js HTTP/1.1" 304 -
+2018-08-07 09:24:07,382---INFO---  ---预期结果ok
+2018-08-07 09:24:28,411---INFO---  ---预期结果ok
+2018-08-07 09:24:28,426---INFO---  ---预期结果
+2018-08-07 09:24:28,426---INFO---  --QQ邮箱--正确
+2018-08-07 09:24:28,442---INFO---127.0.0.1 - - [07/Aug/2018 09:24:28] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%222%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:3} HTTP/1.1" 200 -
+2018-08-07 09:26:21,144---INFO---127.0.0.1 - - [07/Aug/2018 09:26:21] "GET / HTTP/1.1" 200 -
+2018-08-07 09:26:22,696---INFO---127.0.0.1 - - [07/Aug/2018 09:26:22] "GET /report HTTP/1.1" 500 -
+2018-08-07 09:26:23,288---INFO---127.0.0.1 - - [07/Aug/2018 09:26:23] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 09:26:23,341---INFO---127.0.0.1 - - [07/Aug/2018 09:26:23] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 09:26:23,342---INFO---127.0.0.1 - - [07/Aug/2018 09:26:23] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 09:26:24,241---INFO---127.0.0.1 - - [07/Aug/2018 09:26:24] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 09:26:24,882---INFO---127.0.0.1 - - [07/Aug/2018 09:26:24] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 09:26:25,126---INFO---127.0.0.1 - - [07/Aug/2018 09:26:25] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 09:30:13,738---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\get_report.py', reloading
+2018-08-07 09:30:13,941---INFO--- * Restarting with stat
+2018-08-07 09:34:29,612---INFO--- * Restarting with stat
+2018-08-07 09:34:34,645---WARNING--- * Debugger is active!
+2018-08-07 09:34:34,655---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 09:34:34,655---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 09:34:39,442---INFO---127.0.0.1 - - [07/Aug/2018 09:34:39] "GET / HTTP/1.1" 200 -
+2018-08-07 09:34:41,647---INFO---127.0.0.1 - - [07/Aug/2018 09:34:41] "GET /report HTTP/1.1" 500 -
+2018-08-07 09:34:41,835---INFO---127.0.0.1 - - [07/Aug/2018 09:34:41] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 09:34:42,364---INFO---127.0.0.1 - - [07/Aug/2018 09:34:42] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 09:34:42,365---INFO---127.0.0.1 - - [07/Aug/2018 09:34:42] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 09:34:43,252---INFO---127.0.0.1 - - [07/Aug/2018 09:34:43] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 09:34:43,716---INFO---127.0.0.1 - - [07/Aug/2018 09:34:43] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 09:36:40,410---INFO---127.0.0.1 - - [07/Aug/2018 09:36:40] "GET / HTTP/1.1" 200 -
+2018-08-07 09:36:41,202---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\get_report.py', reloading
+2018-08-07 09:36:41,293---INFO--- * Restarting with stat
+2018-08-07 09:36:46,849---WARNING--- * Debugger is active!
+2018-08-07 09:36:46,889---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 09:36:46,889---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 09:36:49,812---INFO---127.0.0.1 - - [07/Aug/2018 09:36:49] "GET / HTTP/1.1" 200 -
+2018-08-07 09:36:54,256---INFO---127.0.0.1 - - [07/Aug/2018 09:36:54] "GET /report HTTP/1.1" 500 -
+2018-08-07 09:36:54,495---INFO---127.0.0.1 - - [07/Aug/2018 09:36:54] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 09:36:54,657---INFO---127.0.0.1 - - [07/Aug/2018 09:36:54] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 09:36:54,756---INFO---127.0.0.1 - - [07/Aug/2018 09:36:54] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 09:36:55,532---INFO---127.0.0.1 - - [07/Aug/2018 09:36:55] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 09:36:55,758---INFO---127.0.0.1 - - [07/Aug/2018 09:36:55] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 09:37:55,384---INFO---127.0.0.1 - - [07/Aug/2018 09:37:55] "GET / HTTP/1.1" 200 -
+2018-08-07 09:37:57,090---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\get_report.py', reloading
+2018-08-07 09:37:57,164---INFO--- * Restarting with stat
+2018-08-07 09:38:03,234---WARNING--- * Debugger is active!
+2018-08-07 09:38:03,250---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 09:38:03,275---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 09:38:06,729---INFO---127.0.0.1 - - [07/Aug/2018 09:38:06] "GET /report HTTP/1.1" 200 -
+2018-08-07 09:41:41,301---INFO---127.0.0.1 - - [07/Aug/2018 09:41:41] "GET /report HTTP/1.1" 200 -
+2018-08-07 09:42:11,389---INFO---127.0.0.1 - - [07/Aug/2018 09:42:11] "GET /report HTTP/1.1" 200 -
+2018-08-07 09:42:57,156---INFO---127.0.0.1 - - [07/Aug/2018 09:42:57] "GET /report HTTP/1.1" 200 -
+2018-08-07 09:42:59,207---INFO---127.0.0.1 - - [07/Aug/2018 09:42:59] "GET /report_result HTTP/1.1" 500 -
+2018-08-07 09:42:59,453---INFO---127.0.0.1 - - [07/Aug/2018 09:42:59] "GET /report_result?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 09:42:59,595---INFO---127.0.0.1 - - [07/Aug/2018 09:42:59] "GET /report_result?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 09:42:59,703---INFO---127.0.0.1 - - [07/Aug/2018 09:42:59] "GET /report_result?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 09:43:00,338---INFO---127.0.0.1 - - [07/Aug/2018 09:43:00] "GET /report_result?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 09:43:00,773---INFO---127.0.0.1 - - [07/Aug/2018 09:43:00] "GET /report_result?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 09:43:01,116---INFO---127.0.0.1 - - [07/Aug/2018 09:43:01] "GET /report_result?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 09:57:21,502---INFO---127.0.0.1 - - [07/Aug/2018 09:57:21] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:40:39,885---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 10:40:40,040---INFO--- * Restarting with stat
+2018-08-07 10:40:45,764---WARNING--- * Debugger is active!
+2018-08-07 10:40:45,772---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 10:40:45,787---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 10:42:59,368---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 10:42:59,459---INFO--- * Restarting with stat
+2018-08-07 10:43:06,065---WARNING--- * Debugger is active!
+2018-08-07 10:43:06,080---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 10:43:06,096---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 10:43:07,245---INFO---127.0.0.1 - - [07/Aug/2018 10:43:07] "GET / HTTP/1.1" 200 -
+2018-08-07 10:43:17,324---INFO---127.0.0.1 - - [07/Aug/2018 10:43:17] "GET /report HTTP/1.1" 500 -
+2018-08-07 10:43:17,571---INFO---127.0.0.1 - - [07/Aug/2018 10:43:17] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 10:43:18,056---INFO---127.0.0.1 - - [07/Aug/2018 10:43:18] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 10:43:18,508---INFO---127.0.0.1 - - [07/Aug/2018 10:43:18] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 10:43:19,056---INFO---127.0.0.1 - - [07/Aug/2018 10:43:19] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 10:43:19,061---INFO---127.0.0.1 - - [07/Aug/2018 10:43:19] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 10:43:19,693---INFO---127.0.0.1 - - [07/Aug/2018 10:43:19] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 10:43:55,184---INFO---127.0.0.1 - - [07/Aug/2018 10:43:55] "GET / HTTP/1.1" 200 -
+2018-08-07 10:43:55,956---INFO---127.0.0.1 - - [07/Aug/2018 10:43:55] "GET / HTTP/1.1" 200 -
+2018-08-07 10:43:57,649---INFO---127.0.0.1 - - [07/Aug/2018 10:43:57] "GET /report HTTP/1.1" 500 -
+2018-08-07 10:43:57,888---INFO---127.0.0.1 - - [07/Aug/2018 10:43:57] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 10:43:58,159---INFO---127.0.0.1 - - [07/Aug/2018 10:43:58] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 10:43:58,160---INFO---127.0.0.1 - - [07/Aug/2018 10:43:58] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 10:43:59,081---INFO---127.0.0.1 - - [07/Aug/2018 10:43:59] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 10:43:59,109---INFO---127.0.0.1 - - [07/Aug/2018 10:43:59] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 10:43:59,222---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\get_report.py', reloading
+2018-08-07 10:43:59,318---INFO--- * Restarting with stat
+2018-08-07 10:44:06,103---WARNING--- * Debugger is active!
+2018-08-07 10:44:06,123---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 10:44:06,138---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 10:44:07,818---INFO---127.0.0.1 - - [07/Aug/2018 10:44:07] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:44:12,960---INFO---127.0.0.1 - - [07/Aug/2018 10:44:12] "GET /url_for('report') HTTP/1.1" 404 -
+2018-08-07 10:45:10,435---INFO---127.0.0.1 - - [07/Aug/2018 10:45:10] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:45:12,107---INFO---127.0.0.1 - - [07/Aug/2018 10:45:12] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:45:13,283---INFO---127.0.0.1 - - [07/Aug/2018 10:45:13] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:45:14,656---INFO---127.0.0.1 - - [07/Aug/2018 10:45:14] "GET /url_for('report_result') HTTP/1.1" 404 -
+2018-08-07 10:45:25,526---INFO---127.0.0.1 - - [07/Aug/2018 10:45:25] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:46:17,862---INFO---127.0.0.1 - - [07/Aug/2018 10:46:17] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:46:18,686---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 10:46:18,812---INFO--- * Restarting with stat
+2018-08-07 10:46:25,397---WARNING--- * Debugger is active!
+2018-08-07 10:46:25,411---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 10:46:25,442---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 10:46:27,008---INFO---127.0.0.1 - - [07/Aug/2018 10:46:27] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:46:29,575---INFO---127.0.0.1 - - [07/Aug/2018 10:46:29] "GET /url_for('report_result') HTTP/1.1" 404 -
+2018-08-07 10:47:49,998---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 10:47:50,123---INFO--- * Restarting with stat
+2018-08-07 10:47:56,632---WARNING--- * Debugger is active!
+2018-08-07 10:47:56,649---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 10:47:56,667---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 10:47:57,280---INFO---127.0.0.1 - - [07/Aug/2018 10:47:57] "GET /report HTTP/1.1" 200 -
+2018-08-07 10:47:59,201---INFO---127.0.0.1 - - [07/Aug/2018 10:47:59] "GET /url_for('report_result') HTTP/1.1" 404 -
+2018-08-07 13:40:56,013---INFO---127.0.0.1 - - [07/Aug/2018 13:40:56] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:41:00,132---INFO---127.0.0.1 - - [07/Aug/2018 13:41:00] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:41:02,946---INFO---127.0.0.1 - - [07/Aug/2018 13:41:02] "GET /app/templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:41:24,257---INFO---127.0.0.1 - - [07/Aug/2018 13:41:24] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:41:57,552---INFO---127.0.0.1 - - [07/Aug/2018 13:41:57] "GET /app/templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:42:10,448---INFO---127.0.0.1 - - [07/Aug/2018 13:42:10] "GET /app/templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:42:18,498---INFO---127.0.0.1 - - [07/Aug/2018 13:42:18] "GET /app/templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:44:46,486---INFO---127.0.0.1 - - [07/Aug/2018 13:44:46] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:44:50,285---INFO---127.0.0.1 - - [07/Aug/2018 13:44:50] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:46:24,811---INFO---127.0.0.1 - - [07/Aug/2018 13:46:24] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:46:30,185---INFO---127.0.0.1 - - [07/Aug/2018 13:46:30] "GET /templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:46:37,839---INFO---127.0.0.1 - - [07/Aug/2018 13:46:37] "GET /templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:47:52,311---INFO---127.0.0.1 - - [07/Aug/2018 13:47:52] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:47:54,417---INFO---127.0.0.1 - - [07/Aug/2018 13:47:54] "GET /index HTTP/1.1" 404 -
+2018-08-07 13:48:08,512---INFO---127.0.0.1 - - [07/Aug/2018 13:48:08] "GET / HTTP/1.1" 200 -
+2018-08-07 13:48:11,064---INFO---127.0.0.1 - - [07/Aug/2018 13:48:11] "GET /project HTTP/1.1" 200 -
+2018-08-07 13:48:11,408---INFO---127.0.0.1 - - [07/Aug/2018 13:48:11] "GET /static/project/project.js HTTP/1.1" 304 -
+2018-08-07 13:48:11,698---INFO---127.0.0.1 - - [07/Aug/2018 13:48:11] "GET /static/project/project.css HTTP/1.1" 304 -
+2018-08-07 13:48:13,981---INFO---127.0.0.1 - - [07/Aug/2018 13:48:13] "GET / HTTP/1.1" 200 -
+2018-08-07 13:48:26,063---INFO---127.0.0.1 - - [07/Aug/2018 13:48:26] "GET /index HTTP/1.1" 404 -
+2018-08-07 13:48:29,661---INFO---127.0.0.1 - - [07/Aug/2018 13:48:29] "GET / HTTP/1.1" 200 -
+2018-08-07 13:48:44,474---INFO---127.0.0.1 - - [07/Aug/2018 13:48:44] "GET /case HTTP/1.1" 200 -
+2018-08-07 13:48:46,676---INFO---127.0.0.1 - - [07/Aug/2018 13:48:46] "GET / HTTP/1.1" 200 -
+2018-08-07 13:48:47,854---INFO---127.0.0.1 - - [07/Aug/2018 13:48:47] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:48:50,736---INFO---127.0.0.1 - - [07/Aug/2018 13:48:50] "GET /case HTTP/1.1" 200 -
+2018-08-07 13:50:40,440---INFO---127.0.0.1 - - [07/Aug/2018 13:50:40] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:51:14,038---INFO---127.0.0.1 - - [07/Aug/2018 13:51:14] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:52:22,654---INFO---127.0.0.1 - - [07/Aug/2018 13:52:22] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:52:25,821---INFO---127.0.0.1 - - [07/Aug/2018 13:52:25] "GET /templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:53:07,556---INFO---127.0.0.1 - - [07/Aug/2018 13:53:07] "GET /templates/report/report_case.html HTTP/1.1" 404 -
+2018-08-07 13:54:18,762---INFO---127.0.0.1 - - [07/Aug/2018 13:54:18] "GET /report HTTP/1.1" 500 -
+2018-08-07 13:54:19,080---INFO---127.0.0.1 - - [07/Aug/2018 13:54:19] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 13:54:19,290---INFO---127.0.0.1 - - [07/Aug/2018 13:54:19] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 13:54:19,484---INFO---127.0.0.1 - - [07/Aug/2018 13:54:19] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 13:54:19,672---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\get_report.py', reloading
+2018-08-07 13:54:19,942---INFO--- * Restarting with stat
+2018-08-07 13:54:27,553---WARNING--- * Debugger is active!
+2018-08-07 13:54:27,568---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 13:54:27,592---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 13:54:27,927---INFO---127.0.0.1 - - [07/Aug/2018 13:54:27] "GET / HTTP/1.1" 200 -
+2018-08-07 13:54:30,454---INFO---127.0.0.1 - - [07/Aug/2018 13:54:30] "GET /report HTTP/1.1" 200 -
+2018-08-07 13:54:35,962---INFO---127.0.0.1 - - [07/Aug/2018 13:54:35] "GET /static/report/report_case.html HTTP/1.1" 200 -
+2018-08-07 14:16:25,238---INFO---127.0.0.1 - - [07/Aug/2018 14:16:25] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:16:39,816---INFO---127.0.0.1 - - [07/Aug/2018 14:16:39] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:17:33,462---INFO---127.0.0.1 - - [07/Aug/2018 14:17:33] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:18:37,306---INFO---127.0.0.1 - - [07/Aug/2018 14:18:37] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:18:58,762---INFO---127.0.0.1 - - [07/Aug/2018 14:18:58] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:19:04,253---INFO---127.0.0.1 - - [07/Aug/2018 14:19:04] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:19:16,313---INFO---127.0.0.1 - - [07/Aug/2018 14:19:16] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:19:18,417---INFO---127.0.0.1 - - [07/Aug/2018 14:19:18] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:19:20,012---INFO---127.0.0.1 - - [07/Aug/2018 14:19:20] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:19:22,078---INFO---127.0.0.1 - - [07/Aug/2018 14:19:22] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:05,906---INFO---127.0.0.1 - - [07/Aug/2018 14:20:05] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:22,180---INFO---127.0.0.1 - - [07/Aug/2018 14:20:22] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:26,340---INFO---127.0.0.1 - - [07/Aug/2018 14:20:26] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:29,875---INFO---127.0.0.1 - - [07/Aug/2018 14:20:29] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:32,968---INFO---127.0.0.1 - - [07/Aug/2018 14:20:32] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:35,237---INFO---127.0.0.1 - - [07/Aug/2018 14:20:35] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:35,478---INFO---127.0.0.1 - - [07/Aug/2018 14:20:35] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:39,625---INFO---127.0.0.1 - - [07/Aug/2018 14:20:39] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:42,699---INFO---127.0.0.1 - - [07/Aug/2018 14:20:42] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:44,458---INFO---127.0.0.1 - - [07/Aug/2018 14:20:44] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:46,183---INFO---127.0.0.1 - - [07/Aug/2018 14:20:46] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:46,638---INFO---127.0.0.1 - - [07/Aug/2018 14:20:46] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:47,770---INFO---127.0.0.1 - - [07/Aug/2018 14:20:47] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:48,291---INFO---127.0.0.1 - - [07/Aug/2018 14:20:48] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:20:51,514---INFO---127.0.0.1 - - [07/Aug/2018 14:20:51] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:22:55,810---INFO---127.0.0.1 - - [07/Aug/2018 14:22:55] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:23:09,917---INFO---127.0.0.1 - - [07/Aug/2018 14:23:09] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:23:41,848---INFO---127.0.0.1 - - [07/Aug/2018 14:23:41] "GET /report HTTP/1.1" 500 -
+2018-08-07 14:23:42,150---INFO---127.0.0.1 - - [07/Aug/2018 14:23:42] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 14:23:42,343---INFO---127.0.0.1 - - [07/Aug/2018 14:23:42] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 14:23:42,513---INFO---127.0.0.1 - - [07/Aug/2018 14:23:42] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 14:23:43,265---INFO---127.0.0.1 - - [07/Aug/2018 14:23:43] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 14:23:43,832---INFO---127.0.0.1 - - [07/Aug/2018 14:23:43] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 14:23:44,059---INFO---127.0.0.1 - - [07/Aug/2018 14:23:44] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 14:25:51,417---INFO---127.0.0.1 - - [07/Aug/2018 14:25:51] "GET / HTTP/1.1" 200 -
+2018-08-07 14:25:53,569---INFO---127.0.0.1 - - [07/Aug/2018 14:25:53] "GET / HTTP/1.1" 200 -
+2018-08-07 14:26:37,533---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 14:26:37,661---INFO--- * Restarting with stat
+2018-08-07 14:26:43,988---WARNING--- * Debugger is active!
+2018-08-07 14:26:44,004---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 14:26:44,022---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 14:26:53,832---INFO---127.0.0.1 - - [07/Aug/2018 14:26:53] "GET /report HTTP/1.1" 500 -
+2018-08-07 14:26:54,256---INFO---127.0.0.1 - - [07/Aug/2018 14:26:54] "GET /report?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 14:26:54,488---INFO---127.0.0.1 - - [07/Aug/2018 14:26:54] "GET /report?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 14:26:54,602---INFO---127.0.0.1 - - [07/Aug/2018 14:26:54] "GET /report?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 14:26:55,296---INFO---127.0.0.1 - - [07/Aug/2018 14:26:55] "GET /report?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 14:26:55,519---INFO---127.0.0.1 - - [07/Aug/2018 14:26:55] "GET /report?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 14:27:10,285---INFO---127.0.0.1 - - [07/Aug/2018 14:27:10] "GET / HTTP/1.1" 200 -
+2018-08-07 14:27:57,908---INFO---127.0.0.1 - - [07/Aug/2018 14:27:57] "GET /report HTTP/1.1" 200 -
+2018-08-07 14:28:09,037---INFO---127.0.0.1 - - [07/Aug/2018 14:28:09] "GET /static/report/txt.html HTTP/1.1" 200 -
+2018-08-07 14:34:11,129---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 14:34:11,231---INFO--- * Restarting with stat
+2018-08-07 14:34:18,191---WARNING--- * Debugger is active!
+2018-08-07 14:34:18,205---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 14:34:18,221---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 14:34:18,481---INFO---127.0.0.1 - - [07/Aug/2018 14:34:18] "GET / HTTP/1.1" 200 -
+2018-08-07 14:34:23,616---INFO---127.0.0.1 - - [07/Aug/2018 14:34:23] "GET /case HTTP/1.1" 200 -
+2018-08-07 14:34:52,015---INFO---  ---预期结果ok
+2018-08-07 14:35:13,025---INFO---  ---预期结果ok
+2018-08-07 14:35:34,038---INFO---  ---预期结果ok
+2018-08-07 14:35:34,056---INFO---  ---预期结果
+2018-08-07 14:35:34,056---INFO---  --QQ邮箱--正确
+2018-08-07 14:35:55,070---INFO---  ---预期结果ok
+2018-08-07 14:35:55,260---INFO---127.0.0.1 - - [07/Aug/2018 14:35:55] "GET /do_many_case?{%220%22:{%22id_num%22:%225%22,%22case_name%22:%22%E8%82%A1%E7%A5%A8%E8%A1%8C%E6%83%85%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-hangqing/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{2,3,4,5,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%222%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%223%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%224%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:5} HTTP/1.1" 500 -
+2018-08-07 14:42:43,176---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 14:42:43,302---INFO--- * Restarting with stat
+2018-08-07 14:42:50,341---WARNING--- * Debugger is active!
+2018-08-07 14:42:50,356---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 14:42:50,369---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 14:44:03,043---INFO---  ---预期结果ok
+2018-08-07 14:44:03,063---INFO---  ---预期结果
+2018-08-07 14:44:03,064---INFO---  --QQ邮箱--正确
+2018-08-07 14:44:03,188---INFO---127.0.0.1 - - [07/Aug/2018 14:44:03] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 14:47:04,126---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 14:47:04,261---INFO--- * Restarting with stat
+2018-08-07 14:47:10,358---WARNING--- * Debugger is active!
+2018-08-07 14:47:10,370---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 14:47:10,381---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 14:47:37,112---INFO---  ---预期结果ok
+2018-08-07 14:47:38,413---INFO---  ---预期结果
+2018-08-07 14:47:38,413---INFO---  --QQ邮箱--正确
+2018-08-07 14:47:38,503---INFO---127.0.0.1 - - [07/Aug/2018 14:47:38] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 14:51:15,888---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 14:51:16,024---INFO--- * Restarting with stat
+2018-08-07 14:51:23,401---WARNING--- * Debugger is active!
+2018-08-07 14:51:23,428---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 14:51:23,445---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 14:51:55,718---INFO---  ---预期结果ok
+2018-08-07 14:51:55,795---INFO---  ---预期结果
+2018-08-07 14:51:55,796---INFO---  --QQ邮箱--正确
+2018-08-07 14:51:55,910---INFO---127.0.0.1 - - [07/Aug/2018 14:51:55] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 14:52:16,687---INFO---  ---预期结果ok
+2018-08-07 14:52:17,931---INFO---  ---预期结果
+2018-08-07 14:52:17,932---INFO---  --QQ邮箱--正确
+2018-08-07 14:52:18,029---INFO---127.0.0.1 - - [07/Aug/2018 14:52:18] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 14:56:18,270---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 14:56:18,415---INFO--- * Restarting with stat
+2018-08-07 14:56:47,179---WARNING--- * Debugger is active!
+2018-08-07 14:56:47,197---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 14:56:47,218---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 14:58:26,869---INFO---  ---预期结果ok
+2018-08-07 14:58:26,889---INFO---  ---预期结果
+2018-08-07 14:58:26,890---INFO---  --QQ邮箱--正确
+2018-08-07 14:58:26,987---INFO---127.0.0.1 - - [07/Aug/2018 14:58:26] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 14:58:54,773---INFO---  ---预期结果ok
+2018-08-07 14:58:56,034---INFO---  ---预期结果
+2018-08-07 14:58:56,034---INFO---  --QQ邮箱--正确
+2018-08-07 14:58:56,098---INFO---127.0.0.1 - - [07/Aug/2018 14:58:56] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 15:00:52,431---INFO---127.0.0.1 - - [07/Aug/2018 15:00:52] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:00:53,552---INFO---127.0.0.1 - - [07/Aug/2018 15:00:53] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:00:54,689---INFO---127.0.0.1 - - [07/Aug/2018 15:00:54] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:00:55,470---INFO---127.0.0.1 - - [07/Aug/2018 15:00:55] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:00:56,389---INFO---127.0.0.1 - - [07/Aug/2018 15:00:56] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:00:59,800---INFO---  ---预期结果
+2018-08-07 15:00:59,801---INFO---  --QQ邮箱--正确
+2018-08-07 15:01:20,806---INFO---  ---预期结果ok
+2018-08-07 15:01:20,886---INFO---127.0.0.1 - - [07/Aug/2018 15:01:20] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 15:02:30,232---INFO--- * Restarting with stat
+2018-08-07 15:02:36,803---WARNING--- * Debugger is active!
+2018-08-07 15:02:36,849---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:02:36,884---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:02:43,667---INFO---127.0.0.1 - - [07/Aug/2018 15:02:43] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:03:10,070---INFO---  ---预期结果ok
+2018-08-07 15:03:11,270---INFO---  ---预期结果
+2018-08-07 15:03:11,270---INFO---  --QQ邮箱--正确
+2018-08-07 15:03:11,432---INFO---127.0.0.1 - - [07/Aug/2018 15:03:11] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 15:04:27,249---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 15:04:27,368---INFO--- * Restarting with stat
+2018-08-07 15:04:35,381---WARNING--- * Debugger is active!
+2018-08-07 15:04:35,399---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:04:35,430---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:04:37,973---INFO---127.0.0.1 - - [07/Aug/2018 15:04:37] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:04:39,306---INFO---127.0.0.1 - - [07/Aug/2018 15:04:39] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:04:42,691---INFO---  ---预期结果
+2018-08-07 15:04:42,692---INFO---  --QQ邮箱--正确
+2018-08-07 15:05:03,697---INFO---  ---预期结果ok
+2018-08-07 15:05:03,785---INFO---127.0.0.1 - - [07/Aug/2018 15:05:03] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 15:06:20,303---INFO---127.0.0.1 - - [07/Aug/2018 15:06:20] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:06:21,955---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 15:06:22,149---INFO--- * Restarting with stat
+2018-08-07 15:06:29,538---WARNING--- * Debugger is active!
+2018-08-07 15:06:29,552---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:06:29,568---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:06:51,927---INFO---  ---预期结果ok
+2018-08-07 15:06:53,100---INFO---  ---预期结果
+2018-08-07 15:06:53,101---INFO---  --QQ邮箱--正确
+2018-08-07 15:06:53,171---INFO---127.0.0.1 - - [07/Aug/2018 15:06:53] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 15:08:50,533---INFO---127.0.0.1 - - [07/Aug/2018 15:08:50] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:08:51,586---INFO---127.0.0.1 - - [07/Aug/2018 15:08:51] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:08:51,967---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 15:08:52,086---INFO--- * Restarting with stat
+2018-08-07 15:08:58,392---WARNING--- * Debugger is active!
+2018-08-07 15:08:58,414---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:08:58,433---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:09:22,743---INFO---  ---预期结果ok
+2018-08-07 15:09:23,983---INFO---  ---预期结果
+2018-08-07 15:09:23,984---INFO---  --QQ邮箱--正确
+2018-08-07 15:09:24,105---INFO---127.0.0.1 - - [07/Aug/2018 15:09:24] "GET /do_many_case?{%220%22:{%22id_num%22:%224%22,%22case_name%22:%22%E8%B4%AD%E4%B9%B0%E8%82%A1%E7%A5%A8%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/buy-stock/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{4,5,6,7,21,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 15:10:11,066---INFO---127.0.0.1 - - [07/Aug/2018 15:10:11] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:10:12,297---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 15:10:12,444---INFO--- * Restarting with stat
+2018-08-07 15:10:18,003---WARNING--- * Debugger is active!
+2018-08-07 15:10:18,018---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:10:18,038---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:10:18,387---INFO---127.0.0.1 - - [07/Aug/2018 15:10:18] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:10:22,495---INFO---  ---预期结果
+2018-08-07 15:10:22,496---INFO---  --QQ邮箱--正确
+2018-08-07 15:10:43,504---INFO---  ---预期结果ok
+2018-08-07 15:10:43,584---INFO---127.0.0.1 - - [07/Aug/2018 15:10:43] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-07 15:10:44,427---INFO---  ---预期结果
+2018-08-07 15:10:44,428---INFO---  --QQ邮箱--正确
+2018-08-07 15:11:05,444---INFO---  ---预期结果ok
+2018-08-07 15:11:05,454---INFO---127.0.0.1 - - [07/Aug/2018 15:11:05] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-07 15:14:47,595---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 15:14:47,726---INFO--- * Restarting with stat
+2018-08-07 15:14:55,009---WARNING--- * Debugger is active!
+2018-08-07 15:14:55,024---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:14:55,039---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:14:57,671---INFO---  ---预期结果
+2018-08-07 15:14:57,683---INFO---  --QQ邮箱--正确
+2018-08-07 15:15:18,689---INFO---  ---预期结果ok
+2018-08-07 15:15:18,745---INFO---127.0.0.1 - - [07/Aug/2018 15:15:18] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-07 15:16:21,886---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 15:16:22,019---INFO--- * Restarting with stat
+2018-08-07 15:16:29,248---WARNING--- * Debugger is active!
+2018-08-07 15:16:29,264---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:16:29,280---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:16:29,553---INFO---127.0.0.1 - - [07/Aug/2018 15:16:29] "GET /case HTTP/1.1" 200 -
+2018-08-07 15:16:56,744---INFO---  ---预期结果ok
+2018-08-07 15:16:56,762---INFO---  ---预期结果
+2018-08-07 15:16:56,762---INFO---  --QQ邮箱--正确
+2018-08-07 15:16:56,854---INFO---127.0.0.1 - - [07/Aug/2018 15:16:56] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-07 15:17:17,071---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 15:17:17,190---INFO--- * Restarting with stat
+2018-08-07 15:17:24,285---WARNING--- * Debugger is active!
+2018-08-07 15:17:24,294---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:17:24,311---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:17:45,476---INFO---  ---预期结果ok
+2018-08-07 15:18:06,481---INFO---  ---预期结果ok
+2018-08-07 15:18:27,494---INFO---  ---预期结果ok
+2018-08-07 15:18:48,504---INFO---  ---预期结果ok
+2018-08-07 15:18:49,948---INFO---  ---预期结果
+2018-08-07 15:18:49,949---INFO---  --QQ邮箱--正确
+2018-08-07 15:19:10,957---INFO---  ---预期结果ok
+2018-08-07 15:19:11,005---INFO---127.0.0.1 - - [07/Aug/2018 15:19:11] "GET /do_many_case?{%220%22:{%22id_num%22:%224%22,%22case_name%22:%22%E8%B4%AD%E4%B9%B0%E8%82%A1%E7%A5%A8%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/buy-stock/%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{4,5,6,7,21,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%225%22,%22case_name%22:%22%E8%82%A1%E7%A5%A8%E8%A1%8C%E6%83%85%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-hangqing/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{2,3,4,5,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%222%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%223%22:{%22id_num%22:%227%22,%22case_name%22:%22%E4%BA%BA%E5%91%98%E7%A6%BB%E8%81%8C%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-pp/%22,%22request_method%22:%22PUT%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{121,455,44512,445,24,545,12}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%224%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%225%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:6} HTTP/1.1" 200 -
+2018-08-07 15:41:44,979---INFO---127.0.0.1 - - [07/Aug/2018 15:41:44] "GET / HTTP/1.1" 200 -
+2018-08-07 15:42:28,965---INFO---127.0.0.1 - - [07/Aug/2018 15:42:28] "GET / HTTP/1.1" 200 -
+2018-08-07 15:42:39,338---INFO---127.0.0.1 - - [07/Aug/2018 15:42:39] "GET / HTTP/1.1" 200 -
+2018-08-07 15:42:40,917---INFO---127.0.0.1 - - [07/Aug/2018 15:42:40] "GET /report HTTP/1.1" 200 -
+2018-08-07 15:42:43,253---INFO---127.0.0.1 - - [07/Aug/2018 15:42:43] "GET /static/report/2018-08-07%2015_17_24-report.html HTTP/1.1" 200 -
+2018-08-07 15:45:49,396---INFO--- * Detected change in 'F:\\code\\microblog\\app\\views.py', reloading
+2018-08-07 15:45:49,495---INFO--- * Restarting with stat
+2018-08-07 15:45:54,654---WARNING--- * Debugger is active!
+2018-08-07 15:45:54,666---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 15:45:54,678---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 15:45:55,461---INFO---127.0.0.1 - - [07/Aug/2018 15:45:55] "GET /static/report/2018-08-07%2015_17_24-report.html HTTP/1.1" 304 -
+2018-08-07 15:45:58,681---INFO---127.0.0.1 - - [07/Aug/2018 15:45:58] "GET / HTTP/1.1" 200 -
+2018-08-07 15:46:00,314---INFO---127.0.0.1 - - [07/Aug/2018 15:46:00] "GET /report HTTP/1.1" 200 -
+2018-08-07 15:51:46,628---INFO---127.0.0.1 - - [07/Aug/2018 15:51:46] "GET / HTTP/1.1" 200 -
+2018-08-07 15:51:51,082---INFO---127.0.0.1 - - [07/Aug/2018 15:51:51] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:00:31,891---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 16:00:32,051---INFO--- * Restarting with stat
+2018-08-07 16:00:37,472---WARNING--- * Debugger is active!
+2018-08-07 16:00:37,484---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 16:00:37,496---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 16:11:26,446---INFO---127.0.0.1 - - [07/Aug/2018 16:11:26] "GET /case HTTP/1.1" 200 -
+2018-08-07 16:11:30,688---INFO---  ---预期结果
+2018-08-07 16:11:30,689---INFO---  --QQ邮箱--正确
+2018-08-07 16:11:51,695---INFO---  ---预期结果ok
+2018-08-07 16:11:51,723---INFO---127.0.0.1 - - [07/Aug/2018 16:11:51] "GET /do_many_case?{%220%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%229%22,%22case_name%22:%22%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%B3%95%E8%A7%84%E7%9A%84%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/api/web-user/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{1,2,yy,25,kk}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-07 16:11:58,894---INFO---127.0.0.1 - - [07/Aug/2018 16:11:58] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:12:00,744---INFO---127.0.0.1 - - [07/Aug/2018 16:12:00] "GET /static/report/2018-08-07%2016_11_30-report.html HTTP/1.1" 200 -
+2018-08-07 16:12:11,012---INFO---127.0.0.1 - - [07/Aug/2018 16:12:11] "GET /static/report/2018-08-07%2016_11_30-report.html HTTP/1.1" 304 -
+2018-08-07 16:12:13,041---INFO---127.0.0.1 - - [07/Aug/2018 16:12:13] "GET /static/report/2018-08-07%2016_11_30-report.html HTTP/1.1" 304 -
+2018-08-07 16:12:54,457---INFO---127.0.0.1 - - [07/Aug/2018 16:12:54] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:12:56,087---INFO---127.0.0.1 - - [07/Aug/2018 16:12:56] "GET /case HTTP/1.1" 200 -
+2018-08-07 16:13:21,212---INFO---  ---预期结果ok
+2018-08-07 16:13:22,301---INFO---  ---预期结果
+2018-08-07 16:13:22,301---INFO---  --QQ邮箱--正确
+2018-08-07 16:13:22,327---INFO---127.0.0.1 - - [07/Aug/2018 16:13:22] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-07 16:13:24,558---INFO--- * Detected change in 'F:\\code\\microblog\\app\\test\\write_report.py', reloading
+2018-08-07 16:13:24,660---INFO--- * Restarting with stat
+2018-08-07 16:13:30,219---WARNING--- * Debugger is active!
+2018-08-07 16:13:30,230---INFO--- * Debugger PIN: 105-426-550
+2018-08-07 16:13:30,242---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 16:13:30,440---INFO---127.0.0.1 - - [07/Aug/2018 16:13:30] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:13:41,108---INFO---127.0.0.1 - - [07/Aug/2018 16:13:41] "GET /static/report/2018-08-07%2016_13_00-report.html HTTP/1.1" 200 -
+2018-08-07 16:15:33,000---INFO---127.0.0.1 - - [07/Aug/2018 16:15:33] "GET /case HTTP/1.1" 200 -
+2018-08-07 16:15:51,785---INFO---127.0.0.1 - - [07/Aug/2018 16:15:51] "GET /case HTTP/1.1" 200 -
+2018-08-07 16:15:58,447---INFO---  ---预期结果ok
+2018-08-07 16:16:16,580---INFO---  ---预期结果ok
+2018-08-07 16:16:19,454---INFO---  ---预期结果ok
+2018-08-07 16:16:20,805---INFO---  ---预期结果
+2018-08-07 16:16:20,806---INFO---  --QQ邮箱--正确
+2018-08-07 16:16:20,841---INFO---127.0.0.1 - - [07/Aug/2018 16:16:20] "GET /do_many_case?{%220%22:{%22id_num%22:%225%22,%22case_name%22:%22%E8%82%A1%E7%A5%A8%E8%A1%8C%E6%83%85%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-hangqing/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{2,3,4,5,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%222%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:3} HTTP/1.1" 200 -
+2018-08-07 16:16:37,593---INFO---  ---预期结果ok
+2018-08-07 16:16:37,769---INFO---  ---预期结果
+2018-08-07 16:16:37,770---INFO---  --QQ邮箱--正确
+2018-08-07 16:16:37,795---INFO---127.0.0.1 - - [07/Aug/2018 16:16:37] "GET /do_many_case?{%220%22:{%22id_num%22:%225%22,%22case_name%22:%22%E8%82%A1%E7%A5%A8%E8%A1%8C%E6%83%85%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-hangqing/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{2,3,4,5,1}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%226%22,%22case_name%22:%22%E6%96%B0%E5%A2%9E%E4%BA%BA%E5%91%98%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{dsd,dsad,asd,qwe,wqe,qwe}%22,%22check%22:%22ok%22,%22is_base%22:%22YES%22},%222%22:{%22id_num%22:%228%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:3} HTTP/1.1" 200 -
+2018-08-07 16:16:56,482---INFO---127.0.0.1 - - [07/Aug/2018 16:16:56] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:16:59,328---INFO---127.0.0.1 - - [07/Aug/2018 16:16:59] "GET /static/report/2018-08-07%2016_15_55-report.html HTTP/1.1" 200 -
+2018-08-07 16:17:10,386---INFO---127.0.0.1 - - [07/Aug/2018 16:17:10] "GET /static/report/2018-08-07%2016_15_55-report.html HTTP/1.1" 304 -
+2018-08-07 16:17:14,550---INFO---127.0.0.1 - - [07/Aug/2018 16:17:14] "GET /static/report/2018-08-07%2016_15_55-report.html HTTP/1.1" 304 -
+2018-08-07 16:20:51,647---INFO---127.0.0.1 - - [07/Aug/2018 16:20:51] "GET /static/report/2018-08-07%2016_15_55-report.html HTTP/1.1" 304 -
+2018-08-07 16:30:47,313---INFO---127.0.0.1 - - [07/Aug/2018 16:30:47] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:33:03,305---INFO---127.0.0.1 - - [07/Aug/2018 16:33:03] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:34:10,835---INFO---127.0.0.1 - - [07/Aug/2018 16:34:10] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:34:33,658---INFO---127.0.0.1 - - [07/Aug/2018 16:34:33] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:34:39,141---INFO---127.0.0.1 - - [07/Aug/2018 16:34:39] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:34:50,766---INFO---127.0.0.1 - - [07/Aug/2018 16:34:50] "GET /report HTTP/1.1" 200 -
+2018-08-07 16:36:44,926---INFO---127.0.0.1 - - [07/Aug/2018 16:36:44] "GET / HTTP/1.1" 200 -
+2018-08-07 18:44:26,224---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 18:44:26,301---INFO--- * Restarting with stat
+2018-08-07 18:44:27,489---WARNING--- * Debugger is active!
+2018-08-07 18:44:27,496---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 18:44:27,504---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 18:44:39,005---INFO--- * Restarting with stat
+2018-08-07 18:44:40,105---WARNING--- * Debugger is active!
+2018-08-07 18:44:40,112---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 18:44:40,119---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 18:44:54,042---INFO---127.0.0.1 - - [07/Aug/2018 18:44:54] "GET / HTTP/1.1" 200 -
+2018-08-07 18:44:54,113---INFO---127.0.0.1 - - [07/Aug/2018 18:44:54] "GET /static/jquery.js HTTP/1.1" 304 -
+2018-08-07 18:44:58,490---INFO---127.0.0.1 - - [07/Aug/2018 18:44:58] "GET /report HTTP/1.1" 200 -
+2018-08-07 18:52:41,123---INFO---127.0.0.1 - - [07/Aug/2018 18:52:41] "GET /report HTTP/1.1" 200 -
+2018-08-07 18:52:44,220---INFO---127.0.0.1 - - [07/Aug/2018 18:52:44] "GET /report HTTP/1.1" 200 -
+2018-08-07 18:52:45,075---INFO---127.0.0.1 - - [07/Aug/2018 18:52:45] "GET /report HTTP/1.1" 200 -
+2018-08-07 18:52:45,318---INFO---127.0.0.1 - - [07/Aug/2018 18:52:45] "GET /report HTTP/1.1" 200 -
+2018-08-07 18:59:41,954---INFO---127.0.0.1 - - [07/Aug/2018 18:59:41] "GET / HTTP/1.1" 200 -
+2018-08-07 18:59:44,449---INFO---127.0.0.1 - - [07/Aug/2018 18:59:44] "GET /project HTTP/1.1" 200 -
+2018-08-07 18:59:44,473---INFO---127.0.0.1 - - [07/Aug/2018 18:59:44] "GET /static/project/project.js HTTP/1.1" 304 -
+2018-08-07 18:59:44,487---INFO---127.0.0.1 - - [07/Aug/2018 18:59:44] "GET /static/project/project.css HTTP/1.1" 304 -
+2018-08-07 18:59:49,215---INFO---127.0.0.1 - - [07/Aug/2018 18:59:49] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 18:59:49,228---INFO---127.0.0.1 - - [07/Aug/2018 18:59:49] "GET /project HTTP/1.1" 200 -
+2018-08-07 18:59:52,447---INFO---127.0.0.1 - - [07/Aug/2018 18:59:52] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 18:59:52,461---INFO---127.0.0.1 - - [07/Aug/2018 18:59:52] "GET /project HTTP/1.1" 200 -
+2018-08-07 18:59:55,237---INFO---127.0.0.1 - - [07/Aug/2018 18:59:55] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 18:59:55,250---INFO---127.0.0.1 - - [07/Aug/2018 18:59:55] "GET /project HTTP/1.1" 200 -
+2018-08-07 18:59:58,823---INFO---127.0.0.1 - - [07/Aug/2018 18:59:58] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 18:59:58,836---INFO---127.0.0.1 - - [07/Aug/2018 18:59:58] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:00:02,351---INFO---127.0.0.1 - - [07/Aug/2018 19:00:02] "GET /delete_project?id=4 HTTP/1.1" 302 -
+2018-08-07 19:00:02,373---INFO---127.0.0.1 - - [07/Aug/2018 19:00:02] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:00:03,997---INFO---127.0.0.1 - - [07/Aug/2018 19:00:03] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:02:23,490---INFO---127.0.0.1 - - [07/Aug/2018 19:02:23] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:02:28,475---INFO---127.0.0.1 - - [07/Aug/2018 19:02:28] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:03:06,367---INFO---127.0.0.1 - - [07/Aug/2018 19:03:06] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:03:08,963---INFO---127.0.0.1 - - [07/Aug/2018 19:03:08] "GET /delete_project?id=7 HTTP/1.1" 302 -
+2018-08-07 19:03:08,974---INFO---127.0.0.1 - - [07/Aug/2018 19:03:08] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:03:15,523---INFO---127.0.0.1 - - [07/Aug/2018 19:03:15] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:03:49,391---INFO---127.0.0.1 - - [07/Aug/2018 19:03:49] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:03:52,003---INFO---127.0.0.1 - - [07/Aug/2018 19:03:52] "GET /delete_project?id=5 HTTP/1.1" 302 -
+2018-08-07 19:03:52,015---INFO---127.0.0.1 - - [07/Aug/2018 19:03:52] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:03:53,405---INFO---127.0.0.1 - - [07/Aug/2018 19:03:53] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:14,661---INFO---127.0.0.1 - - [07/Aug/2018 19:08:14] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:22,903---INFO---127.0.0.1 - - [07/Aug/2018 19:08:22] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:22,905---INFO---127.0.0.1 - - [07/Aug/2018 19:08:22] "GET /delete_project?id=6 HTTP/1.1" 302 -
+2018-08-07 19:08:22,931---INFO---127.0.0.1 - - [07/Aug/2018 19:08:22] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:26,961---INFO---127.0.0.1 - - [07/Aug/2018 19:08:26] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:34,792---INFO---127.0.0.1 - - [07/Aug/2018 19:08:34] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 19:08:34,803---INFO---127.0.0.1 - - [07/Aug/2018 19:08:34] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:38,538---INFO---127.0.0.1 - - [07/Aug/2018 19:08:38] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 19:08:38,551---INFO---127.0.0.1 - - [07/Aug/2018 19:08:38] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:42,168---INFO---127.0.0.1 - - [07/Aug/2018 19:08:42] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 19:08:42,181---INFO---127.0.0.1 - - [07/Aug/2018 19:08:42] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:45,603---INFO---127.0.0.1 - - [07/Aug/2018 19:08:45] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 19:08:45,616---INFO---127.0.0.1 - - [07/Aug/2018 19:08:45] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:52,178---INFO---127.0.0.1 - - [07/Aug/2018 19:08:52] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:52,182---INFO---127.0.0.1 - - [07/Aug/2018 19:08:52] "GET /delete_project?id=6 HTTP/1.1" 302 -
+2018-08-07 19:08:52,203---INFO---127.0.0.1 - - [07/Aug/2018 19:08:52] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:55,160---INFO---127.0.0.1 - - [07/Aug/2018 19:08:55] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:55,664---INFO---127.0.0.1 - - [07/Aug/2018 19:08:55] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:56,471---INFO---127.0.0.1 - - [07/Aug/2018 19:08:56] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:56,472---INFO---127.0.0.1 - - [07/Aug/2018 19:08:56] "GET /delete_project?id=7 HTTP/1.1" 302 -
+2018-08-07 19:08:57,503---INFO---127.0.0.1 - - [07/Aug/2018 19:08:57] "GET /delete_project?id=5 HTTP/1.1" 302 -
+2018-08-07 19:08:57,508---INFO---127.0.0.1 - - [07/Aug/2018 19:08:57] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:57,525---INFO---127.0.0.1 - - [07/Aug/2018 19:08:57] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:58,632---INFO---127.0.0.1 - - [07/Aug/2018 19:08:58] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:08:58,634---INFO---127.0.0.1 - - [07/Aug/2018 19:08:58] "GET /delete_project?id=4 HTTP/1.1" 302 -
+2018-08-07 19:08:58,650---INFO---127.0.0.1 - - [07/Aug/2018 19:08:58] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:12:11,764---INFO---127.0.0.1 - - [07/Aug/2018 19:12:11] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:12:13,760---INFO---127.0.0.1 - - [07/Aug/2018 19:12:13] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:12:14,268---INFO---127.0.0.1 - - [07/Aug/2018 19:12:14] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:12:14,597---INFO---127.0.0.1 - - [07/Aug/2018 19:12:14] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:12:14,852---INFO---127.0.0.1 - - [07/Aug/2018 19:12:14] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:12:16,210---INFO---127.0.0.1 - - [07/Aug/2018 19:12:16] "GET /module HTTP/1.1" 200 -
+2018-08-07 19:12:16,233---INFO---127.0.0.1 - - [07/Aug/2018 19:12:16] "GET /static/module/module.css HTTP/1.1" 304 -
+2018-08-07 19:12:16,235---INFO---127.0.0.1 - - [07/Aug/2018 19:12:16] "GET /static/module/module.js HTTP/1.1" 304 -
+2018-08-07 19:12:18,730---INFO---127.0.0.1 - - [07/Aug/2018 19:12:18] "GET /delete_module?id=4 HTTP/1.1" 302 -
+2018-08-07 19:12:18,731---INFO---127.0.0.1 - - [07/Aug/2018 19:12:18] "GET /module HTTP/1.1" 200 -
+2018-08-07 19:12:23,332---INFO---127.0.0.1 - - [07/Aug/2018 19:12:23] "GET /delete_module?id=5 HTTP/1.1" 302 -
+2018-08-07 19:12:23,339---INFO---127.0.0.1 - - [07/Aug/2018 19:12:23] "GET /module HTTP/1.1" 200 -
+2018-08-07 19:12:23,357---INFO---127.0.0.1 - - [07/Aug/2018 19:12:23] "GET /module HTTP/1.1" 200 -
+2018-08-07 19:12:27,373---INFO---127.0.0.1 - - [07/Aug/2018 19:12:27] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:12:28,868---INFO---127.0.0.1 - - [07/Aug/2018 19:12:28] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:12:28,902---INFO---127.0.0.1 - - [07/Aug/2018 19:12:28] "GET /static/case/testcase.css HTTP/1.1" 304 -
+2018-08-07 19:12:28,909---INFO---127.0.0.1 - - [07/Aug/2018 19:12:28] "GET /static/case/testcase.js HTTP/1.1" 304 -
+2018-08-07 19:12:33,838---INFO---127.0.0.1 - - [07/Aug/2018 19:12:33] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 19:12:33,863---INFO---127.0.0.1 - - [07/Aug/2018 19:12:33] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:12:37,556---INFO---127.0.0.1 - - [07/Aug/2018 19:12:37] "GET /delete_case?id=9 HTTP/1.1" 302 -
+2018-08-07 19:12:37,564---INFO---127.0.0.1 - - [07/Aug/2018 19:12:37] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:12:37,599---INFO---127.0.0.1 - - [07/Aug/2018 19:12:37] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:12:45,326---INFO---127.0.0.1 - - [07/Aug/2018 19:12:45] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 19:12:45,355---INFO---127.0.0.1 - - [07/Aug/2018 19:12:45] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:12:49,055---INFO---127.0.0.1 - - [07/Aug/2018 19:12:49] "GET /delete_case?id=9 HTTP/1.1" 302 -
+2018-08-07 19:12:49,071---INFO---127.0.0.1 - - [07/Aug/2018 19:12:49] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:12:49,101---INFO---127.0.0.1 - - [07/Aug/2018 19:12:49] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:13:07,535---INFO---127.0.0.1 - - [07/Aug/2018 19:13:07] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:18:45,509---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:18:45,724---INFO--- * Restarting with stat
+2018-08-07 19:18:47,742---WARNING--- * Debugger is active!
+2018-08-07 19:18:47,748---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:18:47,756---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:20:52,041---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:20:52,115---INFO--- * Restarting with stat
+2018-08-07 19:20:53,263---WARNING--- * Debugger is active!
+2018-08-07 19:20:53,270---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:20:53,277---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:23:00,225---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:23:00,297---INFO--- * Restarting with stat
+2018-08-07 19:23:01,565---WARNING--- * Debugger is active!
+2018-08-07 19:23:01,572---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:23:01,590---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:23:16,266---INFO---127.0.0.1 - - [07/Aug/2018 19:23:16] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:21,561---INFO---127.0.0.1 - - [07/Aug/2018 19:23:21] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:48,502---INFO---127.0.0.1 - - [07/Aug/2018 19:23:48] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:48,515---INFO---127.0.0.1 - - [07/Aug/2018 19:23:48] "GET /del_report?file_name=hhh.html HTTP/1.1" 500 -
+2018-08-07 19:23:53,763---INFO---127.0.0.1 - - [07/Aug/2018 19:23:53] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:54,590---INFO---127.0.0.1 - - [07/Aug/2018 19:23:54] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:55,874---INFO---127.0.0.1 - - [07/Aug/2018 19:23:55] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:55,882---INFO---127.0.0.1 - - [07/Aug/2018 19:23:55] "GET /del_report?file_name=hhh.html HTTP/1.1" 500 -
+2018-08-07 19:23:56,810---INFO---127.0.0.1 - - [07/Aug/2018 19:23:56] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:57,255---INFO---127.0.0.1 - - [07/Aug/2018 19:23:57] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:57,461---INFO---127.0.0.1 - - [07/Aug/2018 19:23:57] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:23:57,649---INFO---127.0.0.1 - - [07/Aug/2018 19:23:57] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:25:35,332---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:25:35,404---INFO--- * Restarting with stat
+2018-08-07 19:25:36,575---WARNING--- * Debugger is active!
+2018-08-07 19:25:36,582---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:25:36,591---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:25:36,669---INFO---127.0.0.1 - - [07/Aug/2018 19:25:36] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:25:40,341---INFO---127.0.0.1 - - [07/Aug/2018 19:25:40] "GET /del_report?file_name=hhh.html HTTP/1.1" 200 -
+2018-08-07 19:25:40,348---INFO---127.0.0.1 - - [07/Aug/2018 19:25:40] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:25:49,486---INFO---127.0.0.1 - - [07/Aug/2018 19:25:49] "GET /del_report?file_name=txt.html HTTP/1.1" 200 -
+2018-08-07 19:25:49,496---INFO---127.0.0.1 - - [07/Aug/2018 19:25:49] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:25:50,326---INFO---127.0.0.1 - - [07/Aug/2018 19:25:50] "GET /del_report?file_name=report_case.html HTTP/1.1" 200 -
+2018-08-07 19:25:50,335---INFO---127.0.0.1 - - [07/Aug/2018 19:25:50] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:26:07,409---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:26:07,478---INFO--- * Restarting with stat
+2018-08-07 19:26:08,973---WARNING--- * Debugger is active!
+2018-08-07 19:26:08,992---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:26:09,028---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:26:12,359---INFO---127.0.0.1 - - [07/Aug/2018 19:26:12] "GET /del_report?file_name=2018-08-07%2016_15_55-report.html HTTP/1.1" 200 -
+2018-08-07 19:26:12,398---INFO---127.0.0.1 - - [07/Aug/2018 19:26:12] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:26:15,846---INFO---127.0.0.1 - - [07/Aug/2018 19:26:15] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:26:40,416---INFO---127.0.0.1 - - [07/Aug/2018 19:26:40] "GET /del_report?file_name=2018-08-07%2015_10_22-report.html HTTP/1.1" 200 -
+2018-08-07 19:26:40,423---INFO---127.0.0.1 - - [07/Aug/2018 19:26:40] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:26:40,960---INFO---127.0.0.1 - - [07/Aug/2018 19:26:40] "GET /del_report?file_name=2018-08-07%2015_14_56-report.html HTTP/1.1" 200 -
+2018-08-07 19:26:40,969---INFO---127.0.0.1 - - [07/Aug/2018 19:26:40] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:26:41,679---INFO---127.0.0.1 - - [07/Aug/2018 19:26:41] "GET /del_report?file_name=2018-08-07%2016_11_30-report.html HTTP/1.1" 200 -
+2018-08-07 19:26:41,687---INFO---127.0.0.1 - - [07/Aug/2018 19:26:41] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:26:45,101---INFO---127.0.0.1 - - [07/Aug/2018 19:26:45] "GET / HTTP/1.1" 200 -
+2018-08-07 19:28:33,561---INFO---127.0.0.1 - - [07/Aug/2018 19:28:33] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:28:34,850---INFO---127.0.0.1 - - [07/Aug/2018 19:28:34] "GET / HTTP/1.1" 200 -
+2018-08-07 19:28:36,092---INFO---127.0.0.1 - - [07/Aug/2018 19:28:36] "GET /report HTTP/1.1" 200 -
+2018-08-07 19:28:37,612---INFO---127.0.0.1 - - [07/Aug/2018 19:28:37] "GET / HTTP/1.1" 200 -
+2018-08-07 19:28:38,548---INFO---127.0.0.1 - - [07/Aug/2018 19:28:38] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:28:50,645---INFO---127.0.0.1 - - [07/Aug/2018 19:28:50] "POST /editor HTTP/1.1" 302 -
+2018-08-07 19:28:50,666---INFO---127.0.0.1 - - [07/Aug/2018 19:28:50] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:33:57,210---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\models.py', reloading
+2018-08-07 19:33:57,328---INFO--- * Restarting with stat
+2018-08-07 19:33:58,682---WARNING--- * Debugger is active!
+2018-08-07 19:33:58,689---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:33:58,698---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:37:37,193---INFO--- * Restarting with stat
+2018-08-07 19:37:38,257---WARNING--- * Debugger is active!
+2018-08-07 19:37:38,263---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:37:38,271---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:37:41,349---INFO---127.0.0.1 - - [07/Aug/2018 19:37:41] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:37:58,993---INFO---127.0.0.1 - - [07/Aug/2018 19:37:58] "POST /add_testcase HTTP/1.1" 500 -
+2018-08-07 19:37:59,026---INFO---127.0.0.1 - - [07/Aug/2018 19:37:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 19:37:59,027---INFO---127.0.0.1 - - [07/Aug/2018 19:37:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 19:37:59,027---INFO---127.0.0.1 - - [07/Aug/2018 19:37:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 19:37:59,078---INFO---127.0.0.1 - - [07/Aug/2018 19:37:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 19:37:59,134---INFO---127.0.0.1 - - [07/Aug/2018 19:37:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 19:37:59,171---INFO---127.0.0.1 - - [07/Aug/2018 19:37:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 19:38:14,621---INFO---127.0.0.1 - - [07/Aug/2018 19:38:14] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:38:24,510---INFO---127.0.0.1 - - [07/Aug/2018 19:38:24] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:38:33,854---INFO---127.0.0.1 - - [07/Aug/2018 19:38:33] "POST /add_project HTTP/1.1" 302 -
+2018-08-07 19:38:33,865---INFO---127.0.0.1 - - [07/Aug/2018 19:38:33] "GET /project HTTP/1.1" 200 -
+2018-08-07 19:38:36,139---INFO---127.0.0.1 - - [07/Aug/2018 19:38:36] "GET /module HTTP/1.1" 200 -
+2018-08-07 19:38:42,759---INFO---127.0.0.1 - - [07/Aug/2018 19:38:42] "POST /add_module HTTP/1.1" 302 -
+2018-08-07 19:38:42,773---INFO---127.0.0.1 - - [07/Aug/2018 19:38:42] "GET /module HTTP/1.1" 200 -
+2018-08-07 19:38:44,865---INFO---127.0.0.1 - - [07/Aug/2018 19:38:44] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:39:01,481---INFO---127.0.0.1 - - [07/Aug/2018 19:39:01] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 19:39:01,498---INFO---127.0.0.1 - - [07/Aug/2018 19:39:01] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:42:52,542---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:42:52,614---INFO--- * Restarting with stat
+2018-08-07 19:42:53,955---WARNING--- * Debugger is active!
+2018-08-07 19:42:53,964---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:42:53,975---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:43:17,433---INFO---127.0.0.1 - - [07/Aug/2018 19:43:17] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 19:43:17,492---INFO---127.0.0.1 - - [07/Aug/2018 19:43:17] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:43:22,320---INFO---  ---预期结果
+2018-08-07 19:43:22,320---INFO---  --QQ邮箱--正确
+2018-08-07 19:43:22,333---INFO---127.0.0.1 - - [07/Aug/2018 19:43:22] "POST /do_case HTTP/1.1" 500 -
+2018-08-07 19:43:22,361---INFO---127.0.0.1 - - [07/Aug/2018 19:43:22] "GET /do_case?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 19:43:22,362---INFO---127.0.0.1 - - [07/Aug/2018 19:43:22] "GET /do_case?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 19:43:22,362---INFO---127.0.0.1 - - [07/Aug/2018 19:43:22] "GET /do_case?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 19:43:22,403---INFO---127.0.0.1 - - [07/Aug/2018 19:43:22] "GET /do_case?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 19:43:22,453---INFO---127.0.0.1 - - [07/Aug/2018 19:43:22] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 19:43:22,484---INFO---127.0.0.1 - - [07/Aug/2018 19:43:22] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 19:52:41,275---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:52:41,348---INFO--- * Restarting with stat
+2018-08-07 19:52:42,747---WARNING--- * Debugger is active!
+2018-08-07 19:52:42,755---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:52:42,764---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:52:42,887---INFO---127.0.0.1 - - [07/Aug/2018 19:52:42] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:52:49,541---INFO---  ---预期结果
+2018-08-07 19:52:49,541---INFO---  --QQ邮箱--正确
+2018-08-07 19:52:49,590---INFO---127.0.0.1 - - [07/Aug/2018 19:52:49] "POST /do_case HTTP/1.1" 500 -
+2018-08-07 19:52:49,612---INFO---127.0.0.1 - - [07/Aug/2018 19:52:49] "GET /do_case?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 19:52:49,617---INFO---127.0.0.1 - - [07/Aug/2018 19:52:49] "GET /do_case?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 19:52:49,620---INFO---127.0.0.1 - - [07/Aug/2018 19:52:49] "GET /do_case?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 19:52:49,664---INFO---127.0.0.1 - - [07/Aug/2018 19:52:49] "GET /do_case?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 19:52:49,797---INFO---127.0.0.1 - - [07/Aug/2018 19:52:49] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 19:53:17,849---INFO---127.0.0.1 - - [07/Aug/2018 19:53:17] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:53:21,227---INFO---  ---预期结果
+2018-08-07 19:53:21,227---INFO---  --QQ邮箱--正确
+2018-08-07 19:53:26,495---INFO---127.0.0.1 - - [07/Aug/2018 19:53:26] "POST /do_case HTTP/1.1" 500 -
+2018-08-07 19:53:26,529---INFO---127.0.0.1 - - [07/Aug/2018 19:53:26] "GET /do_case?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 19:53:26,535---INFO---127.0.0.1 - - [07/Aug/2018 19:53:26] "GET /do_case?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 19:53:26,537---INFO---127.0.0.1 - - [07/Aug/2018 19:53:26] "GET /do_case?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 19:53:26,622---INFO---127.0.0.1 - - [07/Aug/2018 19:53:26] "GET /do_case?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 19:53:26,860---INFO---127.0.0.1 - - [07/Aug/2018 19:53:26] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 19:54:38,337---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:54:38,427---INFO--- * Restarting with stat
+2018-08-07 19:54:39,604---WARNING--- * Debugger is active!
+2018-08-07 19:54:39,610---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:54:39,618---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:54:59,834---INFO---127.0.0.1 - - [07/Aug/2018 19:54:59] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:55:05,884---INFO---  ---预期结果
+2018-08-07 19:55:05,884---INFO---  --QQ邮箱--正确
+2018-08-07 19:55:05,897---INFO---127.0.0.1 - - [07/Aug/2018 19:55:05] "POST /do_case HTTP/1.1" 500 -
+2018-08-07 19:55:05,920---INFO---127.0.0.1 - - [07/Aug/2018 19:55:05] "GET /do_case?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 19:55:05,920---INFO---127.0.0.1 - - [07/Aug/2018 19:55:05] "GET /do_case?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 19:55:05,931---INFO---127.0.0.1 - - [07/Aug/2018 19:55:05] "GET /do_case?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 19:55:05,966---INFO---127.0.0.1 - - [07/Aug/2018 19:55:05] "GET /do_case?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 19:55:05,993---INFO---127.0.0.1 - - [07/Aug/2018 19:55:05] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 19:55:58,817---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:55:58,890---INFO--- * Restarting with stat
+2018-08-07 19:56:00,376---WARNING--- * Debugger is active!
+2018-08-07 19:56:00,383---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:56:00,393---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:56:00,525---INFO---127.0.0.1 - - [07/Aug/2018 19:56:00] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:56:04,508---INFO---  ---预期结果
+2018-08-07 19:56:04,508---INFO---  --QQ邮箱--正确
+2018-08-07 19:56:04,553---INFO---127.0.0.1 - - [07/Aug/2018 19:56:04] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 19:56:04,583---INFO---127.0.0.1 - - [07/Aug/2018 19:56:04] "GET /static/tiaoshi_result/testcase.css HTTP/1.1" 200 -
+2018-08-07 19:56:04,598---INFO---127.0.0.1 - - [07/Aug/2018 19:56:04] "GET /static/tiaoshi_result/testcase.js HTTP/1.1" 200 -
+2018-08-07 19:57:25,059---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:57:25,136---INFO--- * Restarting with stat
+2018-08-07 19:57:26,873---WARNING--- * Debugger is active!
+2018-08-07 19:57:26,885---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:57:26,896---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:57:29,051---INFO---  ---预期结果
+2018-08-07 19:57:29,051---INFO---  --QQ邮箱--正确
+2018-08-07 19:57:29,107---INFO---127.0.0.1 - - [07/Aug/2018 19:57:29] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 19:57:33,981---INFO---  ---预期结果
+2018-08-07 19:57:33,982---INFO---  --QQ邮箱--正确
+2018-08-07 19:57:34,001---INFO---127.0.0.1 - - [07/Aug/2018 19:57:34] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 19:58:22,170---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 19:58:22,249---INFO--- * Restarting with stat
+2018-08-07 19:58:23,422---WARNING--- * Debugger is active!
+2018-08-07 19:58:23,429---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 19:58:23,438---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 19:58:31,133---INFO---127.0.0.1 - - [07/Aug/2018 19:58:31] "GET /case HTTP/1.1" 200 -
+2018-08-07 19:58:34,449---INFO---  ---预期结果
+2018-08-07 19:58:34,450---INFO---  --QQ邮箱--正确
+2018-08-07 19:58:34,500---INFO---127.0.0.1 - - [07/Aug/2018 19:58:34] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 19:59:53,668---INFO---127.0.0.1 - - [07/Aug/2018 19:59:53] "POST /editor HTTP/1.1" 302 -
+2018-08-07 19:59:53,686---INFO---127.0.0.1 - - [07/Aug/2018 19:59:53] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:01:15,752---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\models.py', reloading
+2018-08-07 20:01:15,831---INFO--- * Restarting with stat
+2018-08-07 20:01:17,423---WARNING--- * Debugger is active!
+2018-08-07 20:01:17,429---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:01:17,436---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:01:19,678---INFO---127.0.0.1 - - [07/Aug/2018 20:01:19] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:01:24,526---INFO---  ---预期结果
+2018-08-07 20:01:24,526---INFO---  --QQ邮箱--正确
+2018-08-07 20:01:24,573---INFO---127.0.0.1 - - [07/Aug/2018 20:01:24] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:02:18,163---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:02:18,264---INFO--- * Restarting with stat
+2018-08-07 20:02:19,739---WARNING--- * Debugger is active!
+2018-08-07 20:02:19,746---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:02:19,754---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:02:27,891---INFO---127.0.0.1 - - [07/Aug/2018 20:02:27] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:02:31,759---INFO---  ---预期结果
+2018-08-07 20:02:31,759---INFO---  --QQ邮箱--正确
+2018-08-07 20:02:31,817---INFO---127.0.0.1 - - [07/Aug/2018 20:02:31] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:05:38,765---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:05:38,857---INFO--- * Restarting with stat
+2018-08-07 20:05:40,144---WARNING--- * Debugger is active!
+2018-08-07 20:05:40,150---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:05:40,158---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:05:42,910---INFO---127.0.0.1 - - [07/Aug/2018 20:05:42] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:05:46,164---INFO---  ---预期结果
+2018-08-07 20:05:46,165---INFO---  --QQ邮箱--正确
+2018-08-07 20:05:46,208---INFO---127.0.0.1 - - [07/Aug/2018 20:05:46] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:07:18,112---INFO---127.0.0.1 - - [07/Aug/2018 20:07:18] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:07:22,664---INFO---127.0.0.1 - - [07/Aug/2018 20:07:22] "POST /editor HTTP/1.1" 302 -
+2018-08-07 20:07:22,681---INFO---127.0.0.1 - - [07/Aug/2018 20:07:22] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:07:59,471---INFO---127.0.0.1 - - [07/Aug/2018 20:07:59] "POST /add_testcase HTTP/1.1" 500 -
+2018-08-07 20:07:59,504---INFO---127.0.0.1 - - [07/Aug/2018 20:07:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 20:07:59,505---INFO---127.0.0.1 - - [07/Aug/2018 20:07:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 20:07:59,505---INFO---127.0.0.1 - - [07/Aug/2018 20:07:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 20:07:59,561---INFO---127.0.0.1 - - [07/Aug/2018 20:07:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 20:07:59,618---INFO---127.0.0.1 - - [07/Aug/2018 20:07:59] "GET /add_testcase?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 20:08:32,399---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\models.py', reloading
+2018-08-07 20:08:32,487---INFO--- * Restarting with stat
+2018-08-07 20:08:33,740---WARNING--- * Debugger is active!
+2018-08-07 20:08:33,749---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:08:33,760---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:08:33,953---INFO---127.0.0.1 - - [07/Aug/2018 20:08:33] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:08:38,665---INFO---127.0.0.1 - - [07/Aug/2018 20:08:38] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 20:08:38,687---INFO---127.0.0.1 - - [07/Aug/2018 20:08:38] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:09:45,080---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:09:45,169---INFO--- * Restarting with stat
+2018-08-07 20:10:21,563---INFO--- * Restarting with stat
+2018-08-07 20:10:22,946---WARNING--- * Debugger is active!
+2018-08-07 20:10:22,952---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:10:22,960---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:10:24,507---INFO---127.0.0.1 - - [07/Aug/2018 20:10:24] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:10:31,022---INFO---127.0.0.1 - - [07/Aug/2018 20:10:31] "POST /editor HTTP/1.1" 302 -
+2018-08-07 20:10:31,040---INFO---127.0.0.1 - - [07/Aug/2018 20:10:31] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:12:57,667---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:12:57,783---INFO--- * Restarting with stat
+2018-08-07 20:12:59,001---WARNING--- * Debugger is active!
+2018-08-07 20:12:59,008---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:12:59,015---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:13:03,006---INFO---  ---预期结果
+2018-08-07 20:13:03,006---INFO---  --d--正确
+2018-08-07 20:13:03,074---INFO---127.0.0.1 - - [07/Aug/2018 20:13:03] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:16:52,747---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:16:52,856---INFO--- * Restarting with stat
+2018-08-07 20:16:54,039---WARNING--- * Debugger is active!
+2018-08-07 20:16:54,045---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:16:54,053---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:16:59,021---INFO---  ---预期结果
+2018-08-07 20:16:59,021---INFO---  --d--正确
+2018-08-07 20:16:59,089---INFO---127.0.0.1 - - [07/Aug/2018 20:16:59] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:17:19,280---INFO---127.0.0.1 - - [07/Aug/2018 20:17:19] "POST /editor HTTP/1.1" 302 -
+2018-08-07 20:17:19,331---INFO---127.0.0.1 - - [07/Aug/2018 20:17:19] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:19:00,071---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:19:00,164---INFO--- * Restarting with stat
+2018-08-07 20:19:01,386---WARNING--- * Debugger is active!
+2018-08-07 20:19:01,394---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:19:01,402---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:19:06,057---INFO---127.0.0.1 - - [07/Aug/2018 20:19:06] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 20:19:06,122---INFO---127.0.0.1 - - [07/Aug/2018 20:19:06] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:19:07,901---INFO---127.0.0.1 - - [07/Aug/2018 20:19:07] "GET /delete_case?id=3 HTTP/1.1" 302 -
+2018-08-07 20:19:07,913---INFO---127.0.0.1 - - [07/Aug/2018 20:19:07] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:19:07,944---INFO---127.0.0.1 - - [07/Aug/2018 20:19:07] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:19:26,147---INFO---  ---预期结果
+2018-08-07 20:19:26,147---INFO---  --sdf--正确
+2018-08-07 20:19:26,200---INFO---127.0.0.1 - - [07/Aug/2018 20:19:26] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:20:32,729---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:20:32,800---INFO--- * Restarting with stat
+2018-08-07 20:20:34,204---WARNING--- * Debugger is active!
+2018-08-07 20:20:34,211---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:20:34,218---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:20:37,588---INFO---  ---预期结果
+2018-08-07 20:20:37,588---INFO---  --sdf--正确
+2018-08-07 20:20:37,656---INFO---127.0.0.1 - - [07/Aug/2018 20:20:37] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:21:01,081---INFO---127.0.0.1 - - [07/Aug/2018 20:21:01] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:21:11,305---INFO---  ---预期结果
+2018-08-07 20:21:11,305---INFO---  --sdf--正确
+2018-08-07 20:21:11,331---INFO---127.0.0.1 - - [07/Aug/2018 20:21:11] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:21:53,456---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:21:53,603---INFO--- * Restarting with stat
+2018-08-07 20:21:54,803---WARNING--- * Debugger is active!
+2018-08-07 20:21:54,809---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:21:54,817---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:21:56,161---INFO---127.0.0.1 - - [07/Aug/2018 20:21:56] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:22:01,461---INFO---  ---预期结果
+2018-08-07 20:22:01,462---INFO---  --sdf--正确
+2018-08-07 20:22:01,511---INFO---127.0.0.1 - - [07/Aug/2018 20:22:01] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:24:20,678---INFO---127.0.0.1 - - [07/Aug/2018 20:24:20] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 20:24:20,700---INFO---127.0.0.1 - - [07/Aug/2018 20:24:20] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:24:30,467---INFO---127.0.0.1 - - [07/Aug/2018 20:24:30] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 20:24:30,490---INFO---127.0.0.1 - - [07/Aug/2018 20:24:30] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:24:32,576---INFO---127.0.0.1 - - [07/Aug/2018 20:24:32] "GET /delete_case?id=6 HTTP/1.1" 302 -
+2018-08-07 20:24:32,605---INFO---127.0.0.1 - - [07/Aug/2018 20:24:32] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:24:32,674---INFO---127.0.0.1 - - [07/Aug/2018 20:24:32] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:24:48,010---INFO---  ---预期结果
+2018-08-07 20:24:48,011---INFO---  --sdf--正确
+2018-08-07 20:24:48,035---INFO---127.0.0.1 - - [07/Aug/2018 20:24:48] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:24:51,870---INFO---127.0.0.1 - - [07/Aug/2018 20:24:51] "GET /delete_case?id=5 HTTP/1.1" 302 -
+2018-08-07 20:24:51,870---INFO---  ---预期结果
+2018-08-07 20:24:51,870---INFO---  --sdf--正确
+2018-08-07 20:24:51,896---INFO---127.0.0.1 - - [07/Aug/2018 20:24:51] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:24:51,907---INFO---127.0.0.1 - - [07/Aug/2018 20:24:51] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:24:59,535---INFO---127.0.0.1 - - [07/Aug/2018 20:24:59] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:25:08,850---INFO---127.0.0.1 - - [07/Aug/2018 20:25:08] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 20:25:08,883---INFO---127.0.0.1 - - [07/Aug/2018 20:25:08] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:25:15,425---INFO---127.0.0.1 - - [07/Aug/2018 20:25:15] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 20:25:15,451---INFO---127.0.0.1 - - [07/Aug/2018 20:25:15] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:25:20,763---INFO---  ---预期结果
+2018-08-07 20:25:20,763---INFO---  --sdf--正确
+2018-08-07 20:25:20,788---INFO---127.0.0.1 - - [07/Aug/2018 20:25:20] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:25:25,299---INFO---  ---预期结果
+2018-08-07 20:25:25,300---INFO---  --sdf--正确
+2018-08-07 20:25:25,303---INFO---127.0.0.1 - - [07/Aug/2018 20:25:25] "GET /delete_case?id=5 HTTP/1.1" 302 -
+2018-08-07 20:25:25,332---INFO---127.0.0.1 - - [07/Aug/2018 20:25:25] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:25:25,343---INFO---127.0.0.1 - - [07/Aug/2018 20:25:25] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:25:30,808---INFO---127.0.0.1 - - [07/Aug/2018 20:25:30] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:25:32,592---INFO---127.0.0.1 - - [07/Aug/2018 20:25:32] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:26:25,045---INFO---127.0.0.1 - - [07/Aug/2018 20:26:25] "POST /editor HTTP/1.1" 302 -
+2018-08-07 20:26:25,065---INFO---127.0.0.1 - - [07/Aug/2018 20:26:25] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:26:44,002---INFO---127.0.0.1 - - [07/Aug/2018 20:26:44] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-07 20:26:44,024---INFO---127.0.0.1 - - [07/Aug/2018 20:26:44] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:26:48,326---INFO---127.0.0.1 - - [07/Aug/2018 20:26:48] "GET /delete_case?id=7 HTTP/1.1" 302 -
+2018-08-07 20:26:48,340---INFO---127.0.0.1 - - [07/Aug/2018 20:26:48] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:26:48,372---INFO---127.0.0.1 - - [07/Aug/2018 20:26:48] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:28:32,352---INFO---  ---预期结果
+2018-08-07 20:28:32,353---INFO---  --sdf--正确
+2018-08-07 20:28:43,644---INFO---  ---预期结果wq
+2018-08-07 20:28:43,684---INFO---127.0.0.1 - - [07/Aug/2018 20:28:43] "GET /do_many_case?{%220%22:{%22id_num%22:%224%22,%22case_name%22:%22sdf%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%226%22,%22case_name%22:%22dsf%22,%22server%22:%22fds%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22fs%22,%22check%22:%22wq%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-07 20:29:03,406---INFO---127.0.0.1 - - [07/Aug/2018 20:29:03] "GET /report HTTP/1.1" 200 -
+2018-08-07 20:29:05,939---INFO---127.0.0.1 - - [07/Aug/2018 20:29:05] "GET /static/report/2018-08-07%2020_28_32-report.html HTTP/1.1" 200 -
+2018-08-07 20:31:32,145---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 20:31:32,222---INFO--- * Restarting with stat
+2018-08-07 20:31:33,699---WARNING--- * Debugger is active!
+2018-08-07 20:31:33,705---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 20:31:33,713---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 20:31:34,195---INFO---127.0.0.1 - - [07/Aug/2018 20:31:34] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:31:41,732---INFO---127.0.0.1 - - [07/Aug/2018 20:31:41] "POST /editor HTTP/1.1" 302 -
+2018-08-07 20:31:41,755---INFO---127.0.0.1 - - [07/Aug/2018 20:31:41] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:31:46,717---INFO---  ---预期结果
+2018-08-07 20:31:46,718---INFO---  --sdf--正确
+2018-08-07 20:31:46,805---INFO---127.0.0.1 - - [07/Aug/2018 20:31:46] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:32:38,299---INFO---  ---预期结果wq
+2018-08-07 20:32:38,311---INFO---127.0.0.1 - - [07/Aug/2018 20:32:38] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:32:53,764---INFO---  ---预期结果
+2018-08-07 20:32:53,764---INFO---  --QQ邮箱--正确
+2018-08-07 20:32:53,804---INFO---127.0.0.1 - - [07/Aug/2018 20:32:53] "POST /do_case HTTP/1.1" 200 -
+2018-08-07 20:33:17,110---INFO---127.0.0.1 - - [07/Aug/2018 20:33:17] "POST /editor HTTP/1.1" 302 -
+2018-08-07 20:33:17,135---INFO---127.0.0.1 - - [07/Aug/2018 20:33:17] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:33:19,312---INFO---127.0.0.1 - - [07/Aug/2018 20:33:19] "GET /delete_case?id=4 HTTP/1.1" 302 -
+2018-08-07 20:33:19,321---INFO---127.0.0.1 - - [07/Aug/2018 20:33:19] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:33:19,353---INFO---127.0.0.1 - - [07/Aug/2018 20:33:19] "GET /case HTTP/1.1" 200 -
+2018-08-07 20:33:37,992---INFO---127.0.0.1 - - [07/Aug/2018 20:33:37] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-07 21:24:06,455---INFO--- * Restarting with stat
+2018-08-07 21:24:07,561---WARNING--- * Debugger is active!
+2018-08-07 21:24:07,568---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 21:24:07,575---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 21:24:27,668---INFO---127.0.0.1 - - [07/Aug/2018 21:24:27] "GET /case?module_name=%E4%BD%A0%E7%9A%84 HTTP/1.1" 200 -
+2018-08-07 21:24:49,988---INFO---127.0.0.1 - - [07/Aug/2018 21:24:49] "GET /case HTTP/1.1" 200 -
+2018-08-07 21:24:56,797---INFO---127.0.0.1 - - [07/Aug/2018 21:24:56] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-07 21:24:59,272---INFO---127.0.0.1 - - [07/Aug/2018 21:24:59] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-07 21:28:45,656---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 21:28:45,745---INFO--- * Restarting with stat
+2018-08-07 21:28:47,176---WARNING--- * Debugger is active!
+2018-08-07 21:28:47,183---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 21:28:47,191---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 21:31:58,793---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 21:31:58,875---INFO--- * Restarting with stat
+2018-08-07 21:32:00,173---WARNING--- * Debugger is active!
+2018-08-07 21:32:00,180---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 21:32:00,187---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 21:42:21,109---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 21:42:21,242---INFO--- * Restarting with stat
+2018-08-07 21:42:23,629---WARNING--- * Debugger is active!
+2018-08-07 21:42:23,641---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 21:42:23,687---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 21:45:09,197---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 21:45:09,271---INFO--- * Restarting with stat
+2018-08-07 21:45:11,033---WARNING--- * Debugger is active!
+2018-08-07 21:45:11,042---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 21:45:11,053---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 21:45:17,369---INFO---127.0.0.1 - - [07/Aug/2018 21:45:17] "GET /case HTTP/1.1" 200 -
+2018-08-07 21:45:33,567---INFO---127.0.0.1 - - [07/Aug/2018 21:45:33] "POST /selected_top_case HTTP/1.1" 500 -
+2018-08-07 21:45:33,594---INFO---127.0.0.1 - - [07/Aug/2018 21:45:33] "GET /selected_top_case?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-07 21:45:33,594---INFO---127.0.0.1 - - [07/Aug/2018 21:45:33] "GET /selected_top_case?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-07 21:45:33,595---INFO---127.0.0.1 - - [07/Aug/2018 21:45:33] "GET /selected_top_case?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-07 21:45:33,640---INFO---127.0.0.1 - - [07/Aug/2018 21:45:33] "GET /selected_top_case?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-07 21:45:33,684---INFO---127.0.0.1 - - [07/Aug/2018 21:45:33] "GET /selected_top_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 21:45:33,722---INFO---127.0.0.1 - - [07/Aug/2018 21:45:33] "GET /selected_top_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-07 21:45:59,224---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-07 21:45:59,297---INFO--- * Restarting with stat
+2018-08-07 21:46:00,575---WARNING--- * Debugger is active!
+2018-08-07 21:46:00,582---INFO--- * Debugger PIN: 843-323-975
+2018-08-07 21:46:00,590---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-07 21:46:00,720---INFO---127.0.0.1 - - [07/Aug/2018 21:46:00] "GET /case HTTP/1.1" 200 -
+2018-08-07 21:46:05,315---INFO---127.0.0.1 - - [07/Aug/2018 21:46:05] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-07 21:46:17,310---INFO---127.0.0.1 - - [07/Aug/2018 21:46:17] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-07 21:46:36,544---INFO---127.0.0.1 - - [07/Aug/2018 21:46:36] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-07 21:46:41,380---INFO---127.0.0.1 - - [07/Aug/2018 21:46:41] "POST /selected_top_case HTTP/1.1" 200 -
+2018-08-07 21:46:51,459---INFO---  ---预期结果wq
+2018-08-07 21:46:51,515---INFO---127.0.0.1 - - [07/Aug/2018 21:46:51] "POST /do_case HTTP/1.1" 200 -
+2018-08-08 21:51:14,848---INFO--- * Restarting with stat
+2018-08-08 21:51:15,940---WARNING--- * Debugger is active!
+2018-08-08 21:51:15,947---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 21:51:15,955---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 21:52:00,496---INFO---127.0.0.1 - - [08/Aug/2018 21:52:00] "GET /case HTTP/1.1" 200 -
+2018-08-08 21:52:00,529---INFO---127.0.0.1 - - [08/Aug/2018 21:52:00] "GET /static/case/testcase.js HTTP/1.1" 304 -
+2018-08-08 21:52:00,529---INFO---127.0.0.1 - - [08/Aug/2018 21:52:00] "GET /static/case/testcase.css HTTP/1.1" 304 -
+2018-08-08 21:52:00,531---INFO---127.0.0.1 - - [08/Aug/2018 21:52:00] "GET /static/jquery.js HTTP/1.1" 304 -
+2018-08-08 21:53:45,422---INFO---127.0.0.1 - - [08/Aug/2018 21:53:45] "GET /case HTTP/1.1" 200 -
+2018-08-08 21:53:58,213---INFO---127.0.0.1 - - [08/Aug/2018 21:53:58] "POST /add_testcase HTTP/1.1" 302 -
+2018-08-08 21:53:58,243---INFO---127.0.0.1 - - [08/Aug/2018 21:53:58] "GET /case HTTP/1.1" 200 -
+2018-08-08 22:10:58,346---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 22:10:58,543---INFO--- * Restarting with stat
+2018-08-08 22:41:00,239---INFO--- * Restarting with stat
+2018-08-08 22:41:01,491---WARNING--- * Debugger is active!
+2018-08-08 22:41:01,501---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 22:41:01,512---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 22:41:08,187---INFO---127.0.0.1 - - [08/Aug/2018 22:41:08] "GET /case HTTP/1.1" 200 -
+2018-08-08 22:41:28,790---INFO---127.0.0.1 - - [08/Aug/2018 22:41:28] "POST /do_case HTTP/1.1" 500 -
+2018-08-08 22:41:28,839---INFO---127.0.0.1 - - [08/Aug/2018 22:41:28] "GET /do_case?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-08 22:41:28,846---INFO---127.0.0.1 - - [08/Aug/2018 22:41:28] "GET /do_case?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-08 22:41:28,878---INFO---127.0.0.1 - - [08/Aug/2018 22:41:28] "GET /do_case?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-08 22:41:28,941---INFO---127.0.0.1 - - [08/Aug/2018 22:41:28] "GET /do_case?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-08 22:41:29,043---INFO---127.0.0.1 - - [08/Aug/2018 22:41:29] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-08 22:41:29,121---INFO---127.0.0.1 - - [08/Aug/2018 22:41:29] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-08 22:42:28,490---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\test\\common\\do_sql.py', reloading
+2018-08-08 22:42:28,577---INFO--- * Restarting with stat
+2018-08-08 22:42:30,234---WARNING--- * Debugger is active!
+2018-08-08 22:42:30,243---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 22:42:30,250---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 22:45:55,077---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 22:45:55,153---INFO--- * Restarting with stat
+2018-08-08 22:45:56,520---WARNING--- * Debugger is active!
+2018-08-08 22:45:56,527---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 22:45:56,538---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 22:45:56,934---INFO---127.0.0.1 - - [08/Aug/2018 22:45:56] "GET /case HTTP/1.1" 200 -
+2018-08-08 22:46:02,031---INFO---127.0.0.1 - - [08/Aug/2018 22:46:02] "POST /do_case HTTP/1.1" 500 -
+2018-08-08 22:46:02,065---INFO---127.0.0.1 - - [08/Aug/2018 22:46:02] "GET /do_case?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2018-08-08 22:46:02,066---INFO---127.0.0.1 - - [08/Aug/2018 22:46:02] "GET /do_case?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2018-08-08 22:46:02,066---INFO---127.0.0.1 - - [08/Aug/2018 22:46:02] "GET /do_case?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2018-08-08 22:46:02,114---INFO---127.0.0.1 - - [08/Aug/2018 22:46:02] "GET /do_case?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2018-08-08 22:46:02,164---INFO---127.0.0.1 - - [08/Aug/2018 22:46:02] "GET /do_case?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2018-08-08 22:47:10,784---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 22:47:10,860---INFO--- * Restarting with stat
+2018-08-08 22:47:12,197---WARNING--- * Debugger is active!
+2018-08-08 22:47:12,205---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 22:47:12,215---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 22:47:12,521---INFO---127.0.0.1 - - [08/Aug/2018 22:47:12] "GET /case HTTP/1.1" 200 -
+2018-08-08 22:47:14,267---INFO---127.0.0.1 - - [08/Aug/2018 22:47:14] "GET /case HTTP/1.1" 200 -
+2018-08-08 22:47:14,893---INFO---127.0.0.1 - - [08/Aug/2018 22:47:14] "GET /case HTTP/1.1" 200 -
+2018-08-08 22:47:18,561---INFO---  ---预期结果
+2018-08-08 22:47:18,561---INFO---  --QQ邮箱--正确
+2018-08-08 22:47:18,647---INFO---127.0.0.1 - - [08/Aug/2018 22:47:18] "POST /do_case HTTP/1.1" 200 -
+2018-08-08 22:47:18,683---INFO---127.0.0.1 - - [08/Aug/2018 22:47:18] "GET /static/tiaoshi_result/testcase.css HTTP/1.1" 304 -
+2018-08-08 22:47:18,694---INFO---127.0.0.1 - - [08/Aug/2018 22:47:18] "GET /static/tiaoshi_result/testcase.js HTTP/1.1" 304 -
+2018-08-08 22:47:30,562---INFO---127.0.0.1 - - [08/Aug/2018 22:47:30] "POST /editor HTTP/1.1" 302 -
+2018-08-08 22:47:30,586---INFO---127.0.0.1 - - [08/Aug/2018 22:47:30] "GET /case HTTP/1.1" 200 -
+2018-08-08 22:53:33,904---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 22:53:34,004---INFO--- * Restarting with stat
+2018-08-08 22:53:35,354---WARNING--- * Debugger is active!
+2018-08-08 22:53:35,361---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 22:53:35,369---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 23:01:42,077---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 23:01:42,147---INFO--- * Restarting with stat
+2018-08-08 23:01:43,376---WARNING--- * Debugger is active!
+2018-08-08 23:01:43,387---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 23:01:43,396---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 23:01:44,847---INFO---127.0.0.1 - - [08/Aug/2018 23:01:44] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:02:05,220---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 23:02:05,326---INFO--- * Restarting with stat
+2018-08-08 23:02:06,761---WARNING--- * Debugger is active!
+2018-08-08 23:02:06,768---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 23:02:06,775---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 23:02:08,374---INFO---127.0.0.1 - - [08/Aug/2018 23:02:08] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:02:15,415---INFO---127.0.0.1 - - [08/Aug/2018 23:02:15] "POST /editor HTTP/1.1" 302 -
+2018-08-08 23:02:15,442---INFO---127.0.0.1 - - [08/Aug/2018 23:02:15] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:02:19,757---INFO---  ---预期结果
+2018-08-08 23:02:19,757---INFO---  --QQ邮箱--正确
+2018-08-08 23:02:19,828---INFO---127.0.0.1 - - [08/Aug/2018 23:02:19] "POST /do_case HTTP/1.1" 200 -
+2018-08-08 23:02:56,706---INFO---127.0.0.1 - - [08/Aug/2018 23:02:56] "POST /editor HTTP/1.1" 302 -
+2018-08-08 23:02:56,731---INFO---127.0.0.1 - - [08/Aug/2018 23:02:56] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:03:02,333---INFO---127.0.0.1 - - [08/Aug/2018 23:03:02] "GET /do_many_case?{%220%22:{%22id_num%22:%222%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 500 -
+2018-08-08 23:04:52,218---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 23:04:52,309---INFO--- * Restarting with stat
+2018-08-08 23:04:53,545---WARNING--- * Debugger is active!
+2018-08-08 23:04:53,551---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 23:04:53,559---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 23:04:53,818---INFO---127.0.0.1 - - [08/Aug/2018 23:04:53] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:05:02,292---INFO---  ---预期结果
+2018-08-08 23:05:02,292---INFO---  --QQ邮箱--正确
+2018-08-08 23:05:02,313---INFO---  ---预期结果
+2018-08-08 23:05:02,313---INFO---  --的士速递--正确
+2018-08-08 23:05:02,381---INFO---127.0.0.1 - - [08/Aug/2018 23:05:02] "GET /do_many_case?{%220%22:{%22id_num%22:%222%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-08 23:05:10,510---INFO---127.0.0.1 - - [08/Aug/2018 23:05:10] "GET /report HTTP/1.1" 200 -
+2018-08-08 23:05:13,366---INFO---127.0.0.1 - - [08/Aug/2018 23:05:13] "GET /static/report/2018-08-08%2023_05_01-report.html HTTP/1.1" 200 -
+2018-08-08 23:05:42,016---INFO---127.0.0.1 - - [08/Aug/2018 23:05:42] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:07:17,219---INFO---127.0.0.1 - - [08/Aug/2018 23:07:17] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:07:46,193---INFO---127.0.0.1 - - [08/Aug/2018 23:07:46] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:09:44,862---INFO---127.0.0.1 - - [08/Aug/2018 23:09:44] "GET / HTTP/1.1" 200 -
+2018-08-08 23:09:47,507---INFO---127.0.0.1 - - [08/Aug/2018 23:09:47] "GET /report HTTP/1.1" 200 -
+2018-08-08 23:11:52,034---INFO---127.0.0.1 - - [08/Aug/2018 23:11:52] "GET / HTTP/1.1" 200 -
+2018-08-08 23:11:53,146---INFO---127.0.0.1 - - [08/Aug/2018 23:11:53] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:12:45,269---INFO---127.0.0.1 - - [08/Aug/2018 23:12:45] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:12:46,160---INFO---127.0.0.1 - - [08/Aug/2018 23:12:46] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:12:46,806---INFO---127.0.0.1 - - [08/Aug/2018 23:12:46] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:12:47,475---INFO---127.0.0.1 - - [08/Aug/2018 23:12:47] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:12:47,881---INFO---127.0.0.1 - - [08/Aug/2018 23:12:47] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:07,499---INFO---127.0.0.1 - - [08/Aug/2018 23:13:07] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:08,144---INFO---127.0.0.1 - - [08/Aug/2018 23:13:08] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:08,774---INFO---127.0.0.1 - - [08/Aug/2018 23:13:08] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:11,231---INFO---127.0.0.1 - - [08/Aug/2018 23:13:11] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:11,703---INFO---127.0.0.1 - - [08/Aug/2018 23:13:11] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:11,988---INFO---127.0.0.1 - - [08/Aug/2018 23:13:11] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:12,222---INFO---127.0.0.1 - - [08/Aug/2018 23:13:12] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:12,460---INFO---127.0.0.1 - - [08/Aug/2018 23:13:12] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:12,677---INFO---127.0.0.1 - - [08/Aug/2018 23:13:12] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:24,153---INFO---127.0.0.1 - - [08/Aug/2018 23:13:24] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:24,515---INFO---127.0.0.1 - - [08/Aug/2018 23:13:24] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:24,810---INFO---127.0.0.1 - - [08/Aug/2018 23:13:24] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:25,545---INFO---127.0.0.1 - - [08/Aug/2018 23:13:25] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:25,845---INFO---127.0.0.1 - - [08/Aug/2018 23:13:25] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:26,113---INFO---127.0.0.1 - - [08/Aug/2018 23:13:26] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:37,087---INFO---127.0.0.1 - - [08/Aug/2018 23:13:37] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:13:51,093---INFO---127.0.0.1 - - [08/Aug/2018 23:13:51] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:14:05,326---INFO---127.0.0.1 - - [08/Aug/2018 23:14:05] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:14:06,001---INFO---127.0.0.1 - - [08/Aug/2018 23:14:06] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:14:06,258---INFO---127.0.0.1 - - [08/Aug/2018 23:14:06] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:14:34,235---INFO---127.0.0.1 - - [08/Aug/2018 23:14:34] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:24:55,694---INFO---127.0.0.1 - - [08/Aug/2018 23:24:55] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:24:56,809---INFO---127.0.0.1 - - [08/Aug/2018 23:24:56] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:25:02,799---INFO---  ---预期结果
+2018-08-08 23:25:02,800---INFO---  --QQ邮箱--正确
+2018-08-08 23:25:02,820---INFO---  ---预期结果
+2018-08-08 23:25:02,820---INFO---  --的士速递--正确
+2018-08-08 23:25:02,853---INFO---127.0.0.1 - - [08/Aug/2018 23:25:02] "GET /do_many_case?{%220%22:{%22id_num%22:%222%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-08 23:26:35,417---INFO---127.0.0.1 - - [08/Aug/2018 23:26:35] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:26:36,169---INFO---127.0.0.1 - - [08/Aug/2018 23:26:36] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:26:41,495---INFO---  ---预期结果
+2018-08-08 23:26:41,496---INFO---  --QQ邮箱--正确
+2018-08-08 23:26:41,531---INFO---  ---预期结果
+2018-08-08 23:26:41,531---INFO---  --的士速递--正确
+2018-08-08 23:26:41,598---INFO---127.0.0.1 - - [08/Aug/2018 23:26:41] "GET /do_many_case?{%220%22:{%22id_num%22:%222%22,%22case_name%22:%22QQ%E9%82%AE%E7%AE%B1%22,%22server%22:%22%22,%22way%22:%22mail.qq.com%22,%22request_method%22:%22GET%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-08 23:26:49,783---INFO---  ---预期结果ok
+2018-08-08 23:26:49,784---INFO---  ---预期结果
+2018-08-08 23:26:49,784---INFO---  --的士速递--正确
+2018-08-08 23:26:49,817---INFO---127.0.0.1 - - [08/Aug/2018 23:26:49] "GET /do_many_case?{%220%22:{%22id_num%22:%221%22,%22case_name%22:%22%E9%98%BF%E6%96%AF%E9%A1%BF%22,%22server%22:%22%E9%98%BF%E6%96%AF%E9%A1%BF12%22,%22way%22:%22%E6%92%92%E6%97%A6%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%E6%92%92%E6%97%A6%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-08 23:27:09,862---INFO---  ---预期结果wq
+2018-08-08 23:27:09,863---INFO---  ---预期结果
+2018-08-08 23:27:09,863---INFO---  --的士速递--正确
+2018-08-08 23:27:09,897---INFO---127.0.0.1 - - [08/Aug/2018 23:27:09] "GET /do_many_case?{%220%22:{%22id_num%22:%226%22,%22case_name%22:%22dsf%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22fs%22,%22check%22:%22wq%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-08 23:27:35,870---INFO---127.0.0.1 - - [08/Aug/2018 23:27:35] "POST /editor HTTP/1.1" 302 -
+2018-08-08 23:27:35,895---INFO---127.0.0.1 - - [08/Aug/2018 23:27:35] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:27:40,257---INFO---  ---预期结果
+2018-08-08 23:27:40,257---INFO---  --的士速递--正确
+2018-08-08 23:27:41,158---INFO---  ---预期结果ok
+2018-08-08 23:27:41,174---INFO---127.0.0.1 - - [08/Aug/2018 23:27:41] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22%E5%9C%B0%E6%96%B9%22,%22server%22:%2210.13.8.116%22,%22way%22:%22%E7%AC%AC%E4%B8%89%E6%96%B9%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-08 23:28:19,041---INFO---127.0.0.1 - - [08/Aug/2018 23:28:19] "POST /editor HTTP/1.1" 302 -
+2018-08-08 23:28:19,064---INFO---127.0.0.1 - - [08/Aug/2018 23:28:19] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:28:23,409---INFO---  ---预期结果
+2018-08-08 23:28:23,409---INFO---  --的士速递--正确
+2018-08-08 23:28:44,454---INFO---  ---预期结果ok
+2018-08-08 23:28:44,473---INFO---127.0.0.1 - - [08/Aug/2018 23:28:44] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22%E5%9C%B0%E6%96%B9%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{32,53,5,5,5}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -
+2018-08-08 23:29:03,666---INFO---127.0.0.1 - - [08/Aug/2018 23:29:03] "GET /report HTTP/1.1" 200 -
+2018-08-08 23:29:04,693---INFO---127.0.0.1 - - [08/Aug/2018 23:29:04] "GET /static/report/2018-08-08%2023_28_23-report.html HTTP/1.1" 200 -
+2018-08-08 23:29:09,946---INFO---127.0.0.1 - - [08/Aug/2018 23:29:09] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:33:54,429---INFO---127.0.0.1 - - [08/Aug/2018 23:33:54] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:34:29,385---INFO---127.0.0.1 - - [08/Aug/2018 23:34:29] "GET /report HTTP/1.1" 200 -
+2018-08-08 23:34:57,546---INFO---127.0.0.1 - - [08/Aug/2018 23:34:57] "GET /report HTTP/1.1" 200 -
+2018-08-08 23:34:58,752---INFO---127.0.0.1 - - [08/Aug/2018 23:34:58] "GET /static/report/2018-08-08%2023_27_40-report.html HTTP/1.1" 200 -
+2018-08-08 23:35:02,913---INFO---127.0.0.1 - - [08/Aug/2018 23:35:02] "GET /report HTTP/1.1" 200 -
+2018-08-08 23:35:04,219---INFO---127.0.0.1 - - [08/Aug/2018 23:35:04] "GET /static/report/2018-08-08%2023_27_09-report.html HTTP/1.1" 200 -
+2018-08-08 23:35:20,541---INFO---127.0.0.1 - - [08/Aug/2018 23:35:20] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:40:25,880---INFO--- * Detected change in 'D:\\python\\work\\microblog\\microblog\\app\\views.py', reloading
+2018-08-08 23:40:25,981---INFO--- * Restarting with stat
+2018-08-08 23:40:27,311---WARNING--- * Debugger is active!
+2018-08-08 23:40:27,317---INFO--- * Debugger PIN: 843-323-975
+2018-08-08 23:40:27,326---INFO--- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-08 23:40:30,249---INFO---127.0.0.1 - - [08/Aug/2018 23:40:30] "GET /case HTTP/1.1" 200 -
+2018-08-08 23:40:34,710---INFO---  ---预期结果
+2018-08-08 23:40:34,710---INFO---  --的士速递--正确
+2018-08-08 23:40:55,736---INFO---  ---预期结果ok
+2018-08-08 23:40:55,762---INFO---127.0.0.1 - - [08/Aug/2018 23:40:55] "GET /do_many_case?{%220%22:{%22id_num%22:%227%22,%22case_name%22:%22%E7%9A%84%E5%A3%AB%E9%80%9F%E9%80%92%22,%22server%22:%22%22,%22way%22:%22%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22%22,%22check%22:%22%22,%22is_base%22:%22NO%22},%221%22:{%22id_num%22:%228%22,%22case_name%22:%22%E5%9C%B0%E6%96%B9%22,%22server%22:%2210.13.8.116%22,%22way%22:%22/web/user-login/%22,%22request_method%22:%22POST%22,%22data_type%22:%22DATA%22,%22data_i%22:%22{32,53,5,5,5}%22,%22check%22:%22ok%22,%22is_base%22:%22NO%22},%22len%22:2} HTTP/1.1" 200 -

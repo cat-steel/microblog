@@ -13,7 +13,8 @@
                 type:'GET',
                 url:"{{url_for('delete_module')}}",
                 data:data,
-                dataType:'json'
+                dataType:'json',
+                success: window.location.reload()
             })
         }
     </script>

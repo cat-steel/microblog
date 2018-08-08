@@ -36,8 +36,9 @@ class Case(db.Model):
     is_base = db.Column(db.String(32))
     org_id = db.Column(db.Integer)
     module_id = db.Column(db.Integer)
+    is_succ = db.Column(db.Integer)
 
-    def __init__(self,name,IP,ways,request_method,data_i,data,check,is_base,org_id,module_id):
+    def __init__(self,name,IP,ways,request_method,data_i,data,check,is_base,org_id,module_id,is_succ):
         self.name = name
         self.IP = IP
         self.ways = ways
@@ -48,6 +49,7 @@ class Case(db.Model):
         self.is_base = is_base
         self.org_id = org_id
         self.module_id = module_id
+        self.is_succ = is_succ
 
     def __repr__(self):
         return '<Case %r>' % (self.name)
